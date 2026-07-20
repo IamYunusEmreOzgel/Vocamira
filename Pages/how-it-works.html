@@ -45,41 +45,75 @@
     <section class="process-list" aria-label="Learning process">
       <article class="process-item">
         <span class="process-number">01</span>
-        <div>
+        <div class="process-copy">
           <h2>Study each word in context</h2>
           <p>Browse vocabulary by level, read all three example sentences, and see the target word highlighted in each sentence. The examples remain visible even when the definition is hidden.</p>
+        </div>
+        <div class="step-visual study-visual" aria-hidden="true">
+          <div class="visual-top"><span>B1</span><small>12 / 26</small></div>
+          <strong>Achieve</strong>
+          <p>The team <mark>achieved</mark> its target.</p>
+          <p>She <mark>achieved</mark> a high score.</p>
+          <p>They <mark>achieved</mark> better results.</p>
         </div>
       </article>
 
       <article class="process-item">
         <span class="process-number">02</span>
-        <div>
+        <div class="process-copy">
           <h2>Reveal the definition when you are ready</h2>
           <p>Try to understand the word from its example sentences first, then use the Show definition button to check its English meaning.</p>
+        </div>
+        <div class="step-visual definition-visual" aria-hidden="true">
+          <strong>Achieve</strong>
+          <span class="visual-button">Show definition</span>
+          <div class="definition-box">
+            <small>Definition</small>
+            <p>To successfully complete something.</p>
+          </div>
         </div>
       </article>
 
       <article class="process-item">
         <span class="process-number">03</span>
-        <div>
+        <div class="process-copy">
           <h2>Build a quiz that matches your session</h2>
           <p>Choose Definition Quiz or Fill in the Blank, select a difficulty group and category, then set a session length of 10, 20, 30, or 50 questions.</p>
+        </div>
+        <div class="step-visual settings-visual" aria-hidden="true">
+          <small>Quiz mode</small>
+          <div class="choice-row"><span class="choice active">Definition</span><span class="choice">Fill in Blank</span></div>
+          <div class="setting-row"><span>Level</span><strong>B1</strong></div>
+          <div class="setting-row"><span>Questions</span><strong>20</strong></div>
         </div>
       </article>
 
       <article class="process-item">
         <span class="process-number">04</span>
-        <div>
+        <div class="process-copy">
           <h2>Learn from immediate feedback</h2>
           <p>After every answer, Vocamira shows whether your choice was correct and reveals the correct answer before you continue.</p>
+        </div>
+        <div class="step-visual feedback-visual" aria-hidden="true">
+          <p>The team _____ its target.</p>
+          <span class="answer correct">Achieved <b>✓</b></span>
+          <span class="answer wrong">Reduced <b>×</b></span>
+          <small>Correct answer shown instantly</small>
         </div>
       </article>
 
       <article class="process-item">
         <span class="process-number">05</span>
-        <div>
+        <div class="process-copy">
           <h2>Track your learning progress</h2>
           <p>Signed-in users can view games played, questions answered, accuracy, performance by quiz mode, and the number of learned, learning, and difficult words.</p>
+        </div>
+        <div class="step-visual progress-visual" aria-hidden="true">
+          <div class="progress-score"><span>Accuracy</span><strong>82%</strong></div>
+          <div class="progress-line"><span style="width:82%"></span></div>
+          <div class="stat-row"><span>Learned</span><strong>34</strong></div>
+          <div class="stat-row"><span>Learning</span><strong>18</strong></div>
+          <div class="stat-row"><span>Difficult</span><strong>6</strong></div>
         </div>
       </article>
     </section>
@@ -89,12 +123,8 @@
         <p class="eyebrow">Study preview</p>
         <h2>See the word inside real sentences.</h2>
         <p>The examples stay visible while the definition remains optional.</p>
-
         <div class="mini-interface" aria-hidden="true">
-          <div class="mini-interface-top">
-            <span class="mini-level">B1</span>
-            <span class="mini-count">Word 12 of 26</span>
-          </div>
+          <div class="mini-interface-top"><span class="mini-level">B1</span><span class="mini-count">Word 12 of 26</span></div>
           <strong class="mini-word">Achieve</strong>
           <p class="mini-sentence">The team <mark>achieved</mark> its target ahead of schedule.</p>
           <button class="mini-button" type="button" tabindex="-1">Show definition</button>
@@ -105,31 +135,19 @@
         <p class="eyebrow">Quiz preview</p>
         <h2>Practise with clear, focused questions.</h2>
         <p>Immediate feedback helps you correct mistakes before moving on.</p>
-
         <div class="mini-interface" aria-hidden="true">
-          <div class="mini-interface-top">
-            <span class="mini-mode">Fill in the Blank</span>
-            <span class="mini-count">Question 4 of 10</span>
-          </div>
+          <div class="mini-interface-top"><span class="mini-mode">Fill in the Blank</span><span class="mini-count">Question 4 of 10</span></div>
           <p class="mini-question">The team _____ its target ahead of schedule.</p>
           <div class="mini-options">
-            <span class="mini-option correct">achieved</span>
-            <span class="mini-option">avoided</span>
-            <span class="mini-option">reduced</span>
-            <span class="mini-option">noticed</span>
+            <span class="mini-option correct">achieved</span><span class="mini-option">avoided</span><span class="mini-option">reduced</span><span class="mini-option">noticed</span>
           </div>
         </div>
       </article>
     </section>
 
     <section class="learning-note">
-      <div>
-        <p class="eyebrow">Why English definitions?</p>
-        <h2>Build direct understanding instead of translating first.</h2>
-      </div>
-      <p>
-        English definitions and complete example sentences expose you to useful vocabulary, natural sentence patterns, and the way words appear in dictionaries, lessons, and everyday communication.
-      </p>
+      <div><p class="eyebrow">Why English definitions?</p><h2>Build direct understanding instead of translating first.</h2></div>
+      <p>English definitions and complete example sentences expose you to useful vocabulary, natural sentence patterns, and the way words appear in dictionaries, lessons, and everyday communication.</p>
     </section>
 
     <section class="why-vocamira" aria-labelledby="why-vocamira-title">
@@ -138,25 +156,10 @@
         <h2 id="why-vocamira-title">A simple learning loop built around understanding.</h2>
         <p>Each part of Vocamira supports the same goal: recognise a word, understand it in context, practise it, and see how your performance changes over time.</p>
       </div>
-
       <div class="benefit-grid">
-        <article class="benefit-card">
-          <span class="benefit-icon" aria-hidden="true">Aa</span>
-          <h3>Think directly in English</h3>
-          <p>English definitions reduce dependence on word-for-word translation and strengthen direct understanding.</p>
-        </article>
-
-        <article class="benefit-card">
-          <span class="benefit-icon" aria-hidden="true">“ ”</span>
-          <h3>Learn through context</h3>
-          <p>Three complete example sentences show how each word changes and behaves in natural use.</p>
-        </article>
-
-        <article class="benefit-card">
-          <span class="benefit-icon" aria-hidden="true">%</span>
-          <h3>Follow real progress</h3>
-          <p>Your profile turns completed quizzes into clear statistics about accuracy, modes, and vocabulary status.</p>
-        </article>
+        <article class="benefit-card"><span class="benefit-icon" aria-hidden="true">Aa</span><h3>Think directly in English</h3><p>English definitions reduce dependence on word-for-word translation and strengthen direct understanding.</p></article>
+        <article class="benefit-card"><span class="benefit-icon" aria-hidden="true">“ ”</span><h3>Learn through context</h3><p>Three complete example sentences show how each word changes and behaves in natural use.</p></article>
+        <article class="benefit-card"><span class="benefit-icon" aria-hidden="true">%</span><h3>Follow real progress</h3><p>Your profile turns completed quizzes into clear statistics about accuracy, modes, and vocabulary status.</p></article>
       </div>
     </section>
 
@@ -166,7 +169,6 @@
       <a class="primary-link" href="study.html">Study Words</a>
     </section>
   </main>
-
   <script src="../assets/js/nav.js"></script>
 </body>
 </html>
