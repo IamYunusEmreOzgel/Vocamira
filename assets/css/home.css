@@ -68,20 +68,28 @@
   position: relative;
   z-index: 1;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 12px;
+  min-width: 0;
   margin-bottom: 14px;
 }
 
 .word-preview strong {
+  display: block;
+  max-width: 100%;
+  min-width: 0;
   margin: 0;
-  font-size: clamp(2.25rem, 5vw, 3.35rem);
-  line-height: 1.05;
+  font-size: clamp(1.9rem, 4.2vw, 3.05rem);
+  line-height: 1.08;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: auto;
   text-transform: capitalize;
 }
 
 .preview-category {
+  flex-shrink: 0;
   padding: 6px 10px;
   color: var(--muted);
   background: var(--background);
@@ -132,6 +140,7 @@
   background: rgba(244, 247, 251, 0.78);
   font-size: 0.82rem;
   line-height: 1.5;
+  overflow-wrap: anywhere;
 }
 
 .preview-example-list mark {
@@ -171,6 +180,10 @@
   .word-preview {
     min-height: 0;
     padding: 26px;
+  }
+
+  .word-preview strong {
+    font-size: clamp(1.75rem, 10vw, 2.7rem);
   }
 
   .word-preview .preview-example-list p {
