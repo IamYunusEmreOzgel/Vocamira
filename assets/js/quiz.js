@@ -82,9 +82,7 @@ function getFilteredWords() {
 }
 
 function updateSetupSummary() {
-  if (!words.length) {
-    return;
-  }
+  if (!words.length) return;
 
   const filteredWords = getFilteredWords();
   const requestedQuestions = Number(questionLimitSelect.value);
@@ -104,9 +102,7 @@ function updateSetupSummary() {
 }
 
 function populateCategories() {
-  const categories = [...new Set(words.map((word) => word.category))].sort();
-
-  categories.forEach((category) => {
+  [...new Set(words.map((word) => word.category))].sort().forEach((category) => {
     const option = document.createElement("option");
     option.value = category;
     option.textContent = category.charAt(0).toUpperCase() + category.slice(1);
@@ -119,29 +115,21 @@ function escapeRegExp(value) {
 }
 
 function createBlankSentence(sentence) {
-  if (sentence.text.includes("_____")) {
-    return sentence.text;
-  }
+  if (sentence.text.includes("_____")) return sentence.text;
 
   const answerPattern = new RegExp(`\\b${escapeRegExp(sentence.answer)}\\b`, "i");
   return sentence.text.replace(answerPattern, "_____");
 }
 
 function getRandomSentence(word) {
-  if (!Array.isArray(word.sentences) || word.sentences.length === 0) {
-    return null;
-  }
-
+  if (!Array.isArray(word.sentences) || !word.sentences.length) return null;
   return word.sentences[Math.floor(Math.random() * word.sentences.length)];
 }
 
 async function loadWords() {
   try {
     const manifestResponse = await fetch(MANIFEST_FILE);
-
-    if (!manifestResponse.ok) {
-      throw new Error(`Vocabulary manifest could not be loaded: ${manifestResponse.status}`);
-    }
+    if (!manifestResponse.ok) throw new Error(`Vocabulary manifest could not be loaded: ${manifestResponse.status}`);
 
     const manifest = await manifestResponse.json();
     const files = Object.values(manifest.levels)
@@ -150,19 +138,11 @@ async function loadWords() {
 
     const responses = await Promise.all(files.map((file) => fetch(file)));
     const failedResponse = responses.find((response) => !response.ok);
+    if (failedResponse) throw new Error(`Vocabulary data could not be loaded: ${failedResponse.status}`);
 
-    if (failedResponse) {
-      throw new Error(`Vocabulary data could not be loaded: ${failedResponse.status}`);
-    }
+    words = (await Promise.all(responses.map((response) => response.json()))).flat();
+    if (words.length < 4) throw new Error("At least four words are required to create a quiz.");
 
-    const vocabularyParts = await Promise.all(responses.map((response) => response.json()));
-    const data = vocabularyParts.flat();
-
-    if (!Array.isArray(data) || data.length < 4) {
-      throw new Error("At least four words are required to create a quiz.");
-    }
-
-    words = data;
     populateCategories();
     startButton.textContent = "Start Game";
     updateSetupSummary();
@@ -174,14 +154,12 @@ async function loadWords() {
 
 function startQuiz() {
   activeWordPool = getFilteredWords();
-
   if (activeWordPool.length < 4) {
     updateSetupSummary();
     return;
   }
 
   const questionLimit = Math.min(Number(questionLimitSelect.value), activeWordPool.length);
-
   activeGameMode = getSelectedGameMode();
   quizWords = shuffle(activeWordPool).slice(0, questionLimit);
   currentQuestionIndex = 0;
@@ -191,6 +169,8 @@ function startQuiz() {
   scoreText.textContent = "Score: 0";
   progressBar.style.width = "0%";
   saveStatus.textContent = "";
+  restartButton.disabled = false;
+  changeSettingsButton.disabled = false;
 
   showScreen("quiz");
   renderQuestion();
@@ -206,20 +186,25 @@ function createDefinitionChoices(correctWord) {
 }
 
 function createWordChoices(correctWord, correctAnswer) {
-  const sameLevelWords = words.filter((word) => {
-    return word.id !== correctWord.id && word.level === correctWord.level;
-  });
+  const sameLevelWords = words.filter((word) => word.id !== correctWord.id && word.level === correctWord.level);
   const fallbackWords = words.filter((word) => word.id !== correctWord.id);
   const source = sameLevelWords.length >= 3 ? sameLevelWords : fallbackWords;
 
   const wrongWords = shuffle(source)
     .map((word) => word.word)
-    .filter((word, index, list) => {
-      return word.toLowerCase() !== correctAnswer.toLowerCase() && list.indexOf(word) === index;
-    })
+    .filter((word, index, list) => word.toLowerCase() !== correctAnswer.toLowerCase() && list.indexOf(word) === index)
     .slice(0, 3);
 
   return shuffle([correctAnswer, ...wrongWords]);
+}
+
+function createAnswerButton(answer) {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "answer-button";
+  button.textContent = answer;
+  button.addEventListener("click", () => checkAnswer(button, answer));
+  answerOptions.appendChild(button);
 }
 
 function renderDefinitionQuestion(currentWord) {
@@ -228,10 +213,7 @@ function renderDefinitionQuestion(currentWord) {
   questionPrompt.textContent = currentWord.word;
   questionPrompt.classList.remove("sentence-prompt");
   currentCorrectAnswer = currentWord.definition;
-
-  createDefinitionChoices(currentWord).forEach((definition) => {
-    createAnswerButton(definition);
-  });
+  createDefinitionChoices(currentWord).forEach(createAnswerButton);
 }
 
 function renderFillBlankQuestion(currentWord) {
@@ -247,19 +229,7 @@ function renderFillBlankQuestion(currentWord) {
   questionPrompt.textContent = createBlankSentence(sentence);
   questionPrompt.classList.add("sentence-prompt");
   currentCorrectAnswer = sentence.answer;
-
-  createWordChoices(currentWord, sentence.answer).forEach((word) => {
-    createAnswerButton(word);
-  });
-}
-
-function createAnswerButton(answer) {
-  const button = document.createElement("button");
-  button.type = "button";
-  button.className = "answer-button";
-  button.textContent = answer;
-  button.addEventListener("click", () => checkAnswer(button, answer));
-  answerOptions.appendChild(button);
+  createWordChoices(currentWord, sentence.answer).forEach(createAnswerButton);
 }
 
 function renderQuestion() {
@@ -275,36 +245,23 @@ function renderQuestion() {
   questionCount.textContent = `Question ${currentQuestionIndex + 1} / ${totalQuestions}`;
   progressBar.style.width = `${((currentQuestionIndex + 1) / totalQuestions) * 100}%`;
 
-  if (activeGameMode === "fill-blank") {
-    renderFillBlankQuestion(currentWord);
-  } else {
-    renderDefinitionQuestion(currentWord);
-  }
+  if (activeGameMode === "fill-blank") renderFillBlankQuestion(currentWord);
+  else renderDefinitionQuestion(currentWord);
 }
 
 function checkAnswer(selectedButton, selectedAnswer) {
-  if (answerLocked) {
-    return;
-  }
-
+  if (answerLocked) return;
   answerLocked = true;
 
   [...answerOptions.querySelectorAll(".answer-button")].forEach((button) => {
     button.disabled = true;
-
-    if (button.textContent === currentCorrectAnswer) {
-      button.classList.add("correct");
-    }
+    if (button.textContent === currentCorrectAnswer) button.classList.add("correct");
   });
 
   const isCorrect = selectedAnswer === currentCorrectAnswer;
   const currentWord = quizWords[currentQuestionIndex];
 
-  questionResults.push({
-    wordId: currentWord.id,
-    mode: currentQuestionMode,
-    isCorrect
-  });
+  questionResults.push({ wordId: currentWord.id, mode: currentQuestionMode, isCorrect });
 
   if (isCorrect) {
     score += 1;
@@ -317,17 +274,15 @@ function checkAnswer(selectedButton, selectedAnswer) {
     feedback.classList.add("error");
   }
 
-  nextButton.textContent = currentQuestionIndex === quizWords.length - 1
-    ? "View Result"
-    : "Next Question";
+  nextButton.textContent = currentQuestionIndex === quizWords.length - 1 ? "View Result" : "Next Question";
   nextButton.classList.remove("hidden");
 }
 
-function goToNextQuestion() {
+async function goToNextQuestion() {
   currentQuestionIndex += 1;
 
   if (currentQuestionIndex >= quizWords.length) {
-    showResult();
+    await showResult();
     return;
   }
 
@@ -336,123 +291,115 @@ function goToNextQuestion() {
 
 function calculateWordStatus(progress) {
   const totalCorrect = progress.definition_correct_count + progress.fill_blank_correct_count;
-
-  if (progress.wrong_count >= 2 && progress.wrong_count >= totalCorrect) {
-    return "difficult";
-  }
-
-  if (totalCorrect >= 3 && totalCorrect > progress.wrong_count) {
-    return "learned";
-  }
-
+  if (progress.wrong_count >= 2 && progress.wrong_count >= totalCorrect) return "difficult";
+  if (totalCorrect >= 3 && totalCorrect > progress.wrong_count) return "learned";
   return "learning";
 }
 
 async function saveGameResults() {
-  if (resultSaved || typeof supabaseClient === "undefined") {
+  if (resultSaved) return;
+  resultSaved = true;
+
+  if (!window.supabaseClient) {
+    saveStatus.textContent = "Statistics could not be saved because the connection is unavailable.";
     return;
   }
 
-  resultSaved = true;
-
   try {
-    const { data: sessionData, error: sessionError } = await supabaseClient.auth.getSession();
+    const { data: userData, error: userError } = await window.supabaseClient.auth.getUser();
+    if (userError) throw userError;
 
-    if (sessionError) {
-      throw sessionError;
-    }
-
-    const user = sessionData.session?.user;
-
+    const user = userData.user;
     if (!user) {
       saveStatus.textContent = "You played as a guest. Sign in before your next game to save statistics.";
       return;
     }
 
     saveStatus.textContent = "Saving your progress...";
+    restartButton.disabled = true;
+    changeSettingsButton.disabled = true;
 
     const definitionCorrect = questionResults.filter((item) => item.mode === "definition" && item.isCorrect).length;
     const definitionWrong = questionResults.filter((item) => item.mode === "definition" && !item.isCorrect).length;
     const fillBlankCorrect = questionResults.filter((item) => item.mode === "fill-blank" && item.isCorrect).length;
     const fillBlankWrong = questionResults.filter((item) => item.mode === "fill-blank" && !item.isCorrect).length;
 
-    const { data: currentStats, error: statsReadError } = await supabaseClient
+    const { data: currentStats, error: statsReadError } = await window.supabaseClient
       .from("user_stats")
       .select("*")
       .eq("user_id", user.id)
+      .maybeSingle();
+
+    if (statsReadError) throw statsReadError;
+
+    const nextStats = {
+      user_id: user.id,
+      games_played: Number(currentStats?.games_played || 0) + 1,
+      total_questions: Number(currentStats?.total_questions || 0) + questionResults.length,
+      correct_answers: Number(currentStats?.correct_answers || 0) + score,
+      wrong_answers: Number(currentStats?.wrong_answers || 0) + (questionResults.length - score),
+      definition_correct: Number(currentStats?.definition_correct || 0) + definitionCorrect,
+      definition_wrong: Number(currentStats?.definition_wrong || 0) + definitionWrong,
+      fill_blank_correct: Number(currentStats?.fill_blank_correct || 0) + fillBlankCorrect,
+      fill_blank_wrong: Number(currentStats?.fill_blank_wrong || 0) + fillBlankWrong,
+      updated_at: new Date().toISOString()
+    };
+
+    const { data: savedStats, error: statsSaveError } = await window.supabaseClient
+      .from("user_stats")
+      .upsert(nextStats, { onConflict: "user_id" })
+      .select("user_id, games_played")
       .single();
 
-    if (statsReadError) {
-      throw statsReadError;
-    }
-
-    const { error: statsUpdateError } = await supabaseClient
-      .from("user_stats")
-      .update({
-        games_played: currentStats.games_played + 1,
-        total_questions: currentStats.total_questions + questionResults.length,
-        correct_answers: currentStats.correct_answers + score,
-        wrong_answers: currentStats.wrong_answers + (questionResults.length - score),
-        definition_correct: currentStats.definition_correct + definitionCorrect,
-        definition_wrong: currentStats.definition_wrong + definitionWrong,
-        fill_blank_correct: currentStats.fill_blank_correct + fillBlankCorrect,
-        fill_blank_wrong: currentStats.fill_blank_wrong + fillBlankWrong,
-        updated_at: new Date().toISOString()
-      })
-      .eq("user_id", user.id);
-
-    if (statsUpdateError) {
-      throw statsUpdateError;
+    if (statsSaveError) throw statsSaveError;
+    if (!savedStats || savedStats.games_played !== nextStats.games_played) {
+      throw new Error("The statistics row was not updated.");
     }
 
     for (const result of questionResults) {
-      const { data: existingProgress, error: progressReadError } = await supabaseClient
+      const { data: existingProgress, error: progressReadError } = await window.supabaseClient
         .from("user_word_progress")
         .select("*")
         .eq("user_id", user.id)
         .eq("word_id", result.wordId)
         .maybeSingle();
 
-      if (progressReadError) {
-        throw progressReadError;
-      }
+      if (progressReadError) throw progressReadError;
 
       const updatedProgress = {
         user_id: user.id,
         word_id: result.wordId,
-        definition_correct_count: existingProgress?.definition_correct_count || 0,
-        fill_blank_correct_count: existingProgress?.fill_blank_correct_count || 0,
-        wrong_count: existingProgress?.wrong_count || 0,
+        definition_correct_count: Number(existingProgress?.definition_correct_count || 0),
+        fill_blank_correct_count: Number(existingProgress?.fill_blank_correct_count || 0),
+        wrong_count: Number(existingProgress?.wrong_count || 0),
         last_seen_at: new Date().toISOString()
       };
 
-      if (result.isCorrect && result.mode === "definition") {
-        updatedProgress.definition_correct_count += 1;
-      } else if (result.isCorrect && result.mode === "fill-blank") {
-        updatedProgress.fill_blank_correct_count += 1;
-      } else {
-        updatedProgress.wrong_count += 1;
-      }
+      if (result.isCorrect && result.mode === "definition") updatedProgress.definition_correct_count += 1;
+      else if (result.isCorrect && result.mode === "fill-blank") updatedProgress.fill_blank_correct_count += 1;
+      else updatedProgress.wrong_count += 1;
 
       updatedProgress.status = calculateWordStatus(updatedProgress);
 
-      const { error: progressSaveError } = await supabaseClient
+      const { error: progressSaveError } = await window.supabaseClient
         .from("user_word_progress")
         .upsert(updatedProgress, { onConflict: "user_id,word_id" });
 
-      if (progressSaveError) {
-        throw progressSaveError;
-      }
+      if (progressSaveError) throw progressSaveError;
     }
 
     saveStatus.textContent = "Your statistics and word progress were saved.";
   } catch (error) {
     console.error("Game results could not be saved:", error);
-    saveStatus.textContent = "Your game is complete, but the statistics could not be saved.";
+    resultSaved = false;
+    saveStatus.textContent = `Statistics could not be saved: ${error.message || "Unknown error"}`;
+  } finally {
+    restartButton.disabled = false;
+    changeSettingsButton.disabled = false;
   }
 }
 
-function showResult() {
+async function showResult() {
   const totalQuestions = quizWords.length;
   const percentage = Math.round((score / totalQuestions) * 100);
 
@@ -466,7 +413,7 @@ function showResult() {
         : "Keep practising. Repetition will make these words easier.";
 
   showScreen("result");
-  saveGameResults();
+  await saveGameResults();
 }
 
 function returnToSettings() {
