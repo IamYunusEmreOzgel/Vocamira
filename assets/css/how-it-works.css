@@ -3,9 +3,9 @@
 }
 
 .page-intro h1 {
-  max-width: none;
-  font-size: clamp(2.2rem, 3.8vw, 3.35rem);
-  white-space: nowrap;
+  max-width: 860px;
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  white-space: normal;
 }
 
 .interface-previews {
@@ -189,13 +189,12 @@
   line-height: 1.7;
 }
 
-@media (max-width: 900px) {
-  .page-intro h1 {
-    white-space: normal;
-  }
-}
-
 @media (max-width: 760px) {
+  .page-intro h1 {
+    max-width: 100%;
+    font-size: clamp(2rem, 7vw, 2.7rem);
+  }
+
   .interface-previews,
   .benefit-grid {
     grid-template-columns: 1fr;
