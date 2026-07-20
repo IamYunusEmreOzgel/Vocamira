@@ -2,7 +2,7 @@
   {
     "id": 1,
     "word": "improve",
-    "meaning": "geliştirmek",
+    "definition": "to make something better",
     "level": "A2",
     "category": "general",
     "sentence": "I want to _____ my English.",
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "word": "decision",
-    "meaning": "karar",
+    "definition": "a choice made after thinking about different options",
     "level": "B1",
     "category": "general",
     "sentence": "She made an important _____.",
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "word": "available",
-    "meaning": "mevcut, uygun",
+    "definition": "ready to be used or obtained",
     "level": "B1",
     "category": "general",
     "sentence": "Is this product _____ today?",
@@ -29,7 +29,7 @@
   {
     "id": 4,
     "word": "achieve",
-    "meaning": "başarmak",
+    "definition": "to successfully reach a goal",
     "level": "B1",
     "category": "general",
     "sentence": "You can _____ your goals with practice.",
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "word": "require",
-    "meaning": "gerektirmek",
+    "definition": "to need something for a particular purpose",
     "level": "B1",
     "category": "general",
     "sentence": "This task will _____ more time.",
@@ -47,7 +47,7 @@
   {
     "id": 6,
     "word": "increase",
-    "meaning": "artırmak",
+    "definition": "to become or make something larger in amount",
     "level": "A2",
     "category": "general",
     "sentence": "We need to _____ production.",
@@ -56,7 +56,7 @@
   {
     "id": 7,
     "word": "reduce",
-    "meaning": "azaltmak",
+    "definition": "to make something smaller or less",
     "level": "B1",
     "category": "general",
     "sentence": "The company wants to _____ costs.",
@@ -65,7 +65,7 @@
   {
     "id": 8,
     "word": "support",
-    "meaning": "desteklemek",
+    "definition": "to help or encourage someone or something",
     "level": "A2",
     "category": "general",
     "sentence": "Good friends _____ each other.",
@@ -74,7 +74,7 @@
   {
     "id": 9,
     "word": "compare",
-    "meaning": "karşılaştırmak",
+    "definition": "to examine how two or more things are similar or different",
     "level": "A2",
     "category": "general",
     "sentence": "Let us _____ the two options.",
@@ -83,7 +83,7 @@
   {
     "id": 10,
     "word": "provide",
-    "meaning": "sağlamak",
+    "definition": "to give someone something they need",
     "level": "B1",
     "category": "general",
     "sentence": "The course will _____ useful information.",
@@ -92,7 +92,7 @@
   {
     "id": 11,
     "word": "avoid",
-    "meaning": "kaçınmak",
+    "definition": "to stay away from something or prevent it from happening",
     "level": "B1",
     "category": "general",
     "sentence": "Try to _____ unnecessary mistakes.",
@@ -101,7 +101,7 @@
   {
     "id": 12,
     "word": "develop",
-    "meaning": "geliştirmek, geliştirilmek",
+    "definition": "to grow, improve, or create something over time",
     "level": "A2",
     "category": "general",
     "sentence": "Reading helps you _____ new skills.",
