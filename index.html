@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Vocamira - Web tabanlı İngilizce kelime öğrenme ve test uygulaması.">
-  <title>Vocamira | İngilizce Kelime Testi</title>
+  <meta name="description" content="Vocamira is a web-based English vocabulary learning and quiz application.">
+  <title>Vocamira | Vocabulary Quiz</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,61 +13,60 @@
 <body>
   <main class="app-shell">
     <header class="app-header">
-      <a class="brand" href="index.html" aria-label="Vocamira ana sayfa">
+      <a class="brand" href="index.html" aria-label="Vocamira home">
         <span class="brand-mark">V</span>
         <span>Vocamira</span>
       </a>
-      <span class="header-badge">İlk sürüm</span>
     </header>
 
     <section class="quiz-card" aria-live="polite">
       <div id="start-screen" class="screen active">
-        <p class="eyebrow">Kelime bilgini geliştir</p>
-        <h1>İngilizce kelimeleri test ederek öğren.</h1>
+        <p class="eyebrow">Build your vocabulary</p>
+        <h1>Learn English words through simple quizzes.</h1>
         <p class="intro-text">
-          Her testte 10 soru çöz, doğru cevaplarını gör ve gelişimini adım adım takip et.
+          Answer 10 questions, get instant feedback, and improve one word at a time.
         </p>
         <div class="feature-list">
-          <span>10 soru</span>
-          <span>4 seçenek</span>
-          <span>Anında geri bildirim</span>
+          <span>10 questions</span>
+          <span>4 choices</span>
+          <span>Instant feedback</span>
         </div>
-        <button id="start-button" class="primary-button" type="button">Teste Başla</button>
+        <button id="start-button" class="primary-button" type="button">Start Quiz</button>
       </div>
 
       <div id="quiz-screen" class="screen">
         <div class="quiz-meta">
-          <span id="question-count">Soru 1 / 10</span>
-          <span id="score">Puan: 0</span>
+          <span id="question-count">Question 1 / 10</span>
+          <span id="score">Score: 0</span>
         </div>
 
         <div class="progress-track" aria-hidden="true">
           <div id="progress-bar" class="progress-bar"></div>
         </div>
 
-        <p class="question-label">Bu kelimenin Türkçe anlamı hangisidir?</p>
+        <p class="question-label">Which definition best matches this word?</p>
         <h2 id="question-word" class="question-word">Improve</h2>
 
         <div id="answer-options" class="answer-options"></div>
         <p id="feedback" class="feedback" role="status"></p>
 
-        <button id="next-button" class="primary-button hidden" type="button">Sonraki Soru</button>
+        <button id="next-button" class="primary-button hidden" type="button">Next Question</button>
       </div>
 
       <div id="result-screen" class="screen">
-        <p class="eyebrow">Test tamamlandı</p>
-        <h2>Sonucun hazır!</h2>
+        <p class="eyebrow">Quiz complete</p>
+        <h2>Your result is ready.</h2>
         <div class="result-score">
           <strong id="final-score">0 / 10</strong>
-          <span id="result-message">Güzel başlangıç!</span>
+          <span id="result-message">A good start.</span>
         </div>
-        <button id="restart-button" class="primary-button" type="button">Tekrar Çöz</button>
+        <button id="restart-button" class="primary-button" type="button">Try Again</button>
       </div>
 
       <div id="error-screen" class="screen">
-        <p class="eyebrow">Bir sorun oluştu</p>
-        <h2>Kelime verileri yüklenemedi.</h2>
-        <p class="intro-text">Projeyi Live Server veya GitHub Pages üzerinden açmayı dene.</p>
+        <p class="eyebrow">Something went wrong</p>
+        <h2>The vocabulary data could not be loaded.</h2>
+        <p class="intro-text">Open the project with Live Server or GitHub Pages.</p>
       </div>
     </section>
   </main>
