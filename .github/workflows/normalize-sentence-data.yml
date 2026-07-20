@@ -1,0 +1,32 @@
+name: Normalize vocabulary sentences
+
+on:
+  push:
+    paths:
+      - ".github/workflows/normalize-sentence-data.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  normalize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Normalize sentence data
+        run: node scripts/normalize-sentence-data.js
+
+      - name: Remove one-time migration files
+        run: |
+          rm scripts/normalize-sentence-data.js
+          rm .github/workflows/normalize-sentence-data.yml
+
+      - name: Commit normalized vocabulary data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data scripts .github/workflows
+          git commit -m "Normalize fill-in-the-blank sentence data"
+          git push
