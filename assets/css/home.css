@@ -1,0 +1,132 @@
+.word-preview {
+  position: relative;
+  overflow: hidden;
+  min-height: 310px;
+  padding: 30px;
+  border: 1px solid rgba(91, 91, 214, 0.18);
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at top right, rgba(91, 91, 214, 0.16), transparent 42%),
+    var(--surface);
+  box-shadow: 0 24px 60px rgba(35, 45, 75, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.word-preview::before {
+  content: "";
+  position: absolute;
+  top: -42px;
+  right: -38px;
+  width: 126px;
+  height: 126px;
+  border: 22px solid rgba(91, 91, 214, 0.08);
+  border-radius: 50%;
+}
+
+.word-preview:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 30px 70px rgba(35, 45, 75, 0.16);
+}
+
+.preview-topline {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 34px;
+}
+
+.preview-label {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.preview-level,
+.preview-category {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.preview-level {
+  min-width: 42px;
+  padding: 7px 10px;
+  color: var(--primary);
+  background: #eeeeff;
+  font-size: 0.74rem;
+}
+
+.preview-word-wrap {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.word-preview strong {
+  margin: 0;
+  font-size: clamp(2.25rem, 5vw, 3.35rem);
+  line-height: 1.05;
+  text-transform: capitalize;
+}
+
+.preview-category {
+  padding: 6px 10px;
+  color: var(--muted);
+  background: var(--background);
+  font-size: 0.72rem;
+  text-transform: capitalize;
+}
+
+.word-preview p {
+  position: relative;
+  z-index: 1;
+  min-height: 58px;
+  margin-bottom: 34px;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.preview-note {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
+.preview-note::before {
+  content: "↻";
+  display: grid;
+  width: 25px;
+  height: 25px;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--primary);
+  background: #eeeeff;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 760px) {
+  .word-preview {
+    min-height: 0;
+    padding: 26px;
+  }
+}
