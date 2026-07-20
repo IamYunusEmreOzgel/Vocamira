@@ -13,6 +13,15 @@ const previousButton = document.querySelector("#previous-button");
 const nextButton = document.querySelector("#next-study-button");
 const shuffleButton = document.querySelector("#shuffle-button");
 
+const VOCABULARY_FILES = [
+  "../data/words-1.json",
+  "../data/words-2.json",
+  "../data/words-3.json",
+  "../data/words-4.json",
+  "../data/words-5.json",
+  "../data/words-6.json"
+];
+
 let allWords = [];
 let visibleWords = [];
 let currentIndex = 0;
@@ -20,16 +29,17 @@ let detailsVisible = false;
 
 function shuffle(items) {
   const copy = [...items];
-
   for (let index = copy.length - 1; index > 0; index -= 1) {
     const randomIndex = Math.floor(Math.random() * (index + 1));
     [copy[index], copy[randomIndex]] = [copy[randomIndex], copy[index]];
   }
-
   return copy;
 }
 
 function buildExample(word) {
+  if (Array.isArray(word.examples) && word.examples.length > 0) {
+    return word.examples[Math.floor(Math.random() * word.examples.length)];
+  }
   return word.sentence.replace("_____", word.sentenceAnswer);
 }
 
@@ -48,7 +58,6 @@ function renderCard() {
   }
 
   const word = visibleWords[currentIndex];
-
   studyArea.classList.remove("hidden");
   studyError.classList.add("hidden");
   cardCount.textContent = `Word ${currentIndex + 1} of ${visibleWords.length}`;
@@ -64,7 +73,6 @@ function renderCard() {
 
 function populateLevels() {
   const levels = [...new Set(allWords.map((word) => word.level))].sort();
-
   levels.forEach((level) => {
     const option = document.createElement("option");
     option.value = level;
@@ -75,11 +83,9 @@ function populateLevels() {
 
 function applyLevelFilter() {
   const selectedLevel = levelSelect.value;
-
   visibleWords = selectedLevel === "all"
     ? [...allWords]
     : allWords.filter((word) => word.level === selectedLevel);
-
   currentIndex = 0;
   renderCard();
 }
@@ -93,14 +99,14 @@ function toggleDetails() {
 
 async function loadWords() {
   try {
-    const response = await fetch("../data/words.json");
-
-    if (!response.ok) {
-      throw new Error(`Vocabulary data could not be loaded: ${response.status}`);
+    const responses = await Promise.all(VOCABULARY_FILES.map((file) => fetch(file)));
+    const failedResponse = responses.find((response) => !response.ok);
+    if (failedResponse) {
+      throw new Error(`Vocabulary data could not be loaded: ${failedResponse.status}`);
     }
 
-    const data = await response.json();
-
+    const vocabularyParts = await Promise.all(responses.map((response) => response.json()));
+    const data = vocabularyParts.flat();
     if (!Array.isArray(data) || data.length === 0) {
       throw new Error("No vocabulary data is available.");
     }
@@ -117,27 +123,22 @@ async function loadWords() {
 }
 
 revealButton.addEventListener("click", toggleDetails);
-
 previousButton.addEventListener("click", () => {
   if (currentIndex > 0) {
     currentIndex -= 1;
     renderCard();
   }
 });
-
 nextButton.addEventListener("click", () => {
   if (currentIndex < visibleWords.length - 1) {
     currentIndex += 1;
     renderCard();
   }
 });
-
 shuffleButton.addEventListener("click", () => {
   visibleWords = shuffle(visibleWords);
   currentIndex = 0;
   renderCard();
 });
-
 levelSelect.addEventListener("change", applyLevelFilter);
-
 loadWords();
