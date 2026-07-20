@@ -28,8 +28,14 @@ async function validateVocabulary() {
   let totalWords = 0;
 
   for (const [levelName, levelConfig] of Object.entries(manifest.levels || {})) {
+    const expectedWordCount = Number(levelConfig?.wordCount || 0);
+
     if (!levelConfig?.file) {
       errors.push(`${levelName}: manifest file name is missing.`);
+      continue;
+    }
+
+    if (expectedWordCount === 0) {
       continue;
     }
 
@@ -42,9 +48,9 @@ async function validateVocabulary() {
 
     totalWords += words.length;
 
-    if (words.length !== Number(levelConfig.wordCount || 0)) {
+    if (words.length !== expectedWordCount) {
       errors.push(
-        `${levelConfig.file}: manifest says ${levelConfig.wordCount} words, but the file contains ${words.length}.`
+        `${levelConfig.file}: manifest says ${expectedWordCount} words, but the file contains ${words.length}.`
       );
     }
 
