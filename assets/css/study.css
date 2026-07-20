@@ -31,6 +31,7 @@
 }
 
 .study-area {
+  position: relative;
   width: min(720px, 100%);
   margin: 0 auto;
 }
@@ -66,7 +67,7 @@
 }
 
 .secondary-button {
-  min-width: 128px;
+  min-width: 112px;
   padding: 13px 18px;
   border-radius: 11px;
 }
@@ -170,9 +171,17 @@
 }
 
 .study-navigation {
-  width: min(860px, calc(100vw - 40px));
-  margin: 18px auto 0;
-  transform: translateX(calc((720px - 100%) / 2));
+  position: absolute;
+  top: calc(50% + 14px);
+  left: 50%;
+  width: min(1040px, calc(100vw - 48px));
+  margin: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.study-navigation .secondary-button {
+  pointer-events: auto;
 }
 
 .study-error {
@@ -189,10 +198,13 @@
   color: var(--muted);
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1040px) {
   .study-navigation {
+    position: static;
     width: 100%;
+    margin-top: 18px;
     transform: none;
+    pointer-events: auto;
   }
 }
 
