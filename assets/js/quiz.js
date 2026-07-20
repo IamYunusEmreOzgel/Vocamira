@@ -43,7 +43,7 @@ function shuffle(items) {
 
 async function loadWords() {
   try {
-    const response = await fetch("data/words.json");
+    const response = await fetch("../data/words.json");
 
     if (!response.ok) {
       throw new Error(`Vocabulary data could not be loaded: ${response.status}`);
