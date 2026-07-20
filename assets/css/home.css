@@ -35,7 +35,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  margin-bottom: 34px;
+  margin-bottom: 28px;
 }
 
 .preview-label {
@@ -89,14 +89,57 @@
   text-transform: capitalize;
 }
 
-.word-preview p {
+.word-preview .preview-definition {
   position: relative;
   z-index: 1;
-  min-height: 58px;
-  margin-bottom: 34px;
+  min-height: 0;
+  margin-bottom: 22px;
   color: var(--muted);
   font-size: 1rem;
   line-height: 1.7;
+}
+
+.preview-examples {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 24px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+
+.preview-examples-title {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.preview-example-list {
+  display: grid;
+  gap: 8px;
+}
+
+.word-preview .preview-example-list p {
+  min-height: 0;
+  margin: 0;
+  padding: 9px 11px;
+  border: 1px solid rgba(91, 91, 214, 0.12);
+  border-radius: 10px;
+  color: var(--text);
+  background: rgba(244, 247, 251, 0.78);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.preview-example-list mark {
+  padding: 1px 4px;
+  border-radius: 5px;
+  color: var(--primary);
+  background: #eeeeff;
+  font-weight: 700;
 }
 
 .preview-note {
@@ -128,5 +171,9 @@
   .word-preview {
     min-height: 0;
     padding: 26px;
+  }
+
+  .word-preview .preview-example-list p {
+    font-size: 0.8rem;
   }
 }
