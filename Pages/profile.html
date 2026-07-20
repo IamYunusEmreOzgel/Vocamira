@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View your Vocamira learning statistics.">
+  <title>Profile | Vocamira</title>
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/nav.css">
+  <link rel="stylesheet" href="../assets/css/auth.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="site-header">
+      <a class="site-logo" href="../index.html" aria-label="Vocamira home">
+        <img src="../assets/images/vocamira-logo.svg" alt="Vocamira">
+      </a>
+
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="study.html">Study</a>
+        <a href="how-it-works.html">How it works</a>
+        <a class="active" href="profile.html" aria-current="page">Profile</a>
+        <a class="play-link" href="game.html">Play</a>
+      </nav>
+    </header>
+
+    <section class="auth-layout">
+      <div class="profile-card">
+        <p id="profile-status" class="profile-status">Loading your profile...</p>
+
+        <div id="profile-content" hidden>
+          <div class="profile-header">
+            <div>
+              <p class="eyebrow">Your account</p>
+              <h1 id="profile-name">Vocamira Learner</h1>
+              <p id="profile-email" class="profile-email"></p>
+            </div>
+            <button id="logout-button" class="logout-button" type="button">Sign Out</button>
+          </div>
+
+          <div class="stats-grid" aria-label="Learning statistics">
+            <div class="stat-item">
+              <span>Games played</span>
+              <strong id="games-played">0</strong>
+            </div>
+            <div class="stat-item">
+              <span>Total questions</span>
+              <strong id="total-questions">0</strong>
+            </div>
+            <div class="stat-item">
+              <span>Correct answers</span>
+              <strong id="correct-answers">0</strong>
+            </div>
+            <div class="stat-item">
+              <span>Wrong answers</span>
+              <strong id="wrong-answers">0</strong>
+            </div>
+            <div class="stat-item">
+              <span>Definition correct</span>
+              <strong id="definition-correct">0</strong>
+            </div>
+            <div class="stat-item">
+              <span>Fill in the blank correct</span>
+              <strong id="fill-blank-correct">0</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="../assets/js/supabase.js"></script>
+  <script src="../assets/js/nav.js"></script>
+  <script src="../assets/js/profile.js"></script>
+</body>
+</html>
