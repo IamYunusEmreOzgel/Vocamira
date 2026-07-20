@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="View your Vocamira learning statistics.">
+  <meta name="description" content="View your Vocamira learning progress and vocabulary performance.">
   <title>Profile | Vocamira</title>
   <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,46 +35,122 @@
       </nav>
     </header>
 
-    <section class="auth-layout">
+    <section class="auth-layout profile-layout">
       <div class="profile-card">
         <p id="profile-status" class="profile-status">Loading your profile...</p>
 
         <div id="profile-content" hidden>
           <div class="profile-header">
             <div>
-              <p class="eyebrow">Your account</p>
-              <h1 id="profile-name">Vocamira Learner</h1>
+              <p class="eyebrow">Your learning dashboard</p>
+              <h1>Welcome back, <span id="profile-name">Vocamira Learner</span></h1>
               <p id="profile-email" class="profile-email"></p>
             </div>
             <button id="logout-button" class="logout-button" type="button">Sign Out</button>
           </div>
 
-          <div class="stats-grid" aria-label="Learning statistics">
-            <div class="stat-item">
-              <span>Games played</span>
-              <strong id="games-played">0</strong>
+          <section class="profile-section" aria-labelledby="overall-progress-title">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Overview</p>
+                <h2 id="overall-progress-title">Overall Progress</h2>
+              </div>
             </div>
-            <div class="stat-item">
-              <span>Total questions</span>
-              <strong id="total-questions">0</strong>
+
+            <div class="stats-grid stats-grid-four" aria-label="Overall learning statistics">
+              <div class="stat-item">
+                <span>Games Played</span>
+                <strong id="games-played">0</strong>
+              </div>
+              <div class="stat-item">
+                <span>Questions Answered</span>
+                <strong id="total-questions">0</strong>
+              </div>
+              <div class="stat-item">
+                <span>Accuracy</span>
+                <strong id="overall-accuracy">0%</strong>
+              </div>
+              <div class="stat-item">
+                <span>Words Practised</span>
+                <strong id="words-practised">0</strong>
+              </div>
             </div>
-            <div class="stat-item">
-              <span>Correct answers</span>
-              <strong id="correct-answers">0</strong>
+          </section>
+
+          <section class="profile-section" aria-labelledby="vocabulary-progress-title">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Vocabulary</p>
+                <h2 id="vocabulary-progress-title">Vocabulary Progress</h2>
+              </div>
+              <a class="section-link" href="study.html">Open Study</a>
             </div>
-            <div class="stat-item">
-              <span>Wrong answers</span>
-              <strong id="wrong-answers">0</strong>
+
+            <div class="stats-grid stats-grid-three" aria-label="Vocabulary progress">
+              <div class="stat-item">
+                <span>Learned Words</span>
+                <strong id="learned-words">0</strong>
+              </div>
+              <div class="stat-item">
+                <span>Learning</span>
+                <strong id="learning-words">0</strong>
+              </div>
+              <div class="stat-item">
+                <span>Difficult Words</span>
+                <strong id="difficult-words">0</strong>
+              </div>
             </div>
-            <div class="stat-item">
-              <span>Definition correct</span>
-              <strong id="definition-correct">0</strong>
+          </section>
+
+          <section class="profile-section" aria-labelledby="mode-performance-title">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Quiz modes</p>
+                <h2 id="mode-performance-title">Performance by Mode</h2>
+              </div>
             </div>
-            <div class="stat-item">
-              <span>Fill in the blank correct</span>
-              <strong id="fill-blank-correct">0</strong>
+
+            <div class="mode-performance-grid">
+              <article class="mode-performance-card">
+                <div class="mode-performance-header">
+                  <div>
+                    <span>Definition Quiz</span>
+                    <strong id="definition-accuracy">0%</strong>
+                  </div>
+                  <small id="definition-summary">No answers yet</small>
+                </div>
+                <div class="accuracy-track" aria-hidden="true">
+                  <div id="definition-progress" class="accuracy-bar"></div>
+                </div>
+              </article>
+
+              <article class="mode-performance-card">
+                <div class="mode-performance-header">
+                  <div>
+                    <span>Fill in the Blank</span>
+                    <strong id="fill-blank-accuracy">0%</strong>
+                  </div>
+                  <small id="fill-blank-summary">No answers yet</small>
+                </div>
+                <div class="accuracy-track" aria-hidden="true">
+                  <div id="fill-blank-progress" class="accuracy-bar"></div>
+                </div>
+              </article>
             </div>
-          </div>
+          </section>
+
+          <section class="profile-section" aria-labelledby="review-words-title">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Recommended review</p>
+                <h2 id="review-words-title">Words to Review</h2>
+              </div>
+            </div>
+
+            <div id="review-words" class="review-words-list">
+              <p class="empty-review-message">Complete a quiz to discover which words need more practice.</p>
+            </div>
+          </section>
         </div>
       </div>
     </section>
