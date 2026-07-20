@@ -170,7 +170,9 @@
 }
 
 .study-navigation {
-  margin-top: 18px;
+  width: min(860px, calc(100vw - 40px));
+  margin: 18px auto 0;
+  transform: translateX(calc((720px - 100%) / 2));
 }
 
 .study-error {
@@ -185,6 +187,13 @@
 .study-error p:last-child {
   margin-top: 12px;
   color: var(--muted);
+}
+
+@media (max-width: 860px) {
+  .study-navigation {
+    width: 100%;
+    transform: none;
+  }
 }
 
 @media (max-width: 680px) {
