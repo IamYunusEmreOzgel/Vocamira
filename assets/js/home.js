@@ -1,5 +1,7 @@
 const wordElement = document.getElementById("moment-word");
 const definitionElement = document.getElementById("moment-definition");
+const levelElement = document.getElementById("moment-level");
+const categoryElement = document.getElementById("moment-category");
 
 async function showRandomWord() {
   if (!wordElement || !definitionElement) return;
@@ -29,6 +31,14 @@ async function showRandomWord() {
 
     wordElement.textContent = randomWord.word;
     definitionElement.textContent = randomWord.definition;
+
+    if (levelElement) {
+      levelElement.textContent = randomWord.level || "Vocabulary";
+    }
+
+    if (categoryElement) {
+      categoryElement.textContent = randomWord.category || "General";
+    }
   } catch (error) {
     console.error(error);
   }
