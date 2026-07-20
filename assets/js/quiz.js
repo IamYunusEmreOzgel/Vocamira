@@ -46,13 +46,13 @@ async function loadWords() {
     const response = await fetch("data/words.json");
 
     if (!response.ok) {
-      throw new Error(`Kelime verileri yüklenemedi: ${response.status}`);
+      throw new Error(`Vocabulary data could not be loaded: ${response.status}`);
     }
 
     const data = await response.json();
 
     if (!Array.isArray(data) || data.length < 4) {
-      throw new Error("Test oluşturmak için en az dört kelime gerekli.");
+      throw new Error("At least four words are required to create a quiz.");
     }
 
     words = data;
@@ -71,19 +71,19 @@ function startQuiz() {
   quizWords = shuffle(words).slice(0, Math.min(QUESTION_LIMIT, words.length));
   currentQuestionIndex = 0;
   score = 0;
-  scoreText.textContent = "Puan: 0";
+  scoreText.textContent = "Score: 0";
   showScreen("quiz");
   renderQuestion();
 }
 
 function createAnswerChoices(correctWord) {
-  const wrongMeanings = shuffle(
+  const wrongDefinitions = shuffle(
     words
       .filter((word) => word.id !== correctWord.id)
-      .map((word) => word.meaning)
+      .map((word) => word.definition)
   ).slice(0, 3);
 
-  return shuffle([correctWord.meaning, ...wrongMeanings]);
+  return shuffle([correctWord.definition, ...wrongDefinitions]);
 }
 
 function renderQuestion() {
@@ -96,21 +96,23 @@ function renderQuestion() {
   const currentWord = quizWords[currentQuestionIndex];
   const totalQuestions = quizWords.length;
 
-  questionCount.textContent = `Soru ${currentQuestionIndex + 1} / ${totalQuestions}`;
+  questionCount.textContent = `Question ${currentQuestionIndex + 1} / ${totalQuestions}`;
   progressBar.style.width = `${((currentQuestionIndex + 1) / totalQuestions) * 100}%`;
   questionWord.textContent = currentWord.word;
 
-  createAnswerChoices(currentWord).forEach((meaning) => {
+  createAnswerChoices(currentWord).forEach((definition) => {
     const button = document.createElement("button");
     button.type = "button";
     button.className = "answer-button";
-    button.textContent = meaning;
-    button.addEventListener("click", () => checkAnswer(button, meaning, currentWord.meaning));
+    button.textContent = definition;
+    button.addEventListener("click", () =>
+      checkAnswer(button, definition, currentWord.definition)
+    );
     answerOptions.appendChild(button);
   });
 }
 
-function checkAnswer(selectedButton, selectedMeaning, correctMeaning) {
+function checkAnswer(selectedButton, selectedDefinition, correctDefinition) {
   if (answerLocked) {
     return;
   }
@@ -121,24 +123,24 @@ function checkAnswer(selectedButton, selectedMeaning, correctMeaning) {
   buttons.forEach((button) => {
     button.disabled = true;
 
-    if (button.textContent === correctMeaning) {
+    if (button.textContent === correctDefinition) {
       button.classList.add("correct");
     }
   });
 
-  if (selectedMeaning === correctMeaning) {
+  if (selectedDefinition === correctDefinition) {
     score += 1;
-    scoreText.textContent = `Puan: ${score}`;
-    feedback.textContent = "Doğru cevap!";
+    scoreText.textContent = `Score: ${score}`;
+    feedback.textContent = "Correct.";
     feedback.classList.add("success");
   } else {
     selectedButton.classList.add("wrong");
-    feedback.textContent = `Yanlış. Doğru cevap: ${correctMeaning}`;
+    feedback.textContent = `Incorrect. The correct definition is: ${correctDefinition}`;
     feedback.classList.add("error");
   }
 
   nextButton.textContent =
-    currentQuestionIndex === quizWords.length - 1 ? "Sonucu Gör" : "Sonraki Soru";
+    currentQuestionIndex === quizWords.length - 1 ? "View Result" : "Next Question";
   nextButton.classList.remove("hidden");
 }
 
@@ -160,13 +162,13 @@ function showResult() {
   finalScore.textContent = `${score} / ${totalQuestions}`;
 
   if (percentage === 100) {
-    resultMessage.textContent = "Mükemmel! Tüm soruları doğru bildin.";
+    resultMessage.textContent = "Excellent. You answered every question correctly.";
   } else if (percentage >= 70) {
-    resultMessage.textContent = "Çok iyi gidiyorsun. Bir test daha çöz!";
+    resultMessage.textContent = "Good work. Try another quiz to keep improving.";
   } else if (percentage >= 40) {
-    resultMessage.textContent = "Güzel başlangıç. Tekrar ettikçe gelişeceksin.";
+    resultMessage.textContent = "A solid start. Review the words and try again.";
   } else {
-    resultMessage.textContent = "Pes etme. Aynı kelimeleri tekrar deneyelim.";
+    resultMessage.textContent = "Keep practising. Repetition will make these words easier.";
   }
 
   showScreen("result");
