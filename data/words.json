@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "word": "improve",
+    "meaning": "geliştirmek",
+    "level": "A2",
+    "category": "general",
+    "sentence": "I want to _____ my English.",
+    "sentenceAnswer": "improve"
+  },
+  {
+    "id": 2,
+    "word": "decision",
+    "meaning": "karar",
+    "level": "B1",
+    "category": "general",
+    "sentence": "She made an important _____.",
+    "sentenceAnswer": "decision"
+  },
+  {
+    "id": 3,
+    "word": "available",
+    "meaning": "mevcut, uygun",
+    "level": "B1",
+    "category": "general",
+    "sentence": "Is this product _____ today?",
+    "sentenceAnswer": "available"
+  },
+  {
+    "id": 4,
+    "word": "achieve",
+    "meaning": "başarmak",
+    "level": "B1",
+    "category": "general",
+    "sentence": "You can _____ your goals with practice.",
+    "sentenceAnswer": "achieve"
+  },
+  {
+    "id": 5,
+    "word": "require",
+    "meaning": "gerektirmek",
+    "level": "B1",
+    "category": "general",
+    "sentence": "This task will _____ more time.",
+    "sentenceAnswer": "require"
+  },
+  {
+    "id": 6,
+    "word": "increase",
+    "meaning": "artırmak",
+    "level": "A2",
+    "category": "general",
+    "sentence": "We need to _____ production.",
+    "sentenceAnswer": "increase"
+  },
+  {
+    "id": 7,
+    "word": "reduce",
+    "meaning": "azaltmak",
+    "level": "B1",
+    "category": "general",
+    "sentence": "The company wants to _____ costs.",
+    "sentenceAnswer": "reduce"
+  },
+  {
+    "id": 8,
+    "word": "support",
+    "meaning": "desteklemek",
+    "level": "A2",
+    "category": "general",
+    "sentence": "Good friends _____ each other.",
+    "sentenceAnswer": "support"
+  },
+  {
+    "id": 9,
+    "word": "compare",
+    "meaning": "karşılaştırmak",
+    "level": "A2",
+    "category": "general",
+    "sentence": "Let us _____ the two options.",
+    "sentenceAnswer": "compare"
+  },
+  {
+    "id": 10,
+    "word": "provide",
+    "meaning": "sağlamak",
+    "level": "B1",
+    "category": "general",
+    "sentence": "The course will _____ useful information.",
+    "sentenceAnswer": "provide"
+  },
+  {
+    "id": 11,
+    "word": "avoid",
+    "meaning": "kaçınmak",
+    "level": "B1",
+    "category": "general",
+    "sentence": "Try to _____ unnecessary mistakes.",
+    "sentenceAnswer": "avoid"
+  },
+  {
+    "id": 12,
+    "word": "develop",
+    "meaning": "geliştirmek, geliştirilmek",
+    "level": "A2",
+    "category": "general",
+    "sentence": "Reading helps you _____ new skills.",
+    "sentenceAnswer": "develop"
+  }
+]
