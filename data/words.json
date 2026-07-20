@@ -106,5 +106,347 @@
     "category": "general",
     "sentence": "Reading helps you _____ new skills.",
     "sentenceAnswer": "develop"
+  },
+  {
+    "id": 13,
+    "word": "borrow",
+    "definition": "to take something for a short time and return it later",
+    "level": "A2",
+    "category": "daily-life",
+    "sentence": "Can I _____ your pen for a minute?",
+    "sentenceAnswer": "borrow"
+  },
+  {
+    "id": 14,
+    "word": "choose",
+    "definition": "to decide which person or thing you want",
+    "level": "A2",
+    "category": "general",
+    "sentence": "You need to _____ one of these options.",
+    "sentenceAnswer": "choose"
+  },
+  {
+    "id": 15,
+    "word": "arrive",
+    "definition": "to reach a place at the end of a journey",
+    "level": "A2",
+    "category": "travel",
+    "sentence": "We will _____ at the station at noon.",
+    "sentenceAnswer": "arrive"
+  },
+  {
+    "id": 16,
+    "word": "notice",
+    "definition": "to become aware of something",
+    "level": "A2",
+    "category": "general",
+    "sentence": "Did you _____ the change in the room?",
+    "sentenceAnswer": "notice"
+  },
+  {
+    "id": 17,
+    "word": "invite",
+    "definition": "to ask someone to come to an event or place",
+    "level": "A2",
+    "category": "social",
+    "sentence": "I want to _____ my friends to dinner.",
+    "sentenceAnswer": "invite"
+  },
+  {
+    "id": 18,
+    "word": "remember",
+    "definition": "to keep something in your mind or bring it back to mind",
+    "level": "A2",
+    "category": "general",
+    "sentence": "Please _____ to call me later.",
+    "sentenceAnswer": "remember"
+  },
+  {
+    "id": 19,
+    "word": "explain",
+    "definition": "to make something clear by describing it",
+    "level": "A2",
+    "category": "communication",
+    "sentence": "Can you _____ this rule to me?",
+    "sentenceAnswer": "explain"
+  },
+  {
+    "id": 20,
+    "word": "suggest",
+    "definition": "to mention an idea for someone to consider",
+    "level": "B1",
+    "category": "communication",
+    "sentence": "I would _____ taking the earlier train.",
+    "sentenceAnswer": "suggest"
+  },
+  {
+    "id": 21,
+    "word": "manage",
+    "definition": "to succeed in doing something difficult",
+    "level": "B1",
+    "category": "general",
+    "sentence": "She managed to _____ the problem alone.",
+    "sentenceAnswer": "manage"
+  },
+  {
+    "id": 22,
+    "word": "prefer",
+    "definition": "to like one thing more than another",
+    "level": "A2",
+    "category": "general",
+    "sentence": "I _____ tea to coffee.",
+    "sentenceAnswer": "prefer"
+  },
+  {
+    "id": 23,
+    "word": "depend",
+    "definition": "to be decided or influenced by something else",
+    "level": "B1",
+    "category": "general",
+    "sentence": "The result will _____ on your effort.",
+    "sentenceAnswer": "depend"
+  },
+  {
+    "id": 24,
+    "word": "prepare",
+    "definition": "to make something ready for use or an event",
+    "level": "A2",
+    "category": "general",
+    "sentence": "We need to _____ for the meeting.",
+    "sentenceAnswer": "prepare"
+  },
+  {
+    "id": 25,
+    "word": "allow",
+    "definition": "to give permission for something to happen",
+    "level": "B1",
+    "category": "general",
+    "sentence": "The rules do not _____ food inside.",
+    "sentenceAnswer": "allow"
+  },
+  {
+    "id": 26,
+    "word": "expect",
+    "definition": "to believe that something will happen",
+    "level": "B1",
+    "category": "general",
+    "sentence": "We _____ the bus to arrive soon.",
+    "sentenceAnswer": "expect"
+  },
+  {
+    "id": 27,
+    "word": "receive",
+    "definition": "to get something that someone gives or sends",
+    "level": "A2",
+    "category": "communication",
+    "sentence": "Did you _____ my message?",
+    "sentenceAnswer": "receive"
+  },
+  {
+    "id": 28,
+    "word": "discover",
+    "definition": "to find or learn something for the first time",
+    "level": "B1",
+    "category": "general",
+    "sentence": "They hope to _____ a better solution.",
+    "sentenceAnswer": "discover"
+  },
+  {
+    "id": 29,
+    "word": "consider",
+    "definition": "to think carefully about something before deciding",
+    "level": "B1",
+    "category": "general",
+    "sentence": "You should _____ all the possibilities.",
+    "sentenceAnswer": "consider"
+  },
+  {
+    "id": 30,
+    "word": "continue",
+    "definition": "to keep doing something without stopping",
+    "level": "A2",
+    "category": "general",
+    "sentence": "Please _____ reading the next paragraph.",
+    "sentenceAnswer": "continue"
+  },
+  {
+    "id": 31,
+    "word": "attend",
+    "definition": "to go to an event, meeting, or class",
+    "level": "B1",
+    "category": "social",
+    "sentence": "I will _____ the conference tomorrow.",
+    "sentenceAnswer": "attend"
+  },
+  {
+    "id": 32,
+    "word": "imagine",
+    "definition": "to form a picture or idea in your mind",
+    "level": "B1",
+    "category": "general",
+    "sentence": "Can you _____ living in another country?",
+    "sentenceAnswer": "imagine"
+  },
+  {
+    "id": 33,
+    "word": "protect",
+    "definition": "to keep someone or something safe from harm",
+    "level": "A2",
+    "category": "general",
+    "sentence": "This case will _____ your phone.",
+    "sentenceAnswer": "protect"
+  },
+  {
+    "id": 34,
+    "word": "replace",
+    "definition": "to take the place of something old, broken, or missing",
+    "level": "B1",
+    "category": "general",
+    "sentence": "We need to _____ the damaged part.",
+    "sentenceAnswer": "replace"
+  },
+  {
+    "id": 35,
+    "word": "remain",
+    "definition": "to stay in the same place or condition",
+    "level": "B1",
+    "category": "general",
+    "sentence": "Please _____ calm during the test.",
+    "sentenceAnswer": "remain"
+  },
+  {
+    "id": 36,
+    "word": "solve",
+    "definition": "to find an answer to a problem",
+    "level": "A2",
+    "category": "general",
+    "sentence": "Can you _____ this puzzle?",
+    "sentenceAnswer": "solve"
+  },
+  {
+    "id": 37,
+    "word": "behave",
+    "definition": "to act in a particular way",
+    "level": "B1",
+    "category": "social",
+    "sentence": "Children should _____ politely in public.",
+    "sentenceAnswer": "behave"
+  },
+  {
+    "id": 38,
+    "word": "contact",
+    "definition": "to communicate with someone by phone, message, or email",
+    "level": "A2",
+    "category": "communication",
+    "sentence": "Please _____ me if you need help.",
+    "sentenceAnswer": "contact"
+  },
+  {
+    "id": 39,
+    "word": "mention",
+    "definition": "to speak or write about something briefly",
+    "level": "B1",
+    "category": "communication",
+    "sentence": "He did not _____ the problem during the meeting.",
+    "sentenceAnswer": "mention"
+  },
+  {
+    "id": 40,
+    "word": "recognise",
+    "definition": "to know someone or something because you have seen it before",
+    "level": "B1",
+    "category": "general",
+    "sentence": "I did not _____ him at first.",
+    "sentenceAnswer": "recognise"
+  },
+  {
+    "id": 41,
+    "word": "approach",
+    "definition": "to move closer to someone or something",
+    "level": "B2",
+    "category": "general",
+    "sentence": "We watched the train _____ the platform.",
+    "sentenceAnswer": "approach"
+  },
+  {
+    "id": 42,
+    "word": "maintain",
+    "definition": "to keep something in good condition or at the same level",
+    "level": "B2",
+    "category": "general",
+    "sentence": "It is important to _____ a healthy routine.",
+    "sentenceAnswer": "maintain"
+  },
+  {
+    "id": 43,
+    "word": "encourage",
+    "definition": "to give someone confidence or support",
+    "level": "B1",
+    "category": "communication",
+    "sentence": "Good teachers _____ students to ask questions.",
+    "sentenceAnswer": "encourage"
+  },
+  {
+    "id": 44,
+    "word": "respond",
+    "definition": "to answer someone or react to something",
+    "level": "B1",
+    "category": "communication",
+    "sentence": "Please _____ to the email today.",
+    "sentenceAnswer": "respond"
+  },
+  {
+    "id": 45,
+    "word": "involve",
+    "definition": "to include someone or something as part of an activity",
+    "level": "B2",
+    "category": "general",
+    "sentence": "The project will _____ several teams.",
+    "sentenceAnswer": "involve"
+  },
+  {
+    "id": 46,
+    "word": "adapt",
+    "definition": "to change your behaviour or ideas to suit a new situation",
+    "level": "B2",
+    "category": "general",
+    "sentence": "It can take time to _____ to a new city.",
+    "sentenceAnswer": "adapt"
+  },
+  {
+    "id": 47,
+    "word": "reliable",
+    "definition": "able to be trusted or depended on",
+    "level": "B2",
+    "category": "general",
+    "sentence": "We need a _____ source of information.",
+    "sentenceAnswer": "reliable"
+  },
+  {
+    "id": 48,
+    "word": "convenient",
+    "definition": "easy to use or suitable for a particular situation",
+    "level": "B1",
+    "category": "daily-life",
+    "sentence": "Online banking is very _____ for many people.",
+    "sentenceAnswer": "convenient"
+  },
+  {
+    "id": 49,
+    "word": "challenge",
+    "definition": "a difficult task that tests someone's ability",
+    "level": "B1",
+    "category": "general",
+    "sentence": "Learning a new language can be a _____.",
+    "sentenceAnswer": "challenge"
+  },
+  {
+    "id": 50,
+    "word": "opportunity",
+    "definition": "a situation that makes it possible to do something useful",
+    "level": "B1",
+    "category": "general",
+    "sentence": "This course is a good _____ to practise speaking.",
+    "sentenceAnswer": "opportunity"
   }
 ]
