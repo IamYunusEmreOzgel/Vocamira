@@ -6,7 +6,7 @@ const wordLevel = document.querySelector("#word-level");
 const wordCategory = document.querySelector("#word-category");
 const studyWord = document.querySelector("#study-word");
 const studyDefinition = document.querySelector("#study-definition");
-const studyExample = document.querySelector("#study-example");
+const studyExampleList = document.querySelector("#study-example-list");
 const wordDetails = document.querySelector("#word-details");
 const revealButton = document.querySelector("#reveal-button");
 const previousButton = document.querySelector("#previous-button");
@@ -31,13 +31,29 @@ function shuffle(items) {
   return copy;
 }
 
-function buildExample(word) {
+function createHighlightedSentence(sentence) {
+  const paragraph = document.createElement("p");
+  const [beforeAnswer, afterAnswer = ""] = sentence.text.split("_____");
+  const highlightedAnswer = document.createElement("mark");
+
+  highlightedAnswer.textContent = sentence.answer;
+  paragraph.append(beforeAnswer, highlightedAnswer, afterAnswer);
+  return paragraph;
+}
+
+function renderExamples(word) {
+  studyExampleList.replaceChildren();
+
   if (!Array.isArray(word.sentences) || word.sentences.length === 0) {
-    return "No example sentence is available.";
+    const emptyMessage = document.createElement("p");
+    emptyMessage.textContent = "No example sentences are available.";
+    studyExampleList.appendChild(emptyMessage);
+    return;
   }
 
-  const randomSentence = word.sentences[Math.floor(Math.random() * word.sentences.length)];
-  return randomSentence.text.replace("_____", randomSentence.answer);
+  word.sentences.forEach((sentence) => {
+    studyExampleList.appendChild(createHighlightedSentence(sentence));
+  });
 }
 
 function hideDetails() {
@@ -62,7 +78,7 @@ function renderCard() {
   wordCategory.textContent = word.category;
   studyWord.textContent = word.word;
   studyDefinition.textContent = word.definition;
-  studyExample.textContent = buildExample(word);
+  renderExamples(word);
   previousButton.disabled = currentIndex === 0;
   nextButton.disabled = currentIndex === visibleWords.length - 1;
   hideDetails();
