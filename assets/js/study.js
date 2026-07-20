@@ -22,10 +22,12 @@ let detailsVisible = false;
 
 function shuffle(items) {
   const copy = [...items];
+
   for (let index = copy.length - 1; index > 0; index -= 1) {
     const randomIndex = Math.floor(Math.random() * (index + 1));
     [copy[index], copy[randomIndex]] = [copy[randomIndex], copy[index]];
   }
+
   return copy;
 }
 
@@ -35,7 +37,7 @@ function buildExample(word) {
   }
 
   const randomSentence = word.sentences[Math.floor(Math.random() * word.sentences.length)];
-  return randomSentence.text;
+  return randomSentence.text.replace("_____", randomSentence.answer);
 }
 
 function hideDetails() {
@@ -68,6 +70,7 @@ function renderCard() {
 
 function populateLevels() {
   const levels = [...new Set(allWords.map((word) => word.level))].sort();
+
   levels.forEach((level) => {
     const option = document.createElement("option");
     option.value = level;
@@ -95,6 +98,7 @@ function toggleDetails() {
 async function loadWords() {
   try {
     const manifestResponse = await fetch(MANIFEST_FILE);
+
     if (!manifestResponse.ok) {
       throw new Error(`Vocabulary manifest could not be loaded: ${manifestResponse.status}`);
     }
@@ -106,12 +110,14 @@ async function loadWords() {
 
     const responses = await Promise.all(vocabularyFiles.map((file) => fetch(file)));
     const failedResponse = responses.find((response) => !response.ok);
+
     if (failedResponse) {
       throw new Error(`Vocabulary data could not be loaded: ${failedResponse.status}`);
     }
 
     const vocabularyParts = await Promise.all(responses.map((response) => response.json()));
     const data = vocabularyParts.flat();
+
     if (!Array.isArray(data) || data.length === 0) {
       throw new Error("No vocabulary data is available.");
     }
@@ -128,22 +134,27 @@ async function loadWords() {
 }
 
 revealButton.addEventListener("click", toggleDetails);
+
 previousButton.addEventListener("click", () => {
   if (currentIndex > 0) {
     currentIndex -= 1;
     renderCard();
   }
 });
+
 nextButton.addEventListener("click", () => {
   if (currentIndex < visibleWords.length - 1) {
     currentIndex += 1;
     renderCard();
   }
 });
+
 shuffleButton.addEventListener("click", () => {
   visibleWords = shuffle(visibleWords);
   currentIndex = 0;
   renderCard();
 });
+
 levelSelect.addEventListener("change", applyLevelFilter);
+
 loadWords();
