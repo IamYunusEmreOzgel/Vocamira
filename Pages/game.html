@@ -38,9 +38,30 @@
       <div id="start-screen" class="screen active">
         <p class="eyebrow">Vocabulary game</p>
         <h1>Build your quiz.</h1>
-        <p class="intro-text">Choose a difficulty and session length before you begin.</p>
+        <p class="intro-text">Choose a game mode, difficulty and session length before you begin.</p>
 
         <div class="game-settings">
+          <fieldset class="setting-group">
+            <legend>Game mode</legend>
+            <div class="game-mode-options">
+              <label class="choice-card">
+                <input type="radio" name="game-mode" value="definition" checked>
+                <span>
+                  <strong>Definition Quiz</strong>
+                  <small>Match each word with the correct meaning.</small>
+                </span>
+              </label>
+
+              <label class="choice-card">
+                <input type="radio" name="game-mode" value="fill-blank">
+                <span>
+                  <strong>Fill in the Blank</strong>
+                  <small>Choose the correct word to complete the sentence.</small>
+                </span>
+              </label>
+            </div>
+          </fieldset>
+
           <fieldset class="setting-group">
             <legend>Difficulty</legend>
             <div class="difficulty-options">
@@ -110,8 +131,8 @@
           <div id="progress-bar" class="progress-bar"></div>
         </div>
 
-        <p class="question-label">Which definition best matches this word?</p>
-        <h2 id="question-word" class="question-word">Improve</h2>
+        <p id="question-label" class="question-label">Which definition best matches this word?</p>
+        <h2 id="question-prompt" class="question-word">Improve</h2>
 
         <div id="answer-options" class="answer-options"></div>
         <p id="feedback" class="feedback" role="status"></p>
