@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 180" role="img" aria-labelledby="title desc">
+  <title id="title">Vocamira logo</title>
+  <desc id="desc">A blue V inside a speech bubble with open book pages, followed by the Vocamira wordmark.</desc>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M28 70c0-13 11-24 24-24h103c13 0 24 11 24 24v58c0 13-11 24-24 24h-37l-24 19v-19H52c-13 0-24-11-24-24Z" stroke="#354f9b" stroke-width="9"/>
+    <path d="M61 62l35 72 35-72" stroke="#354f9b" stroke-width="18"/>
+    <path d="M55 29c23 2 38 8 46 25 8-17 23-23 46-25l-5 52c-18 2-31 8-41 22-10-14-23-20-41-22Z" fill="#ffffff" stroke="#3d4650" stroke-width="7"/>
+    <path d="M72 39c13 2 22 7 29 16M130 45h20M127 58h23" stroke="#3d4650" stroke-width="6"/>
+  </g>
+  <text x="215" y="119" fill="#172343" font-family="Inter, Arial, sans-serif" font-size="74" font-weight="700" letter-spacing="-2">Vocamira</text>
+</svg>
