@@ -2,6 +2,32 @@ const wordElement = document.getElementById("moment-word");
 const definitionElement = document.getElementById("moment-definition");
 const levelElement = document.getElementById("moment-level");
 const categoryElement = document.getElementById("moment-category");
+const examplesElement = document.getElementById("moment-examples");
+
+function createExampleSentence(sentence) {
+  const sentenceElement = document.createElement("p");
+  const parts = sentence.text.split("_____");
+
+  sentenceElement.append(parts[0]);
+
+  if (parts.length > 1) {
+    const highlightedAnswer = document.createElement("mark");
+    highlightedAnswer.textContent = sentence.answer;
+    sentenceElement.append(highlightedAnswer, parts.slice(1).join("_____"));
+  }
+
+  return sentenceElement;
+}
+
+function showExamples(sentences = []) {
+  if (!examplesElement) return;
+
+  examplesElement.replaceChildren();
+
+  sentences.slice(0, 3).forEach((sentence) => {
+    examplesElement.appendChild(createExampleSentence(sentence));
+  });
+}
 
 async function showRandomWord() {
   if (!wordElement || !definitionElement) return;
@@ -31,6 +57,7 @@ async function showRandomWord() {
 
     wordElement.textContent = randomWord.word;
     definitionElement.textContent = randomWord.definition;
+    showExamples(randomWord.sentences);
 
     if (levelElement) {
       levelElement.textContent = randomWord.level || "Vocabulary";
