@@ -8,6 +8,7 @@ const screens = {
 const startButton = document.querySelector("#start-button");
 const nextButton = document.querySelector("#next-button");
 const restartButton = document.querySelector("#restart-button");
+const changeSettingsButton = document.querySelector("#change-settings-button");
 const questionCount = document.querySelector("#question-count");
 const scoreText = document.querySelector("#score");
 const progressBar = document.querySelector("#progress-bar");
@@ -16,14 +17,25 @@ const answerOptions = document.querySelector("#answer-options");
 const feedback = document.querySelector("#feedback");
 const finalScore = document.querySelector("#final-score");
 const resultMessage = document.querySelector("#result-message");
+const questionLimitSelect = document.querySelector("#question-limit");
+const categorySelect = document.querySelector("#category-select");
+const availableCount = document.querySelector("#available-count");
+const setupMessage = document.querySelector("#setup-message");
+const difficultyInputs = [...document.querySelectorAll('input[name="difficulty"]')];
 
-const QUESTION_LIMIT = 10;
+const LEVEL_GROUPS = {
+  beginner: ["A1", "A2"],
+  intermediate: ["B1", "B2"],
+  mixed: []
+};
 
 let words = [];
+let activeWordPool = [];
 let quizWords = [];
 let currentQuestionIndex = 0;
 let score = 0;
 let answerLocked = false;
+let selectedQuestionLimit = 10;
 
 function showScreen(screenName) {
   Object.values(screens).forEach((screen) => screen.classList.remove("active"));
@@ -41,6 +53,57 @@ function shuffle(items) {
   return copy;
 }
 
+function getSelectedDifficulty() {
+  return difficultyInputs.find((input) => input.checked)?.value || "mixed";
+}
+
+function getFilteredWords() {
+  const selectedDifficulty = getSelectedDifficulty();
+  const selectedCategory = categorySelect.value;
+  const allowedLevels = LEVEL_GROUPS[selectedDifficulty];
+
+  return words.filter((word) => {
+    const matchesLevel = selectedDifficulty === "mixed" || allowedLevels.includes(word.level);
+    const matchesCategory = selectedCategory === "all" || word.category === selectedCategory;
+    return matchesLevel && matchesCategory;
+  });
+}
+
+function updateSetupSummary() {
+  if (words.length === 0) {
+    return;
+  }
+
+  const filteredWords = getFilteredWords();
+  const requestedQuestions = Number(questionLimitSelect.value);
+  availableCount.textContent = `${filteredWords.length} words`;
+
+  if (filteredWords.length < 4) {
+    setupMessage.textContent = "Choose another difficulty or category. At least four words are required.";
+    startButton.disabled = true;
+    return;
+  }
+
+  startButton.disabled = false;
+
+  if (requestedQuestions > filteredWords.length) {
+    setupMessage.textContent = `This selection supports ${filteredWords.length} questions. The quiz length will be adjusted automatically.`;
+  } else {
+    setupMessage.textContent = "";
+  }
+}
+
+function populateCategories() {
+  const categories = [...new Set(words.map((word) => word.category))].sort();
+
+  categories.forEach((category) => {
+    const option = document.createElement("option");
+    option.value = category;
+    option.textContent = category.charAt(0).toUpperCase() + category.slice(1);
+    categorySelect.appendChild(option);
+  });
+}
+
 async function loadWords() {
   try {
     const response = await fetch("../data/words.json");
@@ -56,6 +119,9 @@ async function loadWords() {
     }
 
     words = data;
+    populateCategories();
+    startButton.textContent = "Start Game";
+    updateSetupSummary();
   } catch (error) {
     console.error(error);
     showScreen("error");
@@ -63,25 +129,30 @@ async function loadWords() {
 }
 
 function startQuiz() {
-  if (words.length < 4) {
-    showScreen("error");
+  activeWordPool = getFilteredWords();
+
+  if (activeWordPool.length < 4) {
+    updateSetupSummary();
     return;
   }
 
-  quizWords = shuffle(words).slice(0, Math.min(QUESTION_LIMIT, words.length));
+  const requestedLimit = Number(questionLimitSelect.value);
+  selectedQuestionLimit = Math.min(requestedLimit, activeWordPool.length);
+  quizWords = shuffle(activeWordPool).slice(0, selectedQuestionLimit);
   currentQuestionIndex = 0;
   score = 0;
   scoreText.textContent = "Score: 0";
+  progressBar.style.width = "0%";
   showScreen("quiz");
   renderQuestion();
 }
 
 function createAnswerChoices(correctWord) {
-  const wrongDefinitions = shuffle(
-    words
-      .filter((word) => word.id !== correctWord.id)
-      .map((word) => word.definition)
-  ).slice(0, 3);
+  const distractorPool = words.filter((word) => word.id !== correctWord.id);
+  const wrongDefinitions = shuffle(distractorPool)
+    .map((word) => word.definition)
+    .filter((definition, index, definitions) => definitions.indexOf(definition) === index)
+    .slice(0, 3);
 
   return shuffle([correctWord.definition, ...wrongDefinitions]);
 }
@@ -174,8 +245,17 @@ function showResult() {
   showScreen("result");
 }
 
+function returnToSettings() {
+  showScreen("start");
+  updateSetupSummary();
+}
+
 startButton.addEventListener("click", startQuiz);
 nextButton.addEventListener("click", goToNextQuestion);
 restartButton.addEventListener("click", startQuiz);
+changeSettingsButton.addEventListener("click", returnToSettings);
+questionLimitSelect.addEventListener("change", updateSetupSummary);
+categorySelect.addEventListener("change", updateSetupSummary);
+difficultyInputs.forEach((input) => input.addEventListener("change", updateSetupSummary));
 
 loadWords();
