@@ -6,6 +6,11 @@
   margin-bottom: 36px;
 }
 
+.study-intro h1 {
+  max-width: 620px;
+  font-size: clamp(2rem, 4.2vw, 3.2rem);
+}
+
 .level-filter {
   display: grid;
   gap: 8px;
@@ -186,6 +191,11 @@
   .study-intro {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .study-intro h1 {
+    max-width: 100%;
+    font-size: clamp(1.9rem, 8vw, 2.6rem);
   }
 
   .level-filter {
