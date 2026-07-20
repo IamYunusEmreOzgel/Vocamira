@@ -1,0 +1,401 @@
+[
+  {
+    "id": 1,
+    "word": "improve",
+    "definition": "to make something better",
+    "level": "A2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "I want to improve my English.",
+        "answer": "improve"
+      },
+      {
+        "text": "Regular practice can improve your pronunciation.",
+        "answer": "improve"
+      },
+      {
+        "text": "The service has improved since last year.",
+        "answer": "improve"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "word": "increase",
+    "definition": "to become or make something larger in amount",
+    "level": "A2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "We need to increase production.",
+        "answer": "increase"
+      },
+      {
+        "text": "Prices increased again this month.",
+        "answer": "increase"
+      },
+      {
+        "text": "Exercise can increase your energy.",
+        "answer": "increase"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "word": "support",
+    "definition": "to help or encourage someone or something",
+    "level": "A2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "Good friends support each other.",
+        "answer": "support"
+      },
+      {
+        "text": "The evidence supports his argument.",
+        "answer": "support"
+      },
+      {
+        "text": "Her family supported her decision.",
+        "answer": "support"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "word": "compare",
+    "definition": "to examine how two or more things are similar or different",
+    "level": "A2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "Let us compare the two options.",
+        "answer": "compare"
+      },
+      {
+        "text": "It is difficult to compare the products.",
+        "answer": "compare"
+      },
+      {
+        "text": "She compared prices before buying.",
+        "answer": "compare"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "word": "develop",
+    "definition": "to grow, improve, or create something over time",
+    "level": "A2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "Reading helps you develop new skills.",
+        "answer": "develop"
+      },
+      {
+        "text": "The company is developing a new product.",
+        "answer": "develop"
+      },
+      {
+        "text": "Children develop at different speeds.",
+        "answer": "develop"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "word": "borrow",
+    "definition": "to take something for a short time and return it later",
+    "level": "A2",
+    "category": "daily-life",
+    "sentences": [
+      {
+        "text": "Can I borrow your pen for a minute?",
+        "answer": "borrow"
+      },
+      {
+        "text": "She borrowed a book from the library.",
+        "answer": "borrow"
+      },
+      {
+        "text": "I borrowed some money from my brother.",
+        "answer": "borrow"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "word": "choose",
+    "definition": "to decide which person or thing you want",
+    "level": "A2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "You need to choose one of these options.",
+        "answer": "choose"
+      },
+      {
+        "text": "She chose the blue dress.",
+        "answer": "choose"
+      },
+      {
+        "text": "It is hard to choose between two good offers.",
+        "answer": "choose"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "word": "arrive",
+    "definition": "to reach a place at the end of a journey",
+    "level": "A2",
+    "category": "travel",
+    "sentences": [
+      {
+        "text": "We will arrive at the station at noon.",
+        "answer": "arrive"
+      },
+      {
+        "text": "The package arrived this morning.",
+        "answer": "arrive"
+      },
+      {
+        "text": "Please call me when you arrive.",
+        "answer": "arrive"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "word": "notice",
+    "definition": "to become aware of something",
+    "level": "A2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "Did you notice the change in the room?",
+        "answer": "notice"
+      },
+      {
+        "text": "I noticed a mistake in the report.",
+        "answer": "notice"
+      },
+      {
+        "text": "She did not notice the open door.",
+        "answer": "notice"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "word": "invite",
+    "definition": "to ask someone to come to an event or place",
+    "level": "A2",
+    "category": "social",
+    "sentences": [
+      {
+        "text": "I want to invite my friends to dinner.",
+        "answer": "invite"
+      },
+      {
+        "text": "They invited us to their wedding.",
+        "answer": "invite"
+      },
+      {
+        "text": "Can I invite a colleague to the meeting?",
+        "answer": "invite"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "word": "remember",
+    "definition": "to keep something in your mind or bring it back to mind",
+    "level": "A2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "Please remember to call me later.",
+        "answer": "remember"
+      },
+      {
+        "text": "I remember meeting her years ago.",
+        "answer": "remember"
+      },
+      {
+        "text": "He could not remember the password.",
+        "answer": "remember"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "word": "explain",
+    "definition": "to make something clear by describing it",
+    "level": "A2",
+    "category": "communication",
+    "sentences": [
+      {
+        "text": "Can you explain this rule to me?",
+        "answer": "explain"
+      },
+      {
+        "text": "She explained how the machine works.",
+        "answer": "explain"
+      },
+      {
+        "text": "It is difficult to explain the problem briefly.",
+        "answer": "explain"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "word": "prefer",
+    "definition": "to like one thing more than another",
+    "level": "A2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "I prefer tea to coffee.",
+        "answer": "prefer"
+      },
+      {
+        "text": "She prefers working in the morning.",
+        "answer": "prefer"
+      },
+      {
+        "text": "Would you prefer to sit inside?",
+        "answer": "prefer"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "word": "prepare",
+    "definition": "to make something ready for use or an event",
+    "level": "A2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "We need to prepare for the meeting.",
+        "answer": "prepare"
+      },
+      {
+        "text": "She prepared dinner for the family.",
+        "answer": "prepare"
+      },
+      {
+        "text": "The team is preparing a presentation.",
+        "answer": "prepare"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "word": "receive",
+    "definition": "to get something that someone gives or sends",
+    "level": "A2",
+    "category": "communication",
+    "sentences": [
+      {
+        "text": "Did you receive my message?",
+        "answer": "receive"
+      },
+      {
+        "text": "She received a package yesterday.",
+        "answer": "receive"
+      },
+      {
+        "text": "You will receive an email confirmation.",
+        "answer": "receive"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "word": "continue",
+    "definition": "to keep doing something without stopping",
+    "level": "A2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "Please continue reading the next paragraph.",
+        "answer": "continue"
+      },
+      {
+        "text": "The rain continued all night.",
+        "answer": "continue"
+      },
+      {
+        "text": "She continued working after dinner.",
+        "answer": "continue"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "word": "protect",
+    "definition": "to keep someone or something safe from harm",
+    "level": "A2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "This case will protect your phone.",
+        "answer": "protect"
+      },
+      {
+        "text": "Sunscreen helps protect your skin.",
+        "answer": "protect"
+      },
+      {
+        "text": "The law protects consumers.",
+        "answer": "protect"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "word": "solve",
+    "definition": "to find an answer to a problem",
+    "level": "A2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "Can you solve this puzzle?",
+        "answer": "solve"
+      },
+      {
+        "text": "We need to solve the problem quickly.",
+        "answer": "solve"
+      },
+      {
+        "text": "The update solved several issues.",
+        "answer": "solve"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "word": "contact",
+    "definition": "to communicate with someone by phone, message, or email",
+    "level": "A2",
+    "category": "communication",
+    "sentences": [
+      {
+        "text": "Please contact me if you need help.",
+        "answer": "contact"
+      },
+      {
+        "text": "The company contacted me about the interview.",
+        "answer": "contact"
+      },
+      {
+        "text": "Contact customer support by email.",
+        "answer": "contact"
+      }
+    ]
+  }
+]
