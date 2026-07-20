@@ -1,0 +1,548 @@
+[
+  {
+    "id": 2,
+    "word": "decision",
+    "definition": "a choice made after thinking about different options",
+    "level": "B1",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "She made an important decision.",
+        "answer": "decision"
+      },
+      {
+        "text": "It was a difficult decision to leave.",
+        "answer": "decision"
+      },
+      {
+        "text": "We need more information before making a decision.",
+        "answer": "decision"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "word": "available",
+    "definition": "ready to be used or obtained",
+    "level": "B1",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "Is this product available today?",
+        "answer": "available"
+      },
+      {
+        "text": "The manager is not available now.",
+        "answer": "available"
+      },
+      {
+        "text": "Several options are available online.",
+        "answer": "available"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "word": "achieve",
+    "definition": "to successfully reach a goal",
+    "level": "B1",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "You can achieve your goals with practice.",
+        "answer": "achieve"
+      },
+      {
+        "text": "She worked hard to achieve better results.",
+        "answer": "achieve"
+      },
+      {
+        "text": "The team achieved its target.",
+        "answer": "achieve"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "word": "require",
+    "definition": "to need something for a particular purpose",
+    "level": "B1",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "This task will require more time.",
+        "answer": "require"
+      },
+      {
+        "text": "The job requires strong communication skills.",
+        "answer": "require"
+      },
+      {
+        "text": "Some repairs require professional help.",
+        "answer": "require"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "word": "reduce",
+    "definition": "to make something smaller or less",
+    "level": "B1",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "The company wants to reduce costs.",
+        "answer": "reduce"
+      },
+      {
+        "text": "We should reduce plastic use.",
+        "answer": "reduce"
+      },
+      {
+        "text": "This medicine may reduce the pain.",
+        "answer": "reduce"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "word": "provide",
+    "definition": "to give someone something they need",
+    "level": "B1",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "The course will provide useful information.",
+        "answer": "provide"
+      },
+      {
+        "text": "The hotel provides free breakfast.",
+        "answer": "provide"
+      },
+      {
+        "text": "Please provide your contact details.",
+        "answer": "provide"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "word": "avoid",
+    "definition": "to stay away from something or prevent it from happening",
+    "level": "B1",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "Try to avoid unnecessary mistakes.",
+        "answer": "avoid"
+      },
+      {
+        "text": "He avoids driving during rush hour.",
+        "answer": "avoid"
+      },
+      {
+        "text": "Regular checks help avoid problems.",
+        "answer": "avoid"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "word": "suggest",
+    "definition": "to mention an idea for someone to consider",
+    "level": "B1",
+    "category": "communication",
+    "sentences": [
+      {
+        "text": "I would suggest taking the earlier train.",
+        "answer": "suggest"
+      },
+      {
+        "text": "She suggested a different approach.",
+        "answer": "suggest"
+      },
+      {
+        "text": "Can you suggest a good restaurant?",
+        "answer": "suggest"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "word": "manage",
+    "definition": "to succeed in doing something difficult",
+    "level": "B1",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "She managed to solve the problem alone.",
+        "answer": "manage"
+      },
+      {
+        "text": "Can you manage the project by yourself?",
+        "answer": "manage"
+      },
+      {
+        "text": "He managed to finish before the deadline.",
+        "answer": "manage"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "word": "depend",
+    "definition": "to be decided or influenced by something else",
+    "level": "B1",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "The result will depend on your effort.",
+        "answer": "depend"
+      },
+      {
+        "text": "Prices depend on the season.",
+        "answer": "depend"
+      },
+      {
+        "text": "You can depend on her in an emergency.",
+        "answer": "depend"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "word": "allow",
+    "definition": "to give permission for something to happen",
+    "level": "B1",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "The rules do not allow food inside.",
+        "answer": "allow"
+      },
+      {
+        "text": "This ticket allows museum entry.",
+        "answer": "allow"
+      },
+      {
+        "text": "My schedule does not allow much free time.",
+        "answer": "allow"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "word": "expect",
+    "definition": "to believe that something will happen",
+    "level": "B1",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "We expect the bus to arrive soon.",
+        "answer": "expect"
+      },
+      {
+        "text": "I did not expect such a quick reply.",
+        "answer": "expect"
+      },
+      {
+        "text": "The company expects sales to grow.",
+        "answer": "expect"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "word": "discover",
+    "definition": "to find or learn something for the first time",
+    "level": "B1",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "They hope to discover a better solution.",
+        "answer": "discover"
+      },
+      {
+        "text": "We discovered a small error.",
+        "answer": "discover"
+      },
+      {
+        "text": "She discovered a new way to study.",
+        "answer": "discover"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "word": "consider",
+    "definition": "to think carefully about something before deciding",
+    "level": "B1",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "You should consider all the possibilities.",
+        "answer": "consider"
+      },
+      {
+        "text": "We are considering moving abroad.",
+        "answer": "consider"
+      },
+      {
+        "text": "Please consider my proposal.",
+        "answer": "consider"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "word": "attend",
+    "definition": "to go to an event, meeting, or class",
+    "level": "B1",
+    "category": "social",
+    "sentences": [
+      {
+        "text": "I will attend the conference tomorrow.",
+        "answer": "attend"
+      },
+      {
+        "text": "Many people attended the event.",
+        "answer": "attend"
+      },
+      {
+        "text": "She attends an English class twice a week.",
+        "answer": "attend"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "word": "imagine",
+    "definition": "to form a picture or idea in your mind",
+    "level": "B1",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "Can you imagine living in another country?",
+        "answer": "imagine"
+      },
+      {
+        "text": "I cannot imagine life without the internet.",
+        "answer": "imagine"
+      },
+      {
+        "text": "She imagined running her own business.",
+        "answer": "imagine"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "word": "replace",
+    "definition": "to take the place of something old, broken, or missing",
+    "level": "B1",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "We need to replace the damaged part.",
+        "answer": "replace"
+      },
+      {
+        "text": "They replaced the old windows.",
+        "answer": "replace"
+      },
+      {
+        "text": "Can technology replace human judgment?",
+        "answer": "replace"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "word": "remain",
+    "definition": "to stay in the same place or condition",
+    "level": "B1",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "Please remain calm during the test.",
+        "answer": "remain"
+      },
+      {
+        "text": "Several questions remain unanswered.",
+        "answer": "remain"
+      },
+      {
+        "text": "The shop will remain closed until Monday.",
+        "answer": "remain"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "word": "behave",
+    "definition": "to act in a particular way",
+    "level": "B1",
+    "category": "social",
+    "sentences": [
+      {
+        "text": "Children should behave politely in public.",
+        "answer": "behave"
+      },
+      {
+        "text": "The machine is behaving normally.",
+        "answer": "behave"
+      },
+      {
+        "text": "He behaved calmly during the argument.",
+        "answer": "behave"
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "word": "mention",
+    "definition": "to speak or write about something briefly",
+    "level": "B1",
+    "category": "communication",
+    "sentences": [
+      {
+        "text": "He did not mention the problem.",
+        "answer": "mention"
+      },
+      {
+        "text": "She mentioned your name.",
+        "answer": "mention"
+      },
+      {
+        "text": "I forgot to mention one detail.",
+        "answer": "mention"
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "word": "recognise",
+    "definition": "to know someone or something because you have seen it before",
+    "level": "B1",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "I did not recognise him at first.",
+        "answer": "recognise"
+      },
+      {
+        "text": "She recognised the song immediately.",
+        "answer": "recognise"
+      },
+      {
+        "text": "It is important to recognise your mistakes.",
+        "answer": "recognise"
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "word": "encourage",
+    "definition": "to give someone confidence or support",
+    "level": "B1",
+    "category": "communication",
+    "sentences": [
+      {
+        "text": "Good teachers encourage students to ask questions.",
+        "answer": "encourage"
+      },
+      {
+        "text": "Her friends encouraged her to apply.",
+        "answer": "encourage"
+      },
+      {
+        "text": "The program encourages regular practice.",
+        "answer": "encourage"
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "word": "respond",
+    "definition": "to answer someone or react to something",
+    "level": "B1",
+    "category": "communication",
+    "sentences": [
+      {
+        "text": "Please respond to the email today.",
+        "answer": "respond"
+      },
+      {
+        "text": "He did not respond to my question.",
+        "answer": "respond"
+      },
+      {
+        "text": "The system responds quickly.",
+        "answer": "respond"
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "word": "convenient",
+    "definition": "easy to use or suitable for a particular situation",
+    "level": "B1",
+    "category": "daily-life",
+    "sentences": [
+      {
+        "text": "Online banking is very convenient.",
+        "answer": "convenient"
+      },
+      {
+        "text": "Is Friday convenient for you?",
+        "answer": "convenient"
+      },
+      {
+        "text": "The hotel is in a convenient location.",
+        "answer": "convenient"
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "word": "challenge",
+    "definition": "a difficult task that tests someone's ability",
+    "level": "B1",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "Learning a new language can be a challenge.",
+        "answer": "challenge"
+      },
+      {
+        "text": "The team accepted the challenge.",
+        "answer": "challenge"
+      },
+      {
+        "text": "Finding time is my biggest challenge.",
+        "answer": "challenge"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "word": "opportunity",
+    "definition": "a situation that makes it possible to do something useful",
+    "level": "B1",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "This course is a good opportunity to practise speaking.",
+        "answer": "opportunity"
+      },
+      {
+        "text": "She had the opportunity to work abroad.",
+        "answer": "opportunity"
+      },
+      {
+        "text": "Do not miss this opportunity.",
+        "answer": "opportunity"
+      }
+    ]
+  }
+]
