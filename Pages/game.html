@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/nav.css">
+  <link rel="stylesheet" href="../assets/css/game.css">
 </head>
 <body>
   <main class="app-shell">
@@ -36,16 +37,67 @@
     <section class="quiz-card" aria-live="polite">
       <div id="start-screen" class="screen active">
         <p class="eyebrow">Vocabulary game</p>
-        <h1>Choose the correct definition.</h1>
-        <p class="intro-text">
-          Answer 10 questions and get immediate feedback after every choice.
-        </p>
-        <div class="feature-list">
-          <span>10 questions</span>
-          <span>4 choices</span>
-          <span>Instant feedback</span>
+        <h1>Build your quiz.</h1>
+        <p class="intro-text">Choose a difficulty and session length before you begin.</p>
+
+        <div class="game-settings">
+          <fieldset class="setting-group">
+            <legend>Difficulty</legend>
+            <div class="difficulty-options">
+              <label class="choice-card">
+                <input type="radio" name="difficulty" value="beginner">
+                <span>
+                  <strong>Beginner</strong>
+                  <small>A1–A2 words</small>
+                </span>
+              </label>
+
+              <label class="choice-card">
+                <input type="radio" name="difficulty" value="intermediate">
+                <span>
+                  <strong>Intermediate</strong>
+                  <small>B1–B2 words</small>
+                </span>
+              </label>
+
+              <label class="choice-card">
+                <input type="radio" name="difficulty" value="mixed" checked>
+                <span>
+                  <strong>Mixed</strong>
+                  <small>All available levels</small>
+                </span>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="select-settings">
+            <label class="setting-field" for="question-limit">
+              <span>Questions</span>
+              <select id="question-limit">
+                <option value="10">10 questions</option>
+                <option value="20">20 questions</option>
+                <option value="30">30 questions</option>
+                <option value="50">50 questions</option>
+              </select>
+            </label>
+
+            <label class="setting-field" for="category-select">
+              <span>Category</span>
+              <select id="category-select">
+                <option value="all">All categories</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="available-summary">
+            <span>Available vocabulary</span>
+            <strong id="available-count">Loading...</strong>
+          </div>
+
+          <p id="setup-message" class="setup-message" role="status"></p>
         </div>
-        <button id="start-button" class="primary-button" type="button">Start Game</button>
+
+        <button id="start-button" class="primary-button" type="button" disabled>Loading vocabulary...</button>
       </div>
 
       <div id="quiz-screen" class="screen">
@@ -74,7 +126,10 @@
           <strong id="final-score">0 / 10</strong>
           <span id="result-message">A good start.</span>
         </div>
-        <button id="restart-button" class="primary-button" type="button">Play Again</button>
+        <div class="result-actions">
+          <button id="restart-button" class="primary-button" type="button">Play Again</button>
+          <button id="change-settings-button" class="secondary-game-button" type="button">Change Settings</button>
+        </div>
       </div>
 
       <div id="error-screen" class="screen">
