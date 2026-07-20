@@ -1,5 +1,13 @@
 const menuToggle = document.querySelector("#menu-toggle");
 const siteNav = document.querySelector("#site-nav");
+const siteHeader = document.querySelector(".site-header");
+
+function closeMobileMenu() {
+  if (!menuToggle || !siteNav) return;
+
+  menuToggle.setAttribute("aria-expanded", "false");
+  siteNav.classList.remove("open");
+}
 
 if (menuToggle && siteNav) {
   menuToggle.addEventListener("click", () => {
@@ -9,19 +17,22 @@ if (menuToggle && siteNav) {
     siteNav.classList.toggle("open", !isOpen);
   });
 
-  siteNav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      menuToggle.setAttribute("aria-expanded", "false");
-      siteNav.classList.remove("open");
-    });
+  siteNav.addEventListener("click", (event) => {
+    if (event.target.closest("a")) closeMobileMenu();
   });
 
   window.addEventListener("resize", () => {
-    if (window.innerWidth > 720) {
-      menuToggle.setAttribute("aria-expanded", "false");
-      siteNav.classList.remove("open");
-    }
+    if (window.innerWidth > 720) closeMobileMenu();
   });
+}
+
+if (siteHeader) {
+  const updateHeaderState = () => {
+    siteHeader.classList.toggle("scrolled", window.scrollY > 12);
+  };
+
+  updateHeaderState();
+  window.addEventListener("scroll", updateHeaderState, { passive: true });
 }
 
 function loadScript(src) {
@@ -48,9 +59,7 @@ function loadScript(src) {
 }
 
 async function ensureSupabaseClient() {
-  if (window.supabaseClient) {
-    return window.supabaseClient;
-  }
+  if (window.supabaseClient) return window.supabaseClient;
 
   if (!window.supabase) {
     await loadScript("https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2");
@@ -64,27 +73,31 @@ async function ensureSupabaseClient() {
 }
 
 async function addAccountLink() {
-  if (!siteNav || siteNav.querySelector("[data-account-link]")) {
-    return;
-  }
+  if (!siteNav) return;
 
   const isInsidePages = window.location.pathname.includes("/Pages/");
   const loginHref = isInsidePages ? "login.html" : "Pages/login.html";
   const profileHref = isInsidePages ? "profile.html" : "Pages/profile.html";
-  const accountLink = document.createElement("a");
+  const existingAccountLink = [...siteNav.querySelectorAll("a")].find((link) => {
+    const href = link.getAttribute("href") || "";
+    return href.endsWith("login.html") || href.endsWith("profile.html");
+  });
+  const accountLink = existingAccountLink || document.createElement("a");
 
   accountLink.dataset.accountLink = "true";
   accountLink.href = loginHref;
   accountLink.textContent = "Login";
-  siteNav.appendChild(accountLink);
+
+  if (!existingAccountLink) {
+    const playLink = siteNav.querySelector(".play-link");
+    siteNav.insertBefore(accountLink, playLink || null);
+  }
 
   try {
     const client = await ensureSupabaseClient();
     const { data, error } = await client.auth.getSession();
 
-    if (error) {
-      throw error;
-    }
+    if (error) throw error;
 
     if (data.session?.user) {
       accountLink.href = profileHref;
@@ -93,13 +106,6 @@ async function addAccountLink() {
   } catch (error) {
     console.error("Account link could not be updated:", error);
   }
-
-  accountLink.addEventListener("click", () => {
-    if (menuToggle) {
-      menuToggle.setAttribute("aria-expanded", "false");
-    }
-    siteNav.classList.remove("open");
-  });
 }
 
 addAccountLink();
