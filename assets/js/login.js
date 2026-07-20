@@ -3,16 +3,42 @@ const loginButton = document.getElementById("login-button");
 const loginMessage = document.getElementById("login-message");
 
 async function redirectAuthenticatedUser() {
-  const { data, error } = await supabaseClient.auth.getSession();
+  try {
+    const { data, error } = await supabaseClient.auth.getSession();
 
-  if (!error && data.session) {
-    window.location.replace("profile.html");
+    if (error) {
+      console.error("Session check failed:", error);
+      return;
+    }
+
+    if (data.session) {
+      window.location.replace("profile.html");
+    }
+  } catch (error) {
+    console.error("Session check failed:", error);
   }
 }
 
 function showLoginMessage(message, type = "error") {
   loginMessage.textContent = message;
   loginMessage.className = `auth-message ${type}`;
+}
+
+function getLoginErrorMessage(error) {
+  if (!navigator.onLine) {
+    return "You appear to be offline. Check your internet connection and try again.";
+  }
+
+  const message = String(error?.message || "").toLowerCase();
+  const isConnectionError =
+    error?.status >= 500 ||
+    message.includes("fetch") ||
+    message.includes("network") ||
+    message.includes("connection");
+
+  return isConnectionError
+    ? "The login service could not be reached. Please try again shortly."
+    : "Email or password is incorrect.";
 }
 
 loginForm.addEventListener("submit", async (event) => {
@@ -25,20 +51,26 @@ loginForm.addEventListener("submit", async (event) => {
   loginButton.textContent = "Signing in...";
   showLoginMessage("");
 
-  const { error } = await supabaseClient.auth.signInWithPassword({
-    email,
-    password
-  });
+  try {
+    const { error } = await supabaseClient.auth.signInWithPassword({
+      email,
+      password
+    });
 
-  if (error) {
-    showLoginMessage("Email or password is incorrect.");
+    if (error) {
+      showLoginMessage(getLoginErrorMessage(error));
+      return;
+    }
+
+    showLoginMessage("Login successful. Redirecting...", "success");
+    window.location.replace("profile.html");
+  } catch (error) {
+    console.error("Login failed:", error);
+    showLoginMessage(getLoginErrorMessage(error));
+  } finally {
     loginButton.disabled = false;
     loginButton.textContent = "Sign In";
-    return;
   }
-
-  showLoginMessage("Login successful. Redirecting...", "success");
-  window.location.replace("profile.html");
 });
 
 redirectAuthenticatedUser();
