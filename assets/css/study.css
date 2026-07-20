@@ -4,9 +4,9 @@
 
 .study-intro {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 230px;
+  grid-template-columns: minmax(0, 1fr) 210px;
   align-items: start;
-  gap: 52px;
+  gap: 64px;
   margin-bottom: 42px;
 }
 
@@ -33,25 +33,25 @@
 .level-filter {
   display: grid;
   align-self: center;
-  gap: 9px;
+  gap: 8px;
   min-width: 0;
-  margin-top: 8px;
-  transform: translateX(28px);
+  margin-top: 24px;
+  transform: translateX(40px);
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.86rem;
   font-weight: 700;
 }
 
 .level-filter select {
   width: 100%;
-  min-height: 54px;
-  padding: 14px 16px;
+  min-height: 50px;
+  padding: 13px 15px;
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 11px;
   color: var(--text);
   background: var(--surface);
   font: inherit;
-  font-size: 0.96rem;
+  font-size: 0.92rem;
 }
 
 .study-area {
@@ -266,7 +266,8 @@
   }
 
   .level-filter {
-    transform: translateX(12px);
+    margin-top: 18px;
+    transform: translateX(16px);
   }
 
   .study-navigation {
@@ -304,7 +305,7 @@
 
   .level-filter {
     align-self: start;
-    width: min(240px, 100%);
+    width: min(210px, 100%);
     margin-top: 0;
     transform: none;
   }
