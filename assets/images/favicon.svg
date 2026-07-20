@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-labelledby="title">
+  <title id="title">Vocamira favicon</title>
+  <rect width="180" height="180" rx="36" fill="#ffffff"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 70c0-13 11-24 24-24h88c13 0 24 11 24 24v52c0 13-11 24-24 24h-28l-22 18v-18H46c-13 0-24-11-24-24Z" stroke="#354f9b" stroke-width="9"/>
+    <path d="M55 65l35 67 35-67" stroke="#354f9b" stroke-width="18"/>
+    <path d="M48 31c20 2 34 8 42 23 8-15 22-21 42-23l-5 45c-16 2-28 7-37 19-9-12-21-17-37-19Z" fill="#ffffff" stroke="#3d4650" stroke-width="7"/>
+    <path d="M62 41c11 2 20 6 28 14M112 46h15M110 58h17" stroke="#3d4650" stroke-width="6"/>
+  </g>
+</svg>
