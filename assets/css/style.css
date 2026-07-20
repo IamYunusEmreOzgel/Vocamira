@@ -71,6 +71,12 @@ button {
   background: var(--primary);
 }
 
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
 .text-link {
   color: var(--muted);
   font-size: 0.92rem;
@@ -78,7 +84,8 @@ button {
   text-decoration: none;
 }
 
-.text-link:hover {
+.text-link:hover,
+.active-link {
   color: var(--text);
 }
 
@@ -160,39 +167,69 @@ button {
   line-height: 1.7;
 }
 
-.steps-section {
-  padding-top: 90px;
+.page-intro {
+  max-width: 780px;
+  padding: 34px 0 72px;
 }
 
-.section-heading {
-  margin-bottom: 34px;
-}
-
-.steps-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.step-item {
-  padding: 26px 0;
+.process-list {
   border-top: 1px solid var(--border);
 }
 
-.step-item span {
+.process-item {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 28px;
+  padding: 36px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.process-number {
   color: var(--primary);
   font-size: 0.82rem;
   font-weight: 700;
 }
 
-.step-item h3 {
-  margin: 18px 0 10px;
-  font-size: 1.05rem;
+.process-item h2 {
+  margin-bottom: 12px;
+  font-size: 1.35rem;
 }
 
-.step-item p {
+.process-item p {
+  max-width: 720px;
   color: var(--muted);
-  line-height: 1.65;
+  line-height: 1.75;
+}
+
+.learning-note {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 72px;
+  margin-top: 80px;
+  padding: 42px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--surface);
+}
+
+.learning-note p:last-child {
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.page-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  margin-top: 72px;
+  padding-top: 36px;
+  border-top: 1px solid var(--border);
+}
+
+.page-cta p {
+  flex: 1;
+  color: var(--muted);
 }
 
 .quiz-card {
@@ -415,12 +452,21 @@ h2 {
     min-height: auto;
   }
 
-  .steps-section {
-    padding-top: 72px;
+  .process-item {
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: 16px;
   }
 
-  .steps-grid {
+  .learning-note {
     grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 56px;
+    padding: 28px;
+  }
+
+  .page-cta {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .quiz-card {
@@ -435,12 +481,20 @@ h2 {
 }
 
 @media (max-width: 480px) {
+  .header-nav {
+    gap: 14px;
+  }
+
   .hero-actions {
     display: grid;
   }
 
   .primary-link,
   .secondary-link {
+    width: 100%;
+  }
+
+  .page-cta .primary-link {
     width: 100%;
   }
 }
