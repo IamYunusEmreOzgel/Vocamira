@@ -17,10 +17,18 @@
   font-weight: 700;
 }
 
+.game-mode-options,
 .difficulty-options {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
+}
+
+.game-mode-options {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.difficulty-options {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .choice-card {
@@ -108,6 +116,13 @@
   font-weight: 600;
 }
 
+.question-word.sentence-prompt {
+  max-width: 760px;
+  margin-inline: auto;
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  line-height: 1.5;
+}
+
 .primary-button:disabled {
   cursor: not-allowed;
   opacity: 0.6;
@@ -135,6 +150,7 @@
 }
 
 @media (max-width: 680px) {
+  .game-mode-options,
   .difficulty-options,
   .select-settings,
   .result-actions {
