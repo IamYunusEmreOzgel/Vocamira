@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Study English vocabulary with Vocamira flashcards.">
+  <title>Study Vocabulary | Vocamira</title>
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/nav.css">
+  <link rel="stylesheet" href="../assets/css/study.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="site-header">
+      <a class="site-logo" href="../index.html" aria-label="Vocamira home">
+        <img src="../assets/images/vocamira-logo.svg" alt="Vocamira">
+      </a>
+
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a class="active" href="study.html" aria-current="page">Study</a>
+        <a href="how-it-works.html">How it works</a>
+        <a class="play-link" href="game.html">Play</a>
+      </nav>
+    </header>
+
+    <section class="study-intro">
+      <div>
+        <p class="eyebrow">Study vocabulary</p>
+        <h1>Learn each word before testing yourself.</h1>
+        <p class="intro-text">Review English definitions and example sentences at your own pace.</p>
+      </div>
+
+      <label class="level-filter" for="level-select">
+        <span>Level</span>
+        <select id="level-select">
+          <option value="all">All levels</option>
+        </select>
+      </label>
+    </section>
+
+    <section id="study-area" class="study-area" aria-live="polite">
+      <div class="study-toolbar">
+        <span id="card-count">Word 1 of 1</span>
+        <button id="shuffle-button" class="text-button" type="button">Shuffle</button>
+      </div>
+
+      <article class="flashcard">
+        <div class="flashcard-heading">
+          <span id="word-level" class="level-badge">A2</span>
+          <span id="word-category" class="category-label">General</span>
+        </div>
+
+        <h2 id="study-word">Improve</h2>
+
+        <div id="word-details" class="word-details hidden" aria-hidden="true">
+          <p id="study-definition" class="study-definition"></p>
+          <div class="example-block">
+            <span>Example</span>
+            <p id="study-example"></p>
+          </div>
+        </div>
+
+        <button id="reveal-button" class="primary-button" type="button">Show definition</button>
+      </article>
+
+      <div class="study-navigation">
+        <button id="previous-button" class="secondary-button" type="button">Previous</button>
+        <button id="next-study-button" class="secondary-button" type="button">Next</button>
+      </div>
+    </section>
+
+    <section id="study-error" class="study-error hidden">
+      <p class="eyebrow">Something went wrong</p>
+      <h2>The vocabulary data could not be loaded.</h2>
+      <p>Open the project with Live Server or GitHub Pages.</p>
+    </section>
+  </main>
+
+  <script src="../assets/js/nav.js"></script>
+  <script src="../assets/js/study.js"></script>
+</body>
+</html>
