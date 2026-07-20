@@ -89,7 +89,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 56px;
+  margin-bottom: 42px;
 }
 
 .level-badge {
@@ -113,7 +113,11 @@
 }
 
 .word-details {
-  margin-bottom: 32px;
+  margin: 28px 0 24px;
+  padding: 22px 24px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--background);
 }
 
 .study-definition {
@@ -124,14 +128,14 @@
 }
 
 .example-block {
-  margin-top: 28px;
+  margin: 0 0 28px;
   padding-top: 24px;
   border-top: 1px solid var(--border);
 }
 
-.example-block span {
+.example-block > span {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   color: var(--muted);
   font-size: 0.78rem;
   font-weight: 700;
@@ -139,8 +143,25 @@
   text-transform: uppercase;
 }
 
-.example-block p {
-  line-height: 1.7;
+.example-list {
+  display: grid;
+  gap: 10px;
+}
+
+.example-list p {
+  padding: 13px 15px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--background);
+  line-height: 1.65;
+}
+
+.example-list mark {
+  padding: 1px 4px;
+  border-radius: 5px;
+  color: var(--primary);
+  background: #eeeeff;
+  font-weight: 700;
 }
 
 .study-navigation {
@@ -178,7 +199,15 @@
   }
 
   .flashcard-heading {
-    margin-bottom: 40px;
+    margin-bottom: 34px;
+  }
+
+  .word-details {
+    padding: 18px;
+  }
+
+  .example-list p {
+    padding: 12px 13px;
   }
 
   .study-navigation {
