@@ -1,0 +1,1199 @@
+[
+  {
+    "id": 41,
+    "word": "approach",
+    "definition": "to move closer to someone or something",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "We watched the train approach the platform.",
+        "answer": "approach"
+      },
+      {
+        "text": "She approached the problem carefully.",
+        "answer": "approach"
+      },
+      {
+        "text": "A stranger approached me in the street.",
+        "answer": "approach"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "word": "maintain",
+    "definition": "to keep something in good condition or at the same level",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "It is important to maintain a healthy routine.",
+        "answer": "maintain"
+      },
+      {
+        "text": "The company maintains high standards.",
+        "answer": "maintain"
+      },
+      {
+        "text": "Regular service helps maintain the machine.",
+        "answer": "maintain"
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "word": "involve",
+    "definition": "to include someone or something as part of an activity",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "The project will involve several teams.",
+        "answer": "involve"
+      },
+      {
+        "text": "The job involves working with customers.",
+        "answer": "involve"
+      },
+      {
+        "text": "The change may involve some risk.",
+        "answer": "involve"
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "word": "adapt",
+    "definition": "to change your behaviour or ideas to suit a new situation",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "It can take time to adapt to a new city.",
+        "answer": "adapt"
+      },
+      {
+        "text": "Businesses must adapt to change.",
+        "answer": "adapt"
+      },
+      {
+        "text": "She adapted the plan to fit the budget.",
+        "answer": "adapt"
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "word": "reliable",
+    "definition": "able to be trusted or depended on",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "We need a reliable source of information.",
+        "answer": "reliable"
+      },
+      {
+        "text": "This car is old but reliable.",
+        "answer": "reliable"
+      },
+      {
+        "text": "She is a reliable team member.",
+        "answer": "reliable"
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "word": "efficient",
+    "definition": "working well without wasting time or resources",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "This new system is more efficient.",
+        "answer": "efficient"
+      },
+      {
+        "text": "She found a more efficient way to work.",
+        "answer": "efficient"
+      },
+      {
+        "text": "Public transport can be efficient in large cities.",
+        "answer": "efficient"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "word": "effective",
+    "definition": "successful in producing the intended result",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "The new method was very effective.",
+        "answer": "effective"
+      },
+      {
+        "text": "Clear communication is an effective tool.",
+        "answer": "effective"
+      },
+      {
+        "text": "The medicine is effective against the infection.",
+        "answer": "effective"
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "word": "accurate",
+    "definition": "correct and free from mistakes",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "The report must be completely accurate.",
+        "answer": "accurate"
+      },
+      {
+        "text": "The map gives accurate information.",
+        "answer": "accurate"
+      },
+      {
+        "text": "Her prediction was surprisingly accurate.",
+        "answer": "accurate"
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "word": "aware",
+    "definition": "knowing about a situation or fact",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "Are you aware of the new rules?",
+        "answer": "aware"
+      },
+      {
+        "text": "Most people are aware of the problem.",
+        "answer": "aware"
+      },
+      {
+        "text": "She became aware that someone was following her.",
+        "answer": "aware"
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "word": "assume",
+    "definition": "to accept something as true without proof",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "Do not assume that everyone agrees.",
+        "answer": "assume"
+      },
+      {
+        "text": "I assumed the meeting started at ten.",
+        "answer": "assume"
+      },
+      {
+        "text": "We should not assume the task is easy.",
+        "answer": "assume"
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "word": "recommend",
+    "definition": "to advise someone to do or choose something",
+    "level": "B2",
+    "category": "communication",
+    "sentences": [
+      {
+        "text": "I would recommend this book to beginners.",
+        "answer": "recommend"
+      },
+      {
+        "text": "Doctors recommend regular exercise.",
+        "answer": "recommend"
+      },
+      {
+        "text": "Can you recommend a good hotel?",
+        "answer": "recommend"
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "word": "identify",
+    "definition": "to recognise and name someone or something",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "Can you identify the main problem?",
+        "answer": "identify"
+      },
+      {
+        "text": "The police identified the suspect.",
+        "answer": "identify"
+      },
+      {
+        "text": "We need to identify areas for improvement.",
+        "answer": "identify"
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "word": "prevent",
+    "definition": "to stop something from happening",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "Regular checks can prevent accidents.",
+        "answer": "prevent"
+      },
+      {
+        "text": "This lock prevents the door from opening.",
+        "answer": "prevent"
+      },
+      {
+        "text": "Exercise may help prevent illness.",
+        "answer": "prevent"
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "word": "focus",
+    "definition": "to give full attention to something",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "Please focus on the main task.",
+        "answer": "focus"
+      },
+      {
+        "text": "She finds it hard to focus in noisy places.",
+        "answer": "focus"
+      },
+      {
+        "text": "The report focuses on customer needs.",
+        "answer": "focus"
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "word": "method",
+    "definition": "a particular way of doing something",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "This is a simple learning method.",
+        "answer": "method"
+      },
+      {
+        "text": "We tested several methods.",
+        "answer": "method"
+      },
+      {
+        "text": "The new method saves time.",
+        "answer": "method"
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "word": "result",
+    "definition": "the outcome of an action or process",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "The final result was better than expected.",
+        "answer": "result"
+      },
+      {
+        "text": "Hard work often produces good results.",
+        "answer": "result"
+      },
+      {
+        "text": "We are waiting for the test results.",
+        "answer": "result"
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "word": "evidence",
+    "definition": "facts or information that show something is true",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "There is no clear evidence to support the claim.",
+        "answer": "evidence"
+      },
+      {
+        "text": "The police collected new evidence.",
+        "answer": "evidence"
+      },
+      {
+        "text": "The results provide evidence of improvement.",
+        "answer": "evidence"
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "word": "solution",
+    "definition": "an answer to a problem",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "We need a practical solution.",
+        "answer": "solution"
+      },
+      {
+        "text": "They found a simple solution to the problem.",
+        "answer": "solution"
+      },
+      {
+        "text": "There is no perfect solution.",
+        "answer": "solution"
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "word": "quality",
+    "definition": "the standard of how good something is",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "Customers expect high quality.",
+        "answer": "quality"
+      },
+      {
+        "text": "The product is known for its quality.",
+        "answer": "quality"
+      },
+      {
+        "text": "We need to improve service quality.",
+        "answer": "quality"
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "word": "standard",
+    "definition": "a level of quality used for comparison",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "The product meets the required standard.",
+        "answer": "standard"
+      },
+      {
+        "text": "Safety standards are very strict.",
+        "answer": "standard"
+      },
+      {
+        "text": "Her work is always of a high standard.",
+        "answer": "standard"
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "word": "estimate",
+    "definition": "to roughly calculate or judge a value",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "Can you estimate the total cost?",
+        "answer": "estimate"
+      },
+      {
+        "text": "We estimate that the work will take two days.",
+        "answer": "estimate"
+      },
+      {
+        "text": "The engineer gave us a price estimate.",
+        "answer": "estimate"
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "word": "analyze",
+    "definition": "to examine something carefully",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "We need to analyze the data first.",
+        "answer": "analyze"
+      },
+      {
+        "text": "The team analyzed customer feedback.",
+        "answer": "analyze"
+      },
+      {
+        "text": "Scientists analyze the results carefully.",
+        "answer": "analyze"
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "word": "strategy",
+    "definition": "a plan designed to achieve a goal",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "We need a better marketing strategy.",
+        "answer": "strategy"
+      },
+      {
+        "text": "The company changed its business strategy.",
+        "answer": "strategy"
+      },
+      {
+        "text": "Planning is an important part of any strategy.",
+        "answer": "strategy"
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "word": "impress",
+    "definition": "to make someone admire or respect you",
+    "level": "B2",
+    "category": "social",
+    "sentences": [
+      {
+        "text": "She wanted to impress the interviewer.",
+        "answer": "impress"
+      },
+      {
+        "text": "His presentation impressed the audience.",
+        "answer": "impress"
+      },
+      {
+        "text": "The restaurant failed to impress us.",
+        "answer": "impress"
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "word": "announce",
+    "definition": "to make information publicly known",
+    "level": "B2",
+    "category": "communication",
+    "sentences": [
+      {
+        "text": "They will announce the winner tomorrow.",
+        "answer": "announce"
+      },
+      {
+        "text": "The company announced a new product.",
+        "answer": "announce"
+      },
+      {
+        "text": "She announced that she was leaving.",
+        "answer": "announce"
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "word": "confirm",
+    "definition": "to show or state that something is true",
+    "level": "B2",
+    "category": "communication",
+    "sentences": [
+      {
+        "text": "Please confirm your attendance by Friday.",
+        "answer": "confirm"
+      },
+      {
+        "text": "The test confirmed our results.",
+        "answer": "confirm"
+      },
+      {
+        "text": "He called to confirm the booking.",
+        "answer": "confirm"
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "word": "demand",
+    "definition": "to ask strongly for something",
+    "level": "B2",
+    "category": "communication",
+    "sentences": [
+      {
+        "text": "Customers demand better service.",
+        "answer": "demand"
+      },
+      {
+        "text": "The workers demanded higher pay.",
+        "answer": "demand"
+      },
+      {
+        "text": "This job demands a lot of patience.",
+        "answer": "demand"
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "word": "encounter",
+    "definition": "to meet or experience something unexpectedly",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "We may encounter some difficulties.",
+        "answer": "encounter"
+      },
+      {
+        "text": "She encountered an old friend at the station.",
+        "answer": "encounter"
+      },
+      {
+        "text": "The team encountered several technical problems.",
+        "answer": "encounter"
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "word": "hesitate",
+    "definition": "to pause before doing something because of uncertainty",
+    "level": "B2",
+    "category": "communication",
+    "sentences": [
+      {
+        "text": "Do not hesitate to ask for help.",
+        "answer": "hesitate"
+      },
+      {
+        "text": "She hesitated before answering.",
+        "answer": "hesitate"
+      },
+      {
+        "text": "He did not hesitate to accept the offer.",
+        "answer": "hesitate"
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "word": "influence",
+    "definition": "to affect the way someone thinks or acts",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "Friends can influence our decisions.",
+        "answer": "influence"
+      },
+      {
+        "text": "Weather influences travel plans.",
+        "answer": "influence"
+      },
+      {
+        "text": "His teacher strongly influenced his career choice.",
+        "answer": "influence"
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "word": "insist",
+    "definition": "to say firmly that something must happen",
+    "level": "B2",
+    "category": "communication",
+    "sentences": [
+      {
+        "text": "She continued to insist on paying.",
+        "answer": "insist"
+      },
+      {
+        "text": "He insisted that the report was correct.",
+        "answer": "insist"
+      },
+      {
+        "text": "They insist on high safety standards.",
+        "answer": "insist"
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "word": "observe",
+    "definition": "to watch something carefully",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "Scientists observe the changes over time.",
+        "answer": "observe"
+      },
+      {
+        "text": "She observed how the machine worked.",
+        "answer": "observe"
+      },
+      {
+        "text": "We observed a clear improvement.",
+        "answer": "observe"
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "word": "participate",
+    "definition": "to take part in an activity",
+    "level": "B2",
+    "category": "social",
+    "sentences": [
+      {
+        "text": "Everyone can participate in the discussion.",
+        "answer": "participate"
+      },
+      {
+        "text": "She participated in the competition.",
+        "answer": "participate"
+      },
+      {
+        "text": "Many students participate in school activities.",
+        "answer": "participate"
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "word": "perform",
+    "definition": "to carry out an action or task",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "The machine can perform the task automatically.",
+        "answer": "perform"
+      },
+      {
+        "text": "She performed well in the interview.",
+        "answer": "perform"
+      },
+      {
+        "text": "The doctor performed several tests.",
+        "answer": "perform"
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "word": "reflect",
+    "definition": "to show or express something",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "The results reflect the team's hard work.",
+        "answer": "reflect"
+      },
+      {
+        "text": "His comments reflect his opinion.",
+        "answer": "reflect"
+      },
+      {
+        "text": "Take time to reflect on your progress.",
+        "answer": "reflect"
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "word": "request",
+    "definition": "to ask for something formally",
+    "level": "B2",
+    "category": "communication",
+    "sentences": [
+      {
+        "text": "You can request more information by email.",
+        "answer": "request"
+      },
+      {
+        "text": "She requested a copy of the report.",
+        "answer": "request"
+      },
+      {
+        "text": "The manager refused our request.",
+        "answer": "request"
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "word": "requirement",
+    "definition": "something that is needed or demanded",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "Experience is a key job requirement.",
+        "answer": "requirement"
+      },
+      {
+        "text": "The course has several entry requirements.",
+        "answer": "requirement"
+      },
+      {
+        "text": "Safety training is a legal requirement.",
+        "answer": "requirement"
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "word": "select",
+    "definition": "to choose something from a group",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "Please select an option from the menu.",
+        "answer": "select"
+      },
+      {
+        "text": "The team selected the best candidate.",
+        "answer": "select"
+      },
+      {
+        "text": "You can select multiple files.",
+        "answer": "select"
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "word": "vary",
+    "definition": "to be different in different situations",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "Prices vary depending on the season.",
+        "answer": "vary"
+      },
+      {
+        "text": "Results may vary from person to person.",
+        "answer": "vary"
+      },
+      {
+        "text": "The tasks vary in difficulty.",
+        "answer": "vary"
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "word": "apply",
+    "definition": "to make a formal request or put something into use",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "I plan to apply for the position.",
+        "answer": "apply"
+      },
+      {
+        "text": "You can apply this method to other problems.",
+        "answer": "apply"
+      },
+      {
+        "text": "She applied for a visa online.",
+        "answer": "apply"
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "word": "approve",
+    "definition": "to officially accept or agree to something",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "The manager must approve the plan.",
+        "answer": "approve"
+      },
+      {
+        "text": "The committee approved the budget.",
+        "answer": "approve"
+      },
+      {
+        "text": "Her parents did not approve of the decision.",
+        "answer": "approve"
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "word": "argue",
+    "definition": "to express disagreement or give reasons for an opinion",
+    "level": "B2",
+    "category": "communication",
+    "sentences": [
+      {
+        "text": "They often argue about money.",
+        "answer": "argue"
+      },
+      {
+        "text": "She argued that the change was necessary.",
+        "answer": "argue"
+      },
+      {
+        "text": "It is difficult to argue with the evidence.",
+        "answer": "argue"
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "word": "attempt",
+    "definition": "to try to do something difficult",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "He will attempt to solve the problem.",
+        "answer": "attempt"
+      },
+      {
+        "text": "She made another attempt to pass the exam.",
+        "answer": "attempt"
+      },
+      {
+        "text": "Their first attempt was unsuccessful.",
+        "answer": "attempt"
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "word": "balance",
+    "definition": "a state in which different things have equal importance",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "It is hard to find a good work-life balance.",
+        "answer": "balance"
+      },
+      {
+        "text": "She balanced the box on one hand.",
+        "answer": "balance"
+      },
+      {
+        "text": "The budget must balance income and spending.",
+        "answer": "balance"
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "word": "concentrate",
+    "definition": "to give all your attention to something",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "I cannot concentrate in a noisy room.",
+        "answer": "concentrate"
+      },
+      {
+        "text": "She concentrated on finishing the report.",
+        "answer": "concentrate"
+      },
+      {
+        "text": "Try to concentrate on one task at a time.",
+        "answer": "concentrate"
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "word": "conclude",
+    "definition": "to decide something after considering the facts",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "We can conclude that the plan worked.",
+        "answer": "conclude"
+      },
+      {
+        "text": "The meeting concluded at six.",
+        "answer": "conclude"
+      },
+      {
+        "text": "The report concludes with several recommendations.",
+        "answer": "conclude"
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "word": "contribute",
+    "definition": "to give time, money, or effort to help achieve something",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "Everyone can contribute to the project.",
+        "answer": "contribute"
+      },
+      {
+        "text": "Exercise contributes to good health.",
+        "answer": "contribute"
+      },
+      {
+        "text": "She contributed several useful ideas.",
+        "answer": "contribute"
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "word": "convince",
+    "definition": "to persuade someone to believe or do something",
+    "level": "B2",
+    "category": "communication",
+    "sentences": [
+      {
+        "text": "Can you convince him to join us?",
+        "answer": "convince"
+      },
+      {
+        "text": "The evidence convinced me.",
+        "answer": "convince"
+      },
+      {
+        "text": "She convinced the manager to change the plan.",
+        "answer": "convince"
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "word": "criticize",
+    "definition": "to express disapproval of someone or something",
+    "level": "B2",
+    "category": "communication",
+    "sentences": [
+      {
+        "text": "It is easy to criticize without offering a solution.",
+        "answer": "criticize"
+      },
+      {
+        "text": "The report criticized the company's policy.",
+        "answer": "criticize"
+      },
+      {
+        "text": "She was criticized for arriving late.",
+        "answer": "criticize"
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "word": "demonstrate",
+    "definition": "to show clearly how something works or is true",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "The teacher will demonstrate the process.",
+        "answer": "demonstrate"
+      },
+      {
+        "text": "The results demonstrate clear progress.",
+        "answer": "demonstrate"
+      },
+      {
+        "text": "He demonstrated how to use the equipment.",
+        "answer": "demonstrate"
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "word": "describe",
+    "definition": "to say what someone or something is like",
+    "level": "B2",
+    "category": "communication",
+    "sentences": [
+      {
+        "text": "Can you describe what happened?",
+        "answer": "describe"
+      },
+      {
+        "text": "She described the place in detail.",
+        "answer": "describe"
+      },
+      {
+        "text": "The report describes the current situation.",
+        "answer": "describe"
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "word": "determine",
+    "definition": "to discover or decide something",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "We need to determine the cause of the problem.",
+        "answer": "determine"
+      },
+      {
+        "text": "The test will determine your level.",
+        "answer": "determine"
+      },
+      {
+        "text": "Several factors determine the final price.",
+        "answer": "determine"
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "word": "establish",
+    "definition": "to create or set up something",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "They plan to establish a new company.",
+        "answer": "establish"
+      },
+      {
+        "text": "The study established a clear connection.",
+        "answer": "establish"
+      },
+      {
+        "text": "We need to establish some basic rules.",
+        "answer": "establish"
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "word": "evaluate",
+    "definition": "to judge the quality or value of something",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "We should evaluate all the options.",
+        "answer": "evaluate"
+      },
+      {
+        "text": "The manager evaluated my performance.",
+        "answer": "evaluate"
+      },
+      {
+        "text": "Researchers are evaluating the results.",
+        "answer": "evaluate"
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "word": "examine",
+    "definition": "to look at something carefully",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "The doctor will examine the patient.",
+        "answer": "examine"
+      },
+      {
+        "text": "We examined the data closely.",
+        "answer": "examine"
+      },
+      {
+        "text": "The report examines the effects of the change.",
+        "answer": "examine"
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "word": "expand",
+    "definition": "to become or make something larger",
+    "level": "B2",
+    "category": "general",
+    "sentences": [
+      {
+        "text": "The company plans to expand its services.",
+        "answer": "expand"
+      },
+      {
+        "text": "The business expanded into new markets.",
+        "answer": "expand"
+      },
+      {
+        "text": "Reading can expand your vocabulary.",
+        "answer": "expand"
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "word": "express",
+    "definition": "to show or communicate a thought or feeling",
+    "level": "B2",
+    "category": "communication",
+    "sentences": [
+      {
+        "text": "It is important to express your opinion clearly.",
+        "answer": "express"
+      },
+      {
+        "text": "She expressed concern about the delay.",
+        "answer": "express"
+      },
+      {
+        "text": "Art allows people to express themselves.",
+        "answer": "express"
+      }
+    ]
+  }
+]

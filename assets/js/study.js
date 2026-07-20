@@ -13,14 +13,7 @@ const previousButton = document.querySelector("#previous-button");
 const nextButton = document.querySelector("#next-study-button");
 const shuffleButton = document.querySelector("#shuffle-button");
 
-const VOCABULARY_FILES = [
-  "../data/words-1.json",
-  "../data/words-2.json",
-  "../data/words-3.json",
-  "../data/words-4.json",
-  "../data/words-5.json",
-  "../data/words-6.json"
-];
+const MANIFEST_FILE = "../data/manifest.json";
 
 let allWords = [];
 let visibleWords = [];
@@ -37,10 +30,12 @@ function shuffle(items) {
 }
 
 function buildExample(word) {
-  if (Array.isArray(word.examples) && word.examples.length > 0) {
-    return word.examples[Math.floor(Math.random() * word.examples.length)];
+  if (!Array.isArray(word.sentences) || word.sentences.length === 0) {
+    return "No example sentence is available.";
   }
-  return word.sentence.replace("_____", word.sentenceAnswer);
+
+  const randomSentence = word.sentences[Math.floor(Math.random() * word.sentences.length)];
+  return randomSentence.text;
 }
 
 function hideDetails() {
@@ -99,7 +94,17 @@ function toggleDetails() {
 
 async function loadWords() {
   try {
-    const responses = await Promise.all(VOCABULARY_FILES.map((file) => fetch(file)));
+    const manifestResponse = await fetch(MANIFEST_FILE);
+    if (!manifestResponse.ok) {
+      throw new Error(`Vocabulary manifest could not be loaded: ${manifestResponse.status}`);
+    }
+
+    const manifest = await manifestResponse.json();
+    const vocabularyFiles = Object.values(manifest.levels)
+      .filter((level) => level.wordCount > 0)
+      .map((level) => `../data/${level.file}`);
+
+    const responses = await Promise.all(vocabularyFiles.map((file) => fetch(file)));
     const failedResponse = responses.find((response) => !response.ok);
     if (failedResponse) {
       throw new Error(`Vocabulary data could not be loaded: ${failedResponse.status}`);
