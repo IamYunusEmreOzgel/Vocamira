@@ -5,7 +5,7 @@
 .study-intro {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 190px;
-  align-items: end;
+  align-items: start;
   gap: 48px;
   margin-bottom: 42px;
 }
@@ -32,8 +32,10 @@
 
 .level-filter {
   display: grid;
+  align-self: center;
   gap: 8px;
   min-width: 0;
+  margin-top: 8px;
   color: var(--muted);
   font-size: 0.82rem;
   font-weight: 700;
@@ -294,7 +296,9 @@
   }
 
   .level-filter {
+    align-self: start;
     width: min(220px, 100%);
+    margin-top: 0;
   }
 }
 
