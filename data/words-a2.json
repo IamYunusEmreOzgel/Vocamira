@@ -7,16 +7,16 @@
     "category": "general",
     "sentences": [
       {
-        "text": "I want to improve my English.",
+        "text": "I want to _____ my English.",
         "answer": "improve"
       },
       {
-        "text": "Regular practice can improve your pronunciation.",
+        "text": "Regular practice can _____ your pronunciation.",
         "answer": "improve"
       },
       {
-        "text": "The service has improved since last year.",
-        "answer": "improve"
+        "text": "The service has _____ since last year.",
+        "answer": "improved"
       }
     ]
   },
@@ -28,15 +28,15 @@
     "category": "general",
     "sentences": [
       {
-        "text": "We need to increase production.",
+        "text": "We need to _____ production.",
         "answer": "increase"
       },
       {
-        "text": "Prices increased again this month.",
-        "answer": "increase"
+        "text": "Prices _____ again this month.",
+        "answer": "increased"
       },
       {
-        "text": "Exercise can increase your energy.",
+        "text": "Exercise can _____ your energy.",
         "answer": "increase"
       }
     ]
@@ -49,16 +49,16 @@
     "category": "general",
     "sentences": [
       {
-        "text": "Good friends support each other.",
+        "text": "Good friends _____ each other.",
         "answer": "support"
       },
       {
-        "text": "The evidence supports his argument.",
-        "answer": "support"
+        "text": "The evidence _____ his argument.",
+        "answer": "supports"
       },
       {
-        "text": "Her family supported her decision.",
-        "answer": "support"
+        "text": "Her family _____ her decision.",
+        "answer": "supported"
       }
     ]
   },
@@ -70,16 +70,16 @@
     "category": "general",
     "sentences": [
       {
-        "text": "Let us compare the two options.",
+        "text": "Let us _____ the two options.",
         "answer": "compare"
       },
       {
-        "text": "It is difficult to compare the products.",
+        "text": "It is difficult to _____ the products.",
         "answer": "compare"
       },
       {
-        "text": "She compared prices before buying.",
-        "answer": "compare"
+        "text": "She _____ prices before buying.",
+        "answer": "compared"
       }
     ]
   },
@@ -91,15 +91,15 @@
     "category": "general",
     "sentences": [
       {
-        "text": "Reading helps you develop new skills.",
+        "text": "Reading helps you _____ new skills.",
         "answer": "develop"
       },
       {
-        "text": "The company is developing a new product.",
-        "answer": "develop"
+        "text": "The company is _____ a new product.",
+        "answer": "developing"
       },
       {
-        "text": "Children develop at different speeds.",
+        "text": "Children _____ at different speeds.",
         "answer": "develop"
       }
     ]
@@ -112,16 +112,16 @@
     "category": "daily-life",
     "sentences": [
       {
-        "text": "Can I borrow your pen for a minute?",
+        "text": "Can I _____ your pen for a minute?",
         "answer": "borrow"
       },
       {
-        "text": "She borrowed a book from the library.",
-        "answer": "borrow"
+        "text": "She _____ a book from the library.",
+        "answer": "borrowed"
       },
       {
-        "text": "I borrowed some money from my brother.",
-        "answer": "borrow"
+        "text": "I _____ some money from my brother.",
+        "answer": "borrowed"
       }
     ]
   },
@@ -133,15 +133,15 @@
     "category": "general",
     "sentences": [
       {
-        "text": "You need to choose one of these options.",
+        "text": "You need to _____ one of these options.",
         "answer": "choose"
       },
       {
-        "text": "She chose the blue dress.",
-        "answer": "choose"
+        "text": "She _____ the blue dress.",
+        "answer": "chose"
       },
       {
-        "text": "It is hard to choose between two good offers.",
+        "text": "It is hard to _____ between two good offers.",
         "answer": "choose"
       }
     ]
@@ -154,15 +154,15 @@
     "category": "travel",
     "sentences": [
       {
-        "text": "We will arrive at the station at noon.",
+        "text": "We will _____ at the station at noon.",
         "answer": "arrive"
       },
       {
-        "text": "The package arrived this morning.",
-        "answer": "arrive"
+        "text": "The package _____ this morning.",
+        "answer": "arrived"
       },
       {
-        "text": "Please call me when you arrive.",
+        "text": "Please call me when you _____.",
         "answer": "arrive"
       }
     ]
@@ -175,15 +175,15 @@
     "category": "general",
     "sentences": [
       {
-        "text": "Did you notice the change in the room?",
+        "text": "Did you _____ the change in the room?",
         "answer": "notice"
       },
       {
-        "text": "I noticed a mistake in the report.",
-        "answer": "notice"
+        "text": "I _____ a mistake in the report.",
+        "answer": "noticed"
       },
       {
-        "text": "She did not notice the open door.",
+        "text": "She did not _____ the open door.",
         "answer": "notice"
       }
     ]
@@ -196,15 +196,15 @@
     "category": "social",
     "sentences": [
       {
-        "text": "I want to invite my friends to dinner.",
+        "text": "I want to _____ my friends to dinner.",
         "answer": "invite"
       },
       {
-        "text": "They invited us to their wedding.",
-        "answer": "invite"
+        "text": "They _____ us to their wedding.",
+        "answer": "invited"
       },
       {
-        "text": "Can I invite a colleague to the meeting?",
+        "text": "Can I _____ a colleague to the meeting?",
         "answer": "invite"
       }
     ]
@@ -217,15 +217,15 @@
     "category": "general",
     "sentences": [
       {
-        "text": "Please remember to call me later.",
+        "text": "Please _____ to call me later.",
         "answer": "remember"
       },
       {
-        "text": "I remember meeting her years ago.",
+        "text": "I _____ meeting her years ago.",
         "answer": "remember"
       },
       {
-        "text": "He could not remember the password.",
+        "text": "He could not _____ the password.",
         "answer": "remember"
       }
     ]
@@ -238,15 +238,15 @@
     "category": "communication",
     "sentences": [
       {
-        "text": "Can you explain this rule to me?",
+        "text": "Can you _____ this rule to me?",
         "answer": "explain"
       },
       {
-        "text": "She explained how the machine works.",
-        "answer": "explain"
+        "text": "She _____ how the machine works.",
+        "answer": "explained"
       },
       {
-        "text": "It is difficult to explain the problem briefly.",
+        "text": "It is difficult to _____ the problem briefly.",
         "answer": "explain"
       }
     ]
@@ -259,15 +259,15 @@
     "category": "general",
     "sentences": [
       {
-        "text": "I prefer tea to coffee.",
+        "text": "I _____ tea to coffee.",
         "answer": "prefer"
       },
       {
-        "text": "She prefers working in the morning.",
-        "answer": "prefer"
+        "text": "She _____ working in the morning.",
+        "answer": "prefers"
       },
       {
-        "text": "Would you prefer to sit inside?",
+        "text": "Would you _____ to sit inside?",
         "answer": "prefer"
       }
     ]
@@ -280,16 +280,16 @@
     "category": "general",
     "sentences": [
       {
-        "text": "We need to prepare for the meeting.",
+        "text": "We need to _____ for the meeting.",
         "answer": "prepare"
       },
       {
-        "text": "She prepared dinner for the family.",
-        "answer": "prepare"
+        "text": "She _____ dinner for the family.",
+        "answer": "prepared"
       },
       {
-        "text": "The team is preparing a presentation.",
-        "answer": "prepare"
+        "text": "The team is _____ a presentation.",
+        "answer": "preparing"
       }
     ]
   },
@@ -301,15 +301,15 @@
     "category": "communication",
     "sentences": [
       {
-        "text": "Did you receive my message?",
+        "text": "Did you _____ my message?",
         "answer": "receive"
       },
       {
-        "text": "She received a package yesterday.",
-        "answer": "receive"
+        "text": "She _____ a package yesterday.",
+        "answer": "received"
       },
       {
-        "text": "You will receive an email confirmation.",
+        "text": "You will _____ an email confirmation.",
         "answer": "receive"
       }
     ]
@@ -322,16 +322,16 @@
     "category": "general",
     "sentences": [
       {
-        "text": "Please continue reading the next paragraph.",
+        "text": "Please _____ reading the next paragraph.",
         "answer": "continue"
       },
       {
-        "text": "The rain continued all night.",
-        "answer": "continue"
+        "text": "The rain _____ all night.",
+        "answer": "continued"
       },
       {
-        "text": "She continued working after dinner.",
-        "answer": "continue"
+        "text": "She _____ working after dinner.",
+        "answer": "continued"
       }
     ]
   },
@@ -343,16 +343,16 @@
     "category": "general",
     "sentences": [
       {
-        "text": "This case will protect your phone.",
+        "text": "This case will _____ your phone.",
         "answer": "protect"
       },
       {
-        "text": "Sunscreen helps protect your skin.",
+        "text": "Sunscreen helps _____ your skin.",
         "answer": "protect"
       },
       {
-        "text": "The law protects consumers.",
-        "answer": "protect"
+        "text": "The law _____ consumers.",
+        "answer": "protects"
       }
     ]
   },
@@ -364,16 +364,16 @@
     "category": "general",
     "sentences": [
       {
-        "text": "Can you solve this puzzle?",
+        "text": "Can you _____ this puzzle?",
         "answer": "solve"
       },
       {
-        "text": "We need to solve the problem quickly.",
+        "text": "We need to _____ the problem quickly.",
         "answer": "solve"
       },
       {
-        "text": "The update solved several issues.",
-        "answer": "solve"
+        "text": "The update _____ several issues.",
+        "answer": "solved"
       }
     ]
   },
@@ -385,16 +385,16 @@
     "category": "communication",
     "sentences": [
       {
-        "text": "Please contact me if you need help.",
+        "text": "Please _____ me if you need help.",
         "answer": "contact"
       },
       {
-        "text": "The company contacted me about the interview.",
-        "answer": "contact"
+        "text": "The company _____ me about the interview.",
+        "answer": "contacted"
       },
       {
-        "text": "Contact customer support by email.",
-        "answer": "contact"
+        "text": "_____ customer support by email.",
+        "answer": "Contact"
       }
     ]
   }

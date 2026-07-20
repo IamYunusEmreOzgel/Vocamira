@@ -7,15 +7,15 @@
     "category": "general",
     "sentences": [
       {
-        "text": "She made an important decision.",
+        "text": "She made an important _____.",
         "answer": "decision"
       },
       {
-        "text": "It was a difficult decision to leave.",
+        "text": "It was a difficult _____ to leave.",
         "answer": "decision"
       },
       {
-        "text": "We need more information before making a decision.",
+        "text": "We need more information before making a _____.",
         "answer": "decision"
       }
     ]
@@ -28,15 +28,15 @@
     "category": "general",
     "sentences": [
       {
-        "text": "Is this product available today?",
+        "text": "Is this product _____ today?",
         "answer": "available"
       },
       {
-        "text": "The manager is not available now.",
+        "text": "The manager is not _____ now.",
         "answer": "available"
       },
       {
-        "text": "Several options are available online.",
+        "text": "Several options are _____ online.",
         "answer": "available"
       }
     ]
@@ -49,16 +49,16 @@
     "category": "general",
     "sentences": [
       {
-        "text": "You can achieve your goals with practice.",
+        "text": "You can _____ your goals with practice.",
         "answer": "achieve"
       },
       {
-        "text": "She worked hard to achieve better results.",
+        "text": "She worked hard to _____ better results.",
         "answer": "achieve"
       },
       {
-        "text": "The team achieved its target.",
-        "answer": "achieve"
+        "text": "The team _____ its target.",
+        "answer": "achieved"
       }
     ]
   },
@@ -70,15 +70,15 @@
     "category": "general",
     "sentences": [
       {
-        "text": "This task will require more time.",
+        "text": "This task will _____ more time.",
         "answer": "require"
       },
       {
-        "text": "The job requires strong communication skills.",
-        "answer": "require"
+        "text": "The job _____ strong communication skills.",
+        "answer": "requires"
       },
       {
-        "text": "Some repairs require professional help.",
+        "text": "Some repairs _____ professional help.",
         "answer": "require"
       }
     ]
@@ -91,15 +91,15 @@
     "category": "general",
     "sentences": [
       {
-        "text": "The company wants to reduce costs.",
+        "text": "The company wants to _____ costs.",
         "answer": "reduce"
       },
       {
-        "text": "We should reduce plastic use.",
+        "text": "We should _____ plastic use.",
         "answer": "reduce"
       },
       {
-        "text": "This medicine may reduce the pain.",
+        "text": "This medicine may _____ the pain.",
         "answer": "reduce"
       }
     ]
@@ -112,15 +112,15 @@
     "category": "general",
     "sentences": [
       {
-        "text": "The course will provide useful information.",
+        "text": "The course will _____ useful information.",
         "answer": "provide"
       },
       {
-        "text": "The hotel provides free breakfast.",
-        "answer": "provide"
+        "text": "The hotel _____ free breakfast.",
+        "answer": "provides"
       },
       {
-        "text": "Please provide your contact details.",
+        "text": "Please _____ your contact details.",
         "answer": "provide"
       }
     ]
@@ -133,15 +133,15 @@
     "category": "general",
     "sentences": [
       {
-        "text": "Try to avoid unnecessary mistakes.",
+        "text": "Try to _____ unnecessary mistakes.",
         "answer": "avoid"
       },
       {
-        "text": "He avoids driving during rush hour.",
-        "answer": "avoid"
+        "text": "He _____ driving during rush hour.",
+        "answer": "avoids"
       },
       {
-        "text": "Regular checks help avoid problems.",
+        "text": "Regular checks help _____ problems.",
         "answer": "avoid"
       }
     ]
@@ -154,15 +154,15 @@
     "category": "communication",
     "sentences": [
       {
-        "text": "I would suggest taking the earlier train.",
+        "text": "I would _____ taking the earlier train.",
         "answer": "suggest"
       },
       {
-        "text": "She suggested a different approach.",
-        "answer": "suggest"
+        "text": "She _____ a different approach.",
+        "answer": "suggested"
       },
       {
-        "text": "Can you suggest a good restaurant?",
+        "text": "Can you _____ a good restaurant?",
         "answer": "suggest"
       }
     ]
@@ -175,16 +175,16 @@
     "category": "general",
     "sentences": [
       {
-        "text": "She managed to solve the problem alone.",
+        "text": "She _____ to solve the problem alone.",
+        "answer": "managed"
+      },
+      {
+        "text": "Can you _____ the project by yourself?",
         "answer": "manage"
       },
       {
-        "text": "Can you manage the project by yourself?",
-        "answer": "manage"
-      },
-      {
-        "text": "He managed to finish before the deadline.",
-        "answer": "manage"
+        "text": "He _____ to finish before the deadline.",
+        "answer": "managed"
       }
     ]
   },
@@ -196,15 +196,15 @@
     "category": "general",
     "sentences": [
       {
-        "text": "The result will depend on your effort.",
+        "text": "The result will _____ on your effort.",
         "answer": "depend"
       },
       {
-        "text": "Prices depend on the season.",
+        "text": "Prices _____ on the season.",
         "answer": "depend"
       },
       {
-        "text": "You can depend on her in an emergency.",
+        "text": "You can _____ on her in an emergency.",
         "answer": "depend"
       }
     ]
@@ -217,15 +217,15 @@
     "category": "general",
     "sentences": [
       {
-        "text": "The rules do not allow food inside.",
+        "text": "The rules do not _____ food inside.",
         "answer": "allow"
       },
       {
-        "text": "This ticket allows museum entry.",
-        "answer": "allow"
+        "text": "This ticket _____ museum entry.",
+        "answer": "allows"
       },
       {
-        "text": "My schedule does not allow much free time.",
+        "text": "My schedule does not _____ much free time.",
         "answer": "allow"
       }
     ]
@@ -238,16 +238,16 @@
     "category": "general",
     "sentences": [
       {
-        "text": "We expect the bus to arrive soon.",
+        "text": "We _____ the bus to arrive soon.",
         "answer": "expect"
       },
       {
-        "text": "I did not expect such a quick reply.",
+        "text": "I did not _____ such a quick reply.",
         "answer": "expect"
       },
       {
-        "text": "The company expects sales to grow.",
-        "answer": "expect"
+        "text": "The company _____ sales to grow.",
+        "answer": "expects"
       }
     ]
   },
@@ -259,16 +259,16 @@
     "category": "general",
     "sentences": [
       {
-        "text": "They hope to discover a better solution.",
+        "text": "They hope to _____ a better solution.",
         "answer": "discover"
       },
       {
-        "text": "We discovered a small error.",
-        "answer": "discover"
+        "text": "We _____ a small error.",
+        "answer": "discovered"
       },
       {
-        "text": "She discovered a new way to study.",
-        "answer": "discover"
+        "text": "She _____ a new way to study.",
+        "answer": "discovered"
       }
     ]
   },
@@ -280,15 +280,15 @@
     "category": "general",
     "sentences": [
       {
-        "text": "You should consider all the possibilities.",
+        "text": "You should _____ all the possibilities.",
         "answer": "consider"
       },
       {
-        "text": "We are considering moving abroad.",
-        "answer": "consider"
+        "text": "We are _____ moving abroad.",
+        "answer": "considering"
       },
       {
-        "text": "Please consider my proposal.",
+        "text": "Please _____ my proposal.",
         "answer": "consider"
       }
     ]
@@ -301,16 +301,16 @@
     "category": "social",
     "sentences": [
       {
-        "text": "I will attend the conference tomorrow.",
+        "text": "I will _____ the conference tomorrow.",
         "answer": "attend"
       },
       {
-        "text": "Many people attended the event.",
-        "answer": "attend"
+        "text": "Many people _____ the event.",
+        "answer": "attended"
       },
       {
-        "text": "She attends an English class twice a week.",
-        "answer": "attend"
+        "text": "She _____ an English class twice a week.",
+        "answer": "attends"
       }
     ]
   },
@@ -322,16 +322,16 @@
     "category": "general",
     "sentences": [
       {
-        "text": "Can you imagine living in another country?",
+        "text": "Can you _____ living in another country?",
         "answer": "imagine"
       },
       {
-        "text": "I cannot imagine life without the internet.",
+        "text": "I cannot _____ life without the internet.",
         "answer": "imagine"
       },
       {
-        "text": "She imagined running her own business.",
-        "answer": "imagine"
+        "text": "She _____ running her own business.",
+        "answer": "imagined"
       }
     ]
   },
@@ -343,15 +343,15 @@
     "category": "general",
     "sentences": [
       {
-        "text": "We need to replace the damaged part.",
+        "text": "We need to _____ the damaged part.",
         "answer": "replace"
       },
       {
-        "text": "They replaced the old windows.",
-        "answer": "replace"
+        "text": "They _____ the old windows.",
+        "answer": "replaced"
       },
       {
-        "text": "Can technology replace human judgment?",
+        "text": "Can technology _____ human judgment?",
         "answer": "replace"
       }
     ]
@@ -364,15 +364,15 @@
     "category": "general",
     "sentences": [
       {
-        "text": "Please remain calm during the test.",
+        "text": "Please _____ calm during the test.",
         "answer": "remain"
       },
       {
-        "text": "Several questions remain unanswered.",
+        "text": "Several questions _____ unanswered.",
         "answer": "remain"
       },
       {
-        "text": "The shop will remain closed until Monday.",
+        "text": "The shop will _____ closed until Monday.",
         "answer": "remain"
       }
     ]
@@ -385,16 +385,16 @@
     "category": "social",
     "sentences": [
       {
-        "text": "Children should behave politely in public.",
+        "text": "Children should _____ politely in public.",
         "answer": "behave"
       },
       {
-        "text": "The machine is behaving normally.",
-        "answer": "behave"
+        "text": "The machine is _____ normally.",
+        "answer": "behaving"
       },
       {
-        "text": "He behaved calmly during the argument.",
-        "answer": "behave"
+        "text": "He _____ calmly during the argument.",
+        "answer": "behaved"
       }
     ]
   },
@@ -406,15 +406,15 @@
     "category": "communication",
     "sentences": [
       {
-        "text": "He did not mention the problem.",
+        "text": "He did not _____ the problem.",
         "answer": "mention"
       },
       {
-        "text": "She mentioned your name.",
-        "answer": "mention"
+        "text": "She _____ your name.",
+        "answer": "mentioned"
       },
       {
-        "text": "I forgot to mention one detail.",
+        "text": "I forgot to _____ one detail.",
         "answer": "mention"
       }
     ]
@@ -427,15 +427,15 @@
     "category": "general",
     "sentences": [
       {
-        "text": "I did not recognise him at first.",
+        "text": "I did not _____ him at first.",
         "answer": "recognise"
       },
       {
-        "text": "She recognised the song immediately.",
-        "answer": "recognise"
+        "text": "She _____ the song immediately.",
+        "answer": "recognised"
       },
       {
-        "text": "It is important to recognise your mistakes.",
+        "text": "It is important to _____ your mistakes.",
         "answer": "recognise"
       }
     ]
@@ -448,16 +448,16 @@
     "category": "communication",
     "sentences": [
       {
-        "text": "Good teachers encourage students to ask questions.",
+        "text": "Good teachers _____ students to ask questions.",
         "answer": "encourage"
       },
       {
-        "text": "Her friends encouraged her to apply.",
-        "answer": "encourage"
+        "text": "Her friends _____ her to apply.",
+        "answer": "encouraged"
       },
       {
-        "text": "The program encourages regular practice.",
-        "answer": "encourage"
+        "text": "The program _____ regular practice.",
+        "answer": "encourages"
       }
     ]
   },
@@ -469,16 +469,16 @@
     "category": "communication",
     "sentences": [
       {
-        "text": "Please respond to the email today.",
+        "text": "Please _____ to the email today.",
         "answer": "respond"
       },
       {
-        "text": "He did not respond to my question.",
+        "text": "He did not _____ to my question.",
         "answer": "respond"
       },
       {
-        "text": "The system responds quickly.",
-        "answer": "respond"
+        "text": "The system _____ quickly.",
+        "answer": "responds"
       }
     ]
   },
@@ -490,15 +490,15 @@
     "category": "daily-life",
     "sentences": [
       {
-        "text": "Online banking is very convenient.",
+        "text": "Online banking is very _____.",
         "answer": "convenient"
       },
       {
-        "text": "Is Friday convenient for you?",
+        "text": "Is Friday _____ for you?",
         "answer": "convenient"
       },
       {
-        "text": "The hotel is in a convenient location.",
+        "text": "The hotel is in a _____ location.",
         "answer": "convenient"
       }
     ]
@@ -511,15 +511,15 @@
     "category": "general",
     "sentences": [
       {
-        "text": "Learning a new language can be a challenge.",
+        "text": "Learning a new language can be a _____.",
         "answer": "challenge"
       },
       {
-        "text": "The team accepted the challenge.",
+        "text": "The team accepted the _____.",
         "answer": "challenge"
       },
       {
-        "text": "Finding time is my biggest challenge.",
+        "text": "Finding time is my biggest _____.",
         "answer": "challenge"
       }
     ]
@@ -532,15 +532,15 @@
     "category": "general",
     "sentences": [
       {
-        "text": "This course is a good opportunity to practise speaking.",
+        "text": "This course is a good _____ to practise speaking.",
         "answer": "opportunity"
       },
       {
-        "text": "She had the opportunity to work abroad.",
+        "text": "She had the _____ to work abroad.",
         "answer": "opportunity"
       },
       {
-        "text": "Do not miss this opportunity.",
+        "text": "Do not miss this _____.",
         "answer": "opportunity"
       }
     ]
