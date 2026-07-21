@@ -38,7 +38,7 @@
       <div id="start-screen" class="screen active">
         <p class="eyebrow">Vocabulary game</p>
         <h1>Build your quiz.</h1>
-        <p class="intro-text">Choose a game mode, difficulty and session length before you begin.</p>
+        <p class="intro-text">Choose a game mode, difficulty, word pool and session length before you begin.</p>
 
         <div class="game-settings">
           <fieldset class="setting-group">
@@ -94,6 +94,35 @@
                 <span>
                   <strong>Mixed</strong>
                   <small>All available levels</small>
+                </span>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="setting-group">
+            <legend>Word pool</legend>
+            <div class="word-pool-options">
+              <label class="choice-card">
+                <input type="radio" name="word-pool" value="all" checked>
+                <span>
+                  <strong>All Words</strong>
+                  <small>Use every word that matches your filters.</small>
+                </span>
+              </label>
+
+              <label class="choice-card">
+                <input type="radio" name="word-pool" value="unseen">
+                <span>
+                  <strong>Unseen Words</strong>
+                  <small>Only words that are not in your progress history.</small>
+                </span>
+              </label>
+
+              <label class="choice-card">
+                <input type="radio" name="word-pool" value="difficult">
+                <span>
+                  <strong>Difficult Words</strong>
+                  <small>Only words you marked as difficult.</small>
                 </span>
               </label>
             </div>
