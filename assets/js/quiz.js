@@ -30,6 +30,7 @@ const MANIFEST_FILE = "../data/manifest.json";
 const LEVEL_GROUPS = {
   beginner: ["A1", "A2"],
   intermediate: ["B1", "B2"],
+  advanced: ["C1", "C2"],
   mixed: []
 };
 
