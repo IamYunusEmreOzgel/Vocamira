@@ -1,14 +1,14 @@
 {
-  "totalWords": 102,
+  "totalWords": 152,
   "examplesPerWord": 3,
   "levels": {
     "A1": {
       "file": "words-a1.json",
-      "wordCount": 0
+      "wordCount": 25
     },
     "A2": {
       "file": "words-a2.json",
-      "wordCount": 19
+      "wordCount": 44
     },
     "B1": {
       "file": "words-b1.json",
