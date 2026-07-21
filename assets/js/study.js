@@ -1,6 +1,5 @@
 const studyArea = document.querySelector("#study-area");
 const studyError = document.querySelector("#study-error");
-const studySessionStatus = document.querySelector("#study-session-status");
 const levelSelect = document.querySelector("#level-select");
 const cardCount = document.querySelector("#card-count");
 const wordLevel = document.querySelector("#word-level");
@@ -15,14 +14,11 @@ const nextButton = document.querySelector("#next-study-button");
 const shuffleButton = document.querySelector("#shuffle-button");
 
 const MANIFEST_FILE = "../data/manifest.json";
-const SESSION_SIZE = 10;
 
 let allWords = [];
 let visibleWords = [];
-let seenWordIds = new Set();
 let currentIndex = 0;
 let detailsVisible = false;
-let currentUser = null;
 
 function shuffle(items) {
   const copy = [...items];
@@ -67,33 +63,6 @@ function hideDetails() {
   revealButton.textContent = "Show definition";
 }
 
-async function markWordAsSeen(wordId) {
-  if (!currentUser || seenWordIds.has(Number(wordId))) {
-    return;
-  }
-
-  seenWordIds.add(Number(wordId));
-
-  const { error } = await window.supabaseClient
-    .from("user_word_progress")
-    .upsert(
-      {
-        user_id: currentUser.id,
-        word_id: Number(wordId),
-        status: "learning"
-      },
-      {
-        onConflict: "user_id,word_id",
-        ignoreDuplicates: true
-      }
-    );
-
-  if (error) {
-    seenWordIds.delete(Number(wordId));
-    console.error("Word view could not be saved:", error);
-  }
-}
-
 function renderCard() {
   if (visibleWords.length === 0) {
     studyArea.classList.add("hidden");
@@ -113,7 +82,6 @@ function renderCard() {
   previousButton.disabled = currentIndex === 0;
   nextButton.disabled = currentIndex === visibleWords.length - 1;
   hideDetails();
-  markWordAsSeen(word.id);
 }
 
 function populateLevels() {
@@ -127,36 +95,12 @@ function populateLevels() {
   });
 }
 
-function createDailySession() {
+function applyLevelFilter() {
   const selectedLevel = levelSelect.value;
-  const levelWords = selectedLevel === "all"
+  visibleWords = selectedLevel === "all"
     ? [...allWords]
     : allWords.filter((word) => word.level === selectedLevel);
-
-  const unseenWords = shuffle(
-    levelWords.filter((word) => !seenWordIds.has(Number(word.id)))
-  );
-  const previouslySeenWords = shuffle(
-    levelWords.filter((word) => seenWordIds.has(Number(word.id)))
-  );
-
-  const newWords = unseenWords.slice(0, SESSION_SIZE);
-  const remainingSlots = SESSION_SIZE - newWords.length;
-  const reviewWords = remainingSlots > 0
-    ? previouslySeenWords.slice(0, remainingSlots)
-    : [];
-
-  visibleWords = [...newWords, ...reviewWords];
   currentIndex = 0;
-
-  if (currentUser) {
-    studySessionStatus.textContent = newWords.length === visibleWords.length
-      ? `${newWords.length} new words selected for this session.`
-      : `${newWords.length} new words and ${reviewWords.length} review words selected.`;
-  } else {
-    studySessionStatus.textContent = "Sign in to save which words you have already studied.";
-  }
-
   renderCard();
 }
 
@@ -165,40 +109,6 @@ function toggleDetails() {
   wordDetails.classList.toggle("hidden", !detailsVisible);
   wordDetails.setAttribute("aria-hidden", String(!detailsVisible));
   revealButton.textContent = detailsVisible ? "Hide definition" : "Show definition";
-}
-
-async function loadCurrentUserProgress() {
-  if (!window.supabaseClient) {
-    return;
-  }
-
-  const {
-    data: { user },
-    error: userError
-  } = await window.supabaseClient.auth.getUser();
-
-  if (userError) {
-    console.error("User session could not be loaded:", userError);
-    return;
-  }
-
-  currentUser = user;
-
-  if (!currentUser) {
-    return;
-  }
-
-  const { data, error } = await window.supabaseClient
-    .from("user_word_progress")
-    .select("word_id")
-    .eq("user_id", currentUser.id);
-
-  if (error) {
-    console.error("Word progress could not be loaded:", error);
-    return;
-  }
-
-  seenWordIds = new Set((data || []).map((row) => Number(row.word_id)));
 }
 
 async function loadWords() {
@@ -229,9 +139,9 @@ async function loadWords() {
     }
 
     allWords = data;
+    visibleWords = [...allWords];
     populateLevels();
-    await loadCurrentUserProgress();
-    createDailySession();
+    renderCard();
   } catch (error) {
     console.error(error);
     studyArea.classList.add("hidden");
@@ -261,6 +171,6 @@ shuffleButton.addEventListener("click", () => {
   renderCard();
 });
 
-levelSelect.addEventListener("change", createDailySession);
+levelSelect.addEventListener("change", applyLevelFilter);
 
 loadWords();
