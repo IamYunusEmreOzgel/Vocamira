@@ -67,34 +67,22 @@
             <div class="difficulty-options">
               <label class="choice-card">
                 <input type="radio" name="difficulty" value="beginner">
-                <span>
-                  <strong>Beginner</strong>
-                  <small>A1–A2 words</small>
-                </span>
+                <span><strong>Beginner</strong><small>A1–A2 words</small></span>
               </label>
 
               <label class="choice-card">
                 <input type="radio" name="difficulty" value="intermediate">
-                <span>
-                  <strong>Intermediate</strong>
-                  <small>B1–B2 words</small>
-                </span>
+                <span><strong>Intermediate</strong><small>B1–B2 words</small></span>
               </label>
 
               <label class="choice-card">
                 <input type="radio" name="difficulty" value="advanced">
-                <span>
-                  <strong>Advanced</strong>
-                  <small>C1–C2 words</small>
-                </span>
+                <span><strong>Advanced</strong><small>C1–C2 words</small></span>
               </label>
 
               <label class="choice-card">
                 <input type="radio" name="difficulty" value="mixed" checked>
-                <span>
-                  <strong>Mixed</strong>
-                  <small>All available levels</small>
-                </span>
+                <span><strong>Mixed</strong><small>All available levels</small></span>
               </label>
             </div>
           </fieldset>
@@ -104,26 +92,17 @@
             <div class="word-pool-options">
               <label class="choice-card">
                 <input type="radio" name="word-pool" value="all" checked>
-                <span>
-                  <strong>All Words</strong>
-                  <small>Use every word that matches your filters.</small>
-                </span>
+                <span><strong>All Words</strong><small>Use every word that matches your filters.</small></span>
               </label>
 
               <label class="choice-card">
                 <input type="radio" name="word-pool" value="unseen">
-                <span>
-                  <strong>Unseen Words</strong>
-                  <small>Only words that are not in your progress history.</small>
-                </span>
+                <span><strong>Unseen Words</strong><small>Only words that are not in your progress history.</small></span>
               </label>
 
               <label class="choice-card">
-                <input type="radio" name="word-pool" value="difficult">
-                <span>
-                  <strong>Difficult Words</strong>
-                  <small>Only words you marked as difficult.</small>
-                </span>
+                <input type="radio" name="word-pool" value="weak">
+                <span><strong>Weak Words</strong><small>Words you have answered incorrectly more often than correctly.</small></span>
               </label>
             </div>
           </fieldset>
@@ -164,16 +143,11 @@
           <span id="score">Score: 0</span>
         </div>
 
-        <div class="progress-track" aria-hidden="true">
-          <div id="progress-bar" class="progress-bar"></div>
-        </div>
-
+        <div class="progress-track" aria-hidden="true"><div id="progress-bar" class="progress-bar"></div></div>
         <p id="question-label" class="question-label">Which definition best matches this word?</p>
         <h2 id="question-prompt" class="question-word">Improve</h2>
-
         <div id="answer-options" class="answer-options"></div>
         <p id="feedback" class="feedback" role="status"></p>
-
         <button id="next-button" class="primary-button hidden" type="button">Next Question</button>
       </div>
 
