@@ -1,0 +1,19 @@
+{
+  "name": "Vocamira",
+  "short_name": "Vocamira",
+  "description": "Build your English vocabulary through short, focused games.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#354f9b",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
