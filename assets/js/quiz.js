@@ -211,8 +211,10 @@ async function loadUserProgress() {
   progressByWordId = new Map((data || []).map((row) => [
     Number(row.word_id),
     {
-      correctCount: getProgressNumber(row, ["correct_count", "correct_answers", "correct"]),
-      wrongCount: getProgressNumber(row, ["wrong_count", "incorrect_count", "wrong_answers", "incorrect"])
+      correctCount:
+        getProgressNumber(row, ["definition_correct_count"])
+        + getProgressNumber(row, ["fill_blank_correct_count"]),
+      wrongCount: getProgressNumber(row, ["wrong_count"])
     }
   ]));
 }
