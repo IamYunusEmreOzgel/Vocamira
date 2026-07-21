@@ -108,4 +108,23 @@ async function addAccountLink() {
   }
 }
 
+function registerServiceWorker() {
+  if (!("serviceWorker" in navigator)) return;
+
+  window.addEventListener("load", async () => {
+    const isInsidePages = window.location.pathname.includes("/Pages/");
+    const appRoot = new URL(isInsidePages ? "../" : "./", window.location.href);
+    const serviceWorkerUrl = new URL("service-worker.js", appRoot);
+
+    try {
+      await navigator.serviceWorker.register(serviceWorkerUrl.href, {
+        scope: appRoot.pathname
+      });
+    } catch (error) {
+      console.error("Service worker could not be registered:", error);
+    }
+  });
+}
+
 addAccountLink();
+registerServiceWorker();
