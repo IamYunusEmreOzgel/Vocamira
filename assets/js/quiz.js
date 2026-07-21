@@ -57,12 +57,10 @@ function showScreen(name) {
 
 function shuffle(items) {
   const copy = [...items];
-
   for (let index = copy.length - 1; index > 0; index -= 1) {
     const randomIndex = Math.floor(Math.random() * (index + 1));
     [copy[index], copy[randomIndex]] = [copy[randomIndex], copy[index]];
   }
-
   return copy;
 }
 
@@ -78,6 +76,19 @@ function getSelectedGameMode() {
   return gameModeInputs.find((input) => input.checked)?.value || "definition";
 }
 
+function getProgressNumber(row, names) {
+  for (const name of names) {
+    const value = Number(row?.[name]);
+    if (Number.isFinite(value)) return value;
+  }
+  return 0;
+}
+
+function isWeakWord(progress) {
+  if (!progress) return false;
+  return progress.wrongCount > progress.correctCount;
+}
+
 function getFilteredWords() {
   const difficulty = getSelectedDifficulty();
   const selectedWordPool = getSelectedWordPool();
@@ -85,13 +96,12 @@ function getFilteredWords() {
   const levels = LEVEL_GROUPS[difficulty];
 
   return words.filter((word) => {
-    const wordId = Number(word.id);
-    const progress = progressByWordId.get(wordId);
+    const progress = progressByWordId.get(Number(word.id));
     const matchesLevel = difficulty === "mixed" || levels.includes(word.level);
     const matchesCategory = category === "all" || word.category === category;
     const matchesWordPool = selectedWordPool === "all"
       || (selectedWordPool === "unseen" && !progress)
-      || (selectedWordPool === "difficult" && progress?.status === "difficult");
+      || (selectedWordPool === "weak" && isWeakWord(progress));
 
     return matchesLevel && matchesCategory && matchesWordPool;
   });
@@ -105,7 +115,7 @@ function updateSetupSummary() {
 
   if (needsAccount && !currentUser) {
     availableCount.textContent = "Sign in required";
-    setupMessage.textContent = "Sign in to use Unseen Words or Difficult Words.";
+    setupMessage.textContent = "Sign in to use Unseen Words or Weak Words.";
     startButton.disabled = true;
     return;
   }
@@ -119,12 +129,11 @@ function updateSetupSummary() {
 
   const filteredWords = getFilteredWords();
   const requestedQuestions = Number(questionLimitSelect.value);
-
   availableCount.textContent = `${filteredWords.length} words`;
 
   if (filteredWords.length < 4) {
-    setupMessage.textContent = selectedWordPool === "difficult"
-      ? "At least four difficult words matching these filters are required."
+    setupMessage.textContent = selectedWordPool === "weak"
+      ? "At least four weak words matching these filters are required."
       : selectedWordPool === "unseen"
         ? "At least four unseen words matching these filters are required."
         : "Choose another difficulty or category. At least four words are required.";
@@ -154,19 +163,19 @@ function getRandomSentence(word) {
 
 function isValidVocabularyWord(word) {
   return Boolean(
-    word &&
-    Number.isInteger(Number(word.id)) &&
-    typeof word.word === "string" && word.word.trim() &&
-    typeof word.definition === "string" && word.definition.trim() &&
-    typeof word.level === "string" && word.level.trim() &&
-    typeof word.category === "string" && word.category.trim() &&
-    Array.isArray(word.sentences) &&
-    word.sentences.length > 0 &&
-    word.sentences.every((sentence) =>
-      typeof sentence?.text === "string" &&
-      sentence.text.includes("_____") &&
-      typeof sentence?.answer === "string" &&
-      sentence.answer.trim()
+    word
+    && Number.isInteger(Number(word.id))
+    && typeof word.word === "string" && word.word.trim()
+    && typeof word.definition === "string" && word.definition.trim()
+    && typeof word.level === "string" && word.level.trim()
+    && typeof word.category === "string" && word.category.trim()
+    && Array.isArray(word.sentences)
+    && word.sentences.length > 0
+    && word.sentences.every((sentence) =>
+      typeof sentence?.text === "string"
+      && sentence.text.includes("_____")
+      && typeof sentence?.answer === "string"
+      && sentence.answer.trim()
     )
   );
 }
@@ -177,10 +186,7 @@ async function loadUserProgress() {
     return;
   }
 
-  const {
-    data: { user },
-    error: userError
-  } = await window.supabaseClient.auth.getUser();
+  const { data: { user }, error: userError } = await window.supabaseClient.auth.getUser();
 
   if (userError) {
     console.error("User session could not be loaded:", userError);
@@ -189,14 +195,11 @@ async function loadUserProgress() {
   }
 
   currentUser = user;
-
-  if (!currentUser) {
-    return;
-  }
+  if (!currentUser) return;
 
   const { data, error } = await window.supabaseClient
     .from("user_word_progress")
-    .select("word_id,status")
+    .select("*")
     .eq("user_id", currentUser.id);
 
   if (error) {
@@ -205,9 +208,13 @@ async function loadUserProgress() {
     return;
   }
 
-  progressByWordId = new Map(
-    (data || []).map((row) => [Number(row.word_id), { status: row.status }])
-  );
+  progressByWordId = new Map((data || []).map((row) => [
+    Number(row.word_id),
+    {
+      correctCount: getProgressNumber(row, ["correct_count", "correct_answers", "correct"]),
+      wrongCount: getProgressNumber(row, ["wrong_count", "incorrect_count", "wrong_answers", "incorrect"])
+    }
+  ]));
 }
 
 async function loadWords() {
@@ -225,11 +232,7 @@ async function loadWords() {
     if (failedResponse) throw new Error(`Vocabulary data could not be loaded: ${failedResponse.status}`);
 
     words = (await Promise.all(responses.map((response) => response.json()))).flat();
-
-    if (!words.every(isValidVocabularyWord)) {
-      throw new Error("One or more vocabulary records are invalid.");
-    }
-
+    if (!words.every(isValidVocabularyWord)) throw new Error("One or more vocabulary records are invalid.");
     if (words.length < 4) throw new Error("At least four words are required to create a quiz.");
 
     populateCategories();
@@ -265,7 +268,7 @@ function startQuiz() {
   quizWords.forEach((word) => {
     const wordId = Number(word.id);
     if (!progressByWordId.has(wordId)) {
-      progressByWordId.set(wordId, { status: "learning" });
+      progressByWordId.set(wordId, { correctCount: 0, wrongCount: 0 });
     }
   });
 
@@ -278,7 +281,6 @@ function createDefinitionChoices(correctWord) {
     .map((word) => word.definition)
     .filter((definition, index, list) => list.indexOf(definition) === index)
     .slice(0, 3);
-
   return shuffle([correctWord.definition, ...wrongDefinitions]);
 }
 
@@ -286,12 +288,10 @@ function createWordChoices(correctWord, correctAnswer) {
   const sameLevelWords = words.filter((word) => word.id !== correctWord.id && word.level === correctWord.level);
   const fallbackWords = words.filter((word) => word.id !== correctWord.id);
   const source = sameLevelWords.length >= 3 ? sameLevelWords : fallbackWords;
-
   const wrongWords = shuffle(source)
     .map((word) => word.word)
     .filter((word, index, list) => word.toLowerCase() !== correctAnswer.toLowerCase() && list.indexOf(word) === index)
     .slice(0, 3);
-
   return shuffle([correctAnswer, ...wrongWords]);
 }
 
@@ -315,7 +315,6 @@ function renderDefinitionQuestion(currentWord) {
 
 function renderFillBlankQuestion(currentWord) {
   const sentence = getRandomSentence(currentWord);
-
   if (!sentence) {
     renderDefinitionQuestion(currentWord);
     return;
@@ -338,7 +337,6 @@ function renderQuestion() {
 
   const currentWord = quizWords[currentQuestionIndex];
   const totalQuestions = quizWords.length;
-
   questionCount.textContent = `Question ${currentQuestionIndex + 1} / ${totalQuestions}`;
   progressBar.style.width = `${((currentQuestionIndex + 1) / totalQuestions) * 100}%`;
 
@@ -357,6 +355,12 @@ function checkAnswer(selectedButton, selectedAnswer) {
 
   const isCorrect = selectedAnswer === currentCorrectAnswer;
   const currentWord = quizWords[currentQuestionIndex];
+  const wordId = Number(currentWord.id);
+  const progress = progressByWordId.get(wordId) || { correctCount: 0, wrongCount: 0 };
+
+  if (isCorrect) progress.correctCount += 1;
+  else progress.wrongCount += 1;
+  progressByWordId.set(wordId, progress);
 
   questionResults.push({ wordId: currentWord.id, mode: currentQuestionMode, isCorrect });
 
@@ -377,12 +381,10 @@ function checkAnswer(selectedButton, selectedAnswer) {
 
 async function goToNextQuestion() {
   currentQuestionIndex += 1;
-
   if (currentQuestionIndex >= quizWords.length) {
     await showResult();
     return;
   }
-
   renderQuestion();
 }
 
