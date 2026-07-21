@@ -24,6 +24,7 @@ const categorySelect = document.querySelector("#category-select");
 const availableCount = document.querySelector("#available-count");
 const setupMessage = document.querySelector("#setup-message");
 const difficultyInputs = [...document.querySelectorAll('input[name="difficulty"]')];
+const wordPoolInputs = [...document.querySelectorAll('input[name="word-pool"]')];
 const gameModeInputs = [...document.querySelectorAll('input[name="game-mode"]')];
 
 const MANIFEST_FILE = "../data/manifest.json";
@@ -45,6 +46,9 @@ let currentQuestionMode = "definition";
 let currentCorrectAnswer = "";
 let questionResults = [];
 let resultSaved = false;
+let currentUser = null;
+let progressByWordId = new Map();
+let progressAvailable = true;
 
 function showScreen(name) {
   Object.values(screens).forEach((screen) => screen.classList.remove("active"));
@@ -66,24 +70,52 @@ function getSelectedDifficulty() {
   return difficultyInputs.find((input) => input.checked)?.value || "mixed";
 }
 
+function getSelectedWordPool() {
+  return wordPoolInputs.find((input) => input.checked)?.value || "all";
+}
+
 function getSelectedGameMode() {
   return gameModeInputs.find((input) => input.checked)?.value || "definition";
 }
 
 function getFilteredWords() {
   const difficulty = getSelectedDifficulty();
+  const selectedWordPool = getSelectedWordPool();
   const category = categorySelect.value;
   const levels = LEVEL_GROUPS[difficulty];
 
   return words.filter((word) => {
+    const wordId = Number(word.id);
+    const progress = progressByWordId.get(wordId);
     const matchesLevel = difficulty === "mixed" || levels.includes(word.level);
     const matchesCategory = category === "all" || word.category === category;
-    return matchesLevel && matchesCategory;
+    const matchesWordPool = selectedWordPool === "all"
+      || (selectedWordPool === "unseen" && !progress)
+      || (selectedWordPool === "difficult" && progress?.status === "difficult");
+
+    return matchesLevel && matchesCategory && matchesWordPool;
   });
 }
 
 function updateSetupSummary() {
   if (!words.length) return;
+
+  const selectedWordPool = getSelectedWordPool();
+  const needsAccount = selectedWordPool !== "all";
+
+  if (needsAccount && !currentUser) {
+    availableCount.textContent = "Sign in required";
+    setupMessage.textContent = "Sign in to use Unseen Words or Difficult Words.";
+    startButton.disabled = true;
+    return;
+  }
+
+  if (needsAccount && !progressAvailable) {
+    availableCount.textContent = "Unavailable";
+    setupMessage.textContent = "Your word progress could not be loaded. Try again later.";
+    startButton.disabled = true;
+    return;
+  }
 
   const filteredWords = getFilteredWords();
   const requestedQuestions = Number(questionLimitSelect.value);
@@ -91,14 +123,18 @@ function updateSetupSummary() {
   availableCount.textContent = `${filteredWords.length} words`;
 
   if (filteredWords.length < 4) {
-    setupMessage.textContent = "Choose another difficulty or category. At least four words are required.";
+    setupMessage.textContent = selectedWordPool === "difficult"
+      ? "At least four difficult words matching these filters are required."
+      : selectedWordPool === "unseen"
+        ? "At least four unseen words matching these filters are required."
+        : "Choose another difficulty or category. At least four words are required.";
     startButton.disabled = true;
     return;
   }
 
   startButton.disabled = false;
   setupMessage.textContent = requestedQuestions > filteredWords.length
-    ? `This selection supports ${filteredWords.length} questions. The quiz length will be adjusted automatically.`
+    ? `Only ${filteredWords.length} matching words are available. The quiz length will be adjusted automatically.`
     : "";
 }
 
@@ -135,6 +171,45 @@ function isValidVocabularyWord(word) {
   );
 }
 
+async function loadUserProgress() {
+  if (!window.supabaseClient) {
+    progressAvailable = false;
+    return;
+  }
+
+  const {
+    data: { user },
+    error: userError
+  } = await window.supabaseClient.auth.getUser();
+
+  if (userError) {
+    console.error("User session could not be loaded:", userError);
+    progressAvailable = false;
+    return;
+  }
+
+  currentUser = user;
+
+  if (!currentUser) {
+    return;
+  }
+
+  const { data, error } = await window.supabaseClient
+    .from("user_word_progress")
+    .select("word_id,status")
+    .eq("user_id", currentUser.id);
+
+  if (error) {
+    console.error("Word progress could not be loaded:", error);
+    progressAvailable = false;
+    return;
+  }
+
+  progressByWordId = new Map(
+    (data || []).map((row) => [Number(row.word_id), { status: row.status }])
+  );
+}
+
 async function loadWords() {
   try {
     const manifestResponse = await fetch(MANIFEST_FILE);
@@ -158,6 +233,7 @@ async function loadWords() {
     if (words.length < 4) throw new Error("At least four words are required to create a quiz.");
 
     populateCategories();
+    await loadUserProgress();
     startButton.textContent = "Start Game";
     updateSetupSummary();
   } catch (error) {
@@ -185,6 +261,13 @@ function startQuiz() {
   saveStatus.textContent = "";
   restartButton.disabled = false;
   changeSettingsButton.disabled = false;
+
+  quizWords.forEach((word) => {
+    const wordId = Number(word.id);
+    if (!progressByWordId.has(wordId)) {
+      progressByWordId.set(wordId, { status: "learning" });
+    }
+  });
 
   showScreen("quiz");
   renderQuestion();
@@ -337,6 +420,7 @@ changeSettingsButton.addEventListener("click", returnToSettings);
 questionLimitSelect.addEventListener("change", updateSetupSummary);
 categorySelect.addEventListener("change", updateSetupSummary);
 difficultyInputs.forEach((input) => input.addEventListener("change", updateSetupSummary));
+wordPoolInputs.forEach((input) => input.addEventListener("change", updateSetupSummary));
 gameModeInputs.forEach((input) => input.addEventListener("change", updateSetupSummary));
 
 loadWords();
