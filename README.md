@@ -100,17 +100,4 @@ On iPhone:
 
 Vocamira is under active development. The core study, quiz, authentication, progress tracking, profile statistics, weak-word logic, and initial PWA shell are available.
 
-## Planned Improvements
 
-- Dedicated PNG app icons for broader PWA compatibility
-- Push notifications and daily study reminders
-- Spaced repetition scheduling
-- Daily challenges and streaks
-- More detailed progress charts
-- Achievements and learning milestones
-- Expanded vocabulary content
-- Improved offline support
-
-## Author
-
-Developed by [Yunus Emre Özgel](https://github.com/IamYunusEmreOzgel).
