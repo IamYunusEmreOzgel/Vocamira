@@ -2,7 +2,8 @@
   {
     "id": "sentence-001",
     "english": "I work as a mechatronics engineer.",
-    "turkish": "Mekatronik mühendisi olarak çalışıyorum.",
+    "pattern": "Subject + work as + job title",
+    "similarExample": "She works as a production engineer.",
     "level": "A2",
     "grammar": "present-simple",
     "category": "work",
@@ -11,7 +12,8 @@
   {
     "id": "sentence-002",
     "english": "She programs industrial robots.",
-    "turkish": "O, endüstriyel robotları programlar.",
+    "pattern": "Subject + base verb + object",
+    "similarExample": "He configures automation systems.",
     "level": "A2",
     "grammar": "present-simple",
     "category": "technology",
@@ -20,7 +22,8 @@
   {
     "id": "sentence-003",
     "english": "The machine stops when the safety door opens.",
-    "turkish": "Güvenlik kapısı açıldığında makine durur.",
+    "pattern": "Main clause + when + present simple clause",
+    "similarExample": "The alarm turns on when the pressure drops.",
     "level": "B1",
     "grammar": "present-simple",
     "category": "automation",
@@ -29,7 +32,8 @@
   {
     "id": "sentence-004",
     "english": "I am working on a new PLC project.",
-    "turkish": "Yeni bir PLC projesi üzerinde çalışıyorum.",
+    "pattern": "Subject + am/is/are + verb-ing + object",
+    "similarExample": "We are testing a new control panel.",
     "level": "A2",
     "grammar": "present-continuous",
     "category": "work",
@@ -38,7 +42,8 @@
   {
     "id": "sentence-005",
     "english": "The technicians are testing the production line.",
-    "turkish": "Teknisyenler üretim hattını test ediyor.",
+    "pattern": "Subject + am/is/are + verb-ing + object",
+    "similarExample": "The engineers are checking the safety system.",
     "level": "B1",
     "grammar": "present-continuous",
     "category": "automation",
@@ -47,7 +52,8 @@
   {
     "id": "sentence-006",
     "english": "We installed the robot last week.",
-    "turkish": "Robotu geçen hafta kurduk.",
+    "pattern": "Subject + past verb + object + past time expression",
+    "similarExample": "They updated the PLC software yesterday.",
     "level": "A2",
     "grammar": "past-simple",
     "category": "work",
@@ -56,7 +62,8 @@
   {
     "id": "sentence-007",
     "english": "The system stopped because a sensor failed.",
-    "turkish": "Bir sensör arızalandığı için sistem durdu.",
+    "pattern": "Past simple clause + because + past simple clause",
+    "similarExample": "The line stopped because the motor overheated.",
     "level": "B1",
     "grammar": "past-simple",
     "category": "automation",
@@ -65,7 +72,8 @@
   {
     "id": "sentence-008",
     "english": "I have worked with KUKA robots for two years.",
-    "turkish": "İki yıldır KUKA robotlarla çalışıyorum.",
+    "pattern": "Subject + have/has + past participle + for + duration",
+    "similarExample": "She has worked in automation for five years.",
     "level": "B1",
     "grammar": "present-perfect",
     "category": "experience",
@@ -74,7 +82,8 @@
   {
     "id": "sentence-009",
     "english": "We have completed the commissioning process.",
-    "turkish": "Devreye alma sürecini tamamladık.",
+    "pattern": "Subject + have/has + past participle + object",
+    "similarExample": "They have finished the safety tests.",
     "level": "B1",
     "grammar": "present-perfect",
     "category": "work",
@@ -83,7 +92,8 @@
   {
     "id": "sentence-010",
     "english": "You should check the alarm history first.",
-    "turkish": "Önce alarm geçmişini kontrol etmelisin.",
+    "pattern": "Subject + should + base verb + object",
+    "similarExample": "You should inspect the sensor connections.",
     "level": "B1",
     "grammar": "modal-verbs",
     "category": "automation",
@@ -92,7 +102,8 @@
   {
     "id": "sentence-011",
     "english": "The operator must wear safety equipment.",
-    "turkish": "Operatör güvenlik ekipmanı kullanmalıdır.",
+    "pattern": "Subject + must + base verb + object",
+    "similarExample": "Technicians must follow the safety procedure.",
     "level": "B1",
     "grammar": "modal-verbs",
     "category": "safety",
@@ -101,7 +112,8 @@
   {
     "id": "sentence-012",
     "english": "Could you send me the updated project file?",
-    "turkish": "Güncellenmiş proje dosyasını bana gönderebilir misiniz?",
+    "pattern": "Could + subject + base verb + indirect object + object?",
+    "similarExample": "Could you check the latest robot program?",
     "level": "A2",
     "grammar": "modal-verbs",
     "category": "communication",
