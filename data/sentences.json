@@ -18,5 +18,55 @@
     "grammar": "present-simple-with-contrast",
     "category": "automation-troubleshooting",
     "keywords": ["PLC output", "Robot Start", "automatic mode", "cycle", "alarm", "troubleshooting"]
+  },
+  {
+    "id": "sentence-003",
+    "english": "I identified an unstable sensor signal, checked the wiring and PLC input, replaced the faulty sensor, and tested the system before restarting production.",
+    "pattern": "Subject + sequence of past simple verbs + before + verb-ing.",
+    "similarExample": "I found a loose connection, repaired the cable, verified the input signal, and tested the machine before returning it to production.",
+    "level": "B2",
+    "grammar": "past-simple-sequence",
+    "category": "maintenance-and-troubleshooting",
+    "keywords": ["sensor signal", "wiring", "PLC input", "faulty sensor", "testing", "production restart"]
+  },
+  {
+    "id": "sentence-004",
+    "english": "The production line stopped three times during the shift because the same sensor gave an intermittent signal. The engineer cleaned the sensor, checked the cable and monitored the PLC input. The fault disappeared after the damaged cable was replaced.",
+    "pattern": "Past simple + because + past simple. Sequence of past simple actions. Past simple + after + passive past simple.",
+    "similarExample": "The machine stopped repeatedly because a proximity switch produced an unstable signal. The technician inspected the connector, monitored the input and replaced the damaged wire. The problem disappeared after the repair was completed.",
+    "level": "B2",
+    "grammar": "past-simple-cause-and-passive",
+    "category": "maintenance-and-troubleshooting",
+    "keywords": ["production line", "intermittent signal", "sensor", "cable", "PLC input", "damaged cable"]
+  },
+  {
+    "id": "sentence-005",
+    "english": "The robot receives the start signal, but it does not move because one safety zone is not clear.",
+    "pattern": "Present simple + but + present simple + because + present simple.",
+    "similarExample": "The conveyor receives the run command, but it does not start because the safety gate is still open.",
+    "level": "B1",
+    "grammar": "present-simple-cause-and-contrast",
+    "category": "safety-troubleshooting",
+    "keywords": ["robot", "start signal", "safety zone", "not clear", "movement", "interlock"]
+  },
+  {
+    "id": "sentence-006",
+    "english": "I programmed the robots, developed the PLC logic, created HMI alarms and supported commissioning.",
+    "pattern": "Subject + sequence of past simple verbs + objects.",
+    "similarExample": "I configured the drives, prepared the HMI screens, tested the safety functions and supported the startup process.",
+    "level": "B1",
+    "grammar": "past-simple-sequence",
+    "category": "professional-experience",
+    "keywords": ["robot programming", "PLC logic", "HMI alarms", "commissioning", "automation", "experience"]
+  },
+  {
+    "id": "sentence-007",
+    "english": "The robot completes the weld, but the PLC does not receive the \"weld complete\" signal. The robot output is active on the pendant, but the PLC input remains off.",
+    "pattern": "Present simple + but + present simple. Present simple + but + present simple.",
+    "similarExample": "The robot finishes the operation, but the PLC does not receive the cycle-complete signal. The output is active on the controller, but the corresponding PLC input stays off.",
+    "level": "B2",
+    "grammar": "present-simple-with-contrast",
+    "category": "automation-troubleshooting",
+    "keywords": ["weld complete", "robot output", "pendant", "PLC input", "signal", "welding"]
   }
 ]
