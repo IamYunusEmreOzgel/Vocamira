@@ -297,5 +297,83 @@
       { "text": "Can you _____ this task while I check the machine?", "answer": "handle" },
       { "text": "He _____ the unexpected problem better than I expected.", "answer": "handled" }
     ]
+  },
+  {
+    "id": 38,
+    "word": "unfasten",
+    "definition": "To open or release something that has been tied, buttoned, locked or otherwise secured.",
+    "partOfSpeech": "verb",
+    "level": "B1",
+    "category": "general-english",
+    "sentences": [
+      { "text": "Please _____ your seat belt only after the warning light turns off.", "answer": "unfasten" },
+      { "text": "He stopped to _____ the strap around the package.", "answer": "unfasten" },
+      { "text": "She could not _____ the tight button on her coat.", "answer": "unfasten" }
+    ]
+  },
+  {
+    "id": 39,
+    "word": "domestic",
+    "definition": "Related to the home, family life or activities within a particular country.",
+    "partOfSpeech": "adjective",
+    "level": "B1",
+    "category": "general-english",
+    "sentences": [
+      { "text": "The airport has separate terminals for international and _____ flights.", "answer": "domestic" },
+      { "text": "They share the _____ tasks such as cooking and cleaning.", "answer": "domestic" },
+      { "text": "The company increased its sales in the _____ market.", "answer": "domestic" }
+    ]
+  },
+  {
+    "id": 40,
+    "word": "stewardess",
+    "definition": "A traditional term for a female flight attendant who serves and assists passengers on an aircraft.",
+    "partOfSpeech": "noun",
+    "level": "B1",
+    "category": "career-workplace",
+    "sentences": [
+      { "text": "The _____ showed the passengers where to store their bags.", "answer": "stewardess" },
+      { "text": "A _____ brought water to the passenger during the flight.", "answer": "stewardess" },
+      { "text": "She worked as a _____ before becoming a cabin supervisor.", "answer": "stewardess" }
+    ]
+  },
+  {
+    "id": 41,
+    "word": "invoice",
+    "definition": "A document that lists goods or services provided and states the amount that must be paid.",
+    "partOfSpeech": "noun",
+    "level": "B1",
+    "category": "career-workplace",
+    "sentences": [
+      { "text": "The supplier emailed the _____ after delivering the equipment.", "answer": "invoice" },
+      { "text": "Please check the _____ before approving the payment.", "answer": "invoice" },
+      { "text": "The customer noticed an incorrect amount on the _____.", "answer": "invoice" }
+    ]
+  },
+  {
+    "id": 42,
+    "word": "quilt",
+    "definition": "A thick bed covering made by sewing together layers of fabric, often with decorative patterns.",
+    "partOfSpeech": "noun",
+    "level": "B1",
+    "category": "daily-life",
+    "sentences": [
+      { "text": "She placed a warm _____ over the bed before winter.", "answer": "quilt" },
+      { "text": "My grandmother made the colorful _____ by hand.", "answer": "quilt" },
+      { "text": "He pulled the _____ over his shoulders and went back to sleep.", "answer": "quilt" }
+    ]
+  },
+  {
+    "id": 43,
+    "word": "lorry",
+    "definition": "A large road vehicle used for carrying goods, especially in British English.",
+    "partOfSpeech": "noun",
+    "level": "B1",
+    "category": "general-english",
+    "sentences": [
+      { "text": "A delivery _____ was waiting outside the factory gate.", "answer": "lorry" },
+      { "text": "The _____ carried heavy equipment across the country.", "answer": "lorry" },
+      { "text": "Traffic slowed down after a _____ broke down on the motorway.", "answer": "lorry" }
+    ]
   }
 ]
