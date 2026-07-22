@@ -167,5 +167,109 @@
       { "text": "I liked the job offer. _____, the location was too far from my home.", "answer": "however" },
       { "text": "The repair looked simple; _____, it took several hours to finish.", "answer": "however" }
     ]
+  },
+  {
+    "id": 27,
+    "word": "recovery",
+    "definition": "The process of returning to a normal, healthy or successful condition after a problem or difficult period.",
+    "partOfSpeech": "noun",
+    "level": "B1",
+    "category": "general-english",
+    "sentences": [
+      { "text": "Her _____ after the operation was faster than expected.", "answer": "recovery" },
+      { "text": "The company is showing signs of _____ after a difficult year.", "answer": "recovery" },
+      { "text": "Getting enough rest is important for a full _____.", "answer": "recovery" }
+    ]
+  },
+  {
+    "id": 28,
+    "word": "instead",
+    "definition": "Used to say that one thing replaces another or is chosen as an alternative.",
+    "partOfSpeech": "adverb",
+    "level": "B1",
+    "category": "general-english",
+    "sentences": [
+      { "text": "We decided to stay home _____ of going out.", "answer": "instead" },
+      { "text": "The bus was full, so I took the train _____.", "answer": "instead" },
+      { "text": "Use this cable _____ because the original one is damaged.", "answer": "instead" }
+    ]
+  },
+  {
+    "id": 29,
+    "word": "reasonable",
+    "definition": "Fair, sensible or not more than what is acceptable in a particular situation.",
+    "partOfSpeech": "adjective",
+    "level": "B1",
+    "category": "general-english",
+    "sentences": [
+      { "text": "The hotel offered a clean room at a _____ price.", "answer": "reasonable" },
+      { "text": "Your request sounds _____, so I think the manager will accept it.", "answer": "reasonable" },
+      { "text": "We need a _____ amount of time to complete the task safely.", "answer": "reasonable" }
+    ]
+  },
+  {
+    "id": 31,
+    "word": "stubborn",
+    "definition": "Unwilling to change an opinion, decision or way of behaving even when others disagree.",
+    "partOfSpeech": "adjective",
+    "level": "B1",
+    "category": "daily-life",
+    "sentences": [
+      { "text": "He is too _____ to admit that he made a mistake.", "answer": "stubborn" },
+      { "text": "My grandfather can be _____ when someone challenges his routine.", "answer": "stubborn" },
+      { "text": "The child remained _____ and refused to leave the playground.", "answer": "stubborn" }
+    ]
+  },
+  {
+    "id": 32,
+    "word": "clumsy",
+    "definition": "Moving or handling things awkwardly and often dropping or breaking them.",
+    "partOfSpeech": "adjective",
+    "level": "B1",
+    "category": "daily-life",
+    "sentences": [
+      { "text": "I felt _____ and dropped my phone on the floor.", "answer": "clumsy" },
+      { "text": "He is a little _____ when carrying heavy boxes.", "answer": "clumsy" },
+      { "text": "Her _____ movement knocked the glass off the table.", "answer": "clumsy" }
+    ]
+  },
+  {
+    "id": 33,
+    "word": "picky",
+    "definition": "Very careful about choosing things and difficult to satisfy.",
+    "partOfSpeech": "adjective",
+    "level": "B1",
+    "category": "daily-life",
+    "sentences": [
+      { "text": "My younger brother is very _____ about food.", "answer": "picky" },
+      { "text": "She is _____ when choosing a hotel for her holidays.", "answer": "picky" },
+      { "text": "Do not be too _____, or you may miss a good opportunity.", "answer": "picky" }
+    ]
+  },
+  {
+    "id": 34,
+    "word": "nosy",
+    "definition": "Too interested in other people's private lives or personal information.",
+    "partOfSpeech": "adjective",
+    "level": "B1",
+    "category": "daily-life",
+    "sentences": [
+      { "text": "Our _____ neighbor always asks personal questions.", "answer": "nosy" },
+      { "text": "I do not want to sound _____, but why did you leave your job?", "answer": "nosy" },
+      { "text": "He became _____ and read the message on her screen.", "answer": "nosy" }
+    ]
+  },
+  {
+    "id": 35,
+    "word": "figure out",
+    "definition": "To understand something or find the answer to a problem after thinking about it.",
+    "partOfSpeech": "phrasal verb",
+    "level": "B1",
+    "category": "general-english",
+    "sentences": [
+      { "text": "I am trying to _____ why the application keeps closing.", "answer": "figure out" },
+      { "text": "We finally managed to _____ how the new system works.", "answer": "figure out" },
+      { "text": "Can you _____ the best way to solve this problem?", "answer": "figure out" }
+    ]
   }
 ]
