@@ -1,34 +1,13 @@
 {
-  "totalWords": 254,
+  "totalWords": 0,
   "examplesPerWord": 3,
   "levels": {
-    "A1": {
-      "file": "words-a1.json",
-      "wordCount": 50
-    },
-    "A2": {
-      "file": "words-a2.json",
-      "wordCount": 44
-    },
-    "B1": {
-      "file": "words-b1.json",
-      "wordCount": 51
-    },
-    "B1Business": {
-      "file": "words-business.json",
-      "wordCount": 2
-    },
-    "B2": {
-      "file": "words-b2.json",
-      "wordCount": 57
-    },
-    "C1": {
-      "file": "words-c1.json",
-      "wordCount": 25
-    },
-    "C2": {
-      "file": "words-c2.json",
-      "wordCount": 25
-    }
+    "A1": { "file": "words-a1.json", "wordCount": 0 },
+    "A2": { "file": "words-a2.json", "wordCount": 0 },
+    "B1": { "file": "words-b1.json", "wordCount": 0 },
+    "B1Business": { "file": "words-business.json", "wordCount": 0 },
+    "B2": { "file": "words-b2.json", "wordCount": 0 },
+    "C1": { "file": "words-c1.json", "wordCount": 0 },
+    "C2": { "file": "words-c2.json", "wordCount": 0 }
   }
 }
