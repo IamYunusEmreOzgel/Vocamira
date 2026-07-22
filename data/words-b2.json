@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "word": "commissioning",
+    "definition": "The process of testing, adjusting and preparing a machine, system or production line for normal operation.",
+    "partOfSpeech": "noun",
+    "level": "B2",
+    "category": "industrial-automation",
+    "examples": [
+      "I supported the commissioning of the new production line by testing the PLC program, checking all safety devices and verifying robot communication.",
+      "The commissioning process was delayed because one of the robots failed the safety check.",
+      "During commissioning, we tested every sensor and actuator before starting automatic production."
+    ]
+  }
+]
