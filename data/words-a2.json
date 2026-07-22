@@ -5,7 +5,7 @@
     "definition": "Likely to arrive or happen later than the expected or planned time.",
     "partOfSpeech": "phrase",
     "level": "A2",
-    "category": "daily-conversation",
+    "category": "daily-life",
     "sentences": [
       { "text": "I’m _____ because the traffic is heavier than usual.", "answer": "running late" },
       { "text": "Sorry, I’m _____, but I should be there in ten minutes.", "answer": "running late" },
@@ -18,7 +18,7 @@
     "definition": "Not having a paid job at the present time.",
     "partOfSpeech": "adjective",
     "level": "A2",
-    "category": "career-and-employment",
+    "category": "career-workplace",
     "sentences": [
       { "text": "He was _____ for three months before finding a new job.", "answer": "unemployed" },
       { "text": "She used the time while she was _____ to improve her technical skills.", "answer": "unemployed" },
@@ -44,7 +44,7 @@
     "definition": "The latest time or date by which something must be completed.",
     "partOfSpeech": "noun",
     "level": "A2",
-    "category": "work-and-study",
+    "category": "career-workplace",
     "sentences": [
       { "text": "The _____ for submitting the application is Friday afternoon.", "answer": "deadline" },
       { "text": "We worked late to finish the report before the _____.", "answer": "deadline" },
@@ -57,7 +57,7 @@
     "definition": "Waiting to be decided, completed or approved.",
     "partOfSpeech": "adjective",
     "level": "A2",
-    "category": "work-and-daily-life",
+    "category": "career-workplace",
     "sentences": [
       { "text": "My job application is still _____, so I have not received a final answer.", "answer": "pending" },
       { "text": "The payment will remain _____ until the manager approves it.", "answer": "pending" },

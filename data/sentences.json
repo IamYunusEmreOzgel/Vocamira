@@ -6,7 +6,7 @@
     "similarExample": "During operation, the conveyor stops even though the safety signal is active. The PLC output is on, but the motor is still waiting for a start command.",
     "level": "B2",
     "grammar": "present-simple-and-present-continuous",
-    "category": "automation-troubleshooting",
+    "category": "engineering",
     "keywords": ["robot", "PLC", "part sensor", "pick position", "permission", "troubleshooting"]
   },
   {
@@ -16,7 +16,7 @@
     "similarExample": "The start signal is active, but the conveyor does not move. The drive is ready and there is no fault message.",
     "level": "B2",
     "grammar": "present-simple-with-contrast",
-    "category": "automation-troubleshooting",
+    "category": "engineering",
     "keywords": ["PLC output", "Robot Start", "automatic mode", "cycle", "alarm", "troubleshooting"]
   },
   {
@@ -26,7 +26,7 @@
     "similarExample": "I found a loose connection, repaired the cable, verified the input signal, and tested the machine before returning it to production.",
     "level": "B2",
     "grammar": "past-simple-sequence",
-    "category": "maintenance-and-troubleshooting",
+    "category": "engineering",
     "keywords": ["sensor signal", "wiring", "PLC input", "faulty sensor", "testing", "production restart"]
   },
   {
@@ -36,7 +36,7 @@
     "similarExample": "The machine stopped repeatedly because a proximity switch produced an unstable signal. The technician inspected the connector, monitored the input and replaced the damaged wire. The problem disappeared after the repair was completed.",
     "level": "B2",
     "grammar": "past-simple-cause-and-passive",
-    "category": "maintenance-and-troubleshooting",
+    "category": "engineering",
     "keywords": ["production line", "intermittent signal", "sensor", "cable", "PLC input", "damaged cable"]
   },
   {
@@ -46,7 +46,7 @@
     "similarExample": "The conveyor receives the run command, but it does not start because the safety gate is still open.",
     "level": "B1",
     "grammar": "present-simple-cause-and-contrast",
-    "category": "safety-troubleshooting",
+    "category": "engineering",
     "keywords": ["robot", "start signal", "safety zone", "not clear", "movement", "interlock"]
   },
   {
@@ -56,7 +56,7 @@
     "similarExample": "I configured the drives, prepared the HMI screens, tested the safety functions and supported the startup process.",
     "level": "B1",
     "grammar": "past-simple-sequence",
-    "category": "professional-experience",
+    "category": "engineering",
     "keywords": ["robot programming", "PLC logic", "HMI alarms", "commissioning", "automation", "experience"]
   },
   {
@@ -66,7 +66,7 @@
     "similarExample": "The robot finishes the operation, but the PLC does not receive the cycle-complete signal. The output is active on the controller, but the corresponding PLC input stays off.",
     "level": "B2",
     "grammar": "present-simple-with-contrast",
-    "category": "automation-troubleshooting",
+    "category": "engineering",
     "keywords": ["weld complete", "robot output", "pendant", "PLC input", "signal", "welding"]
   },
   {
@@ -76,7 +76,7 @@
     "similarExample": "The customer requested an HMI update before the production trial.",
     "level": "B1",
     "grammar": "past-simple-with-before",
-    "category": "customer-and-project-communication",
+    "category": "engineering",
     "keywords": ["customer", "software modification", "acceptance test", "request", "project"]
   },
   {
@@ -86,7 +86,7 @@
     "similarExample": "The fault was caused by an incorrect safety setting, which prevented the machine from starting.",
     "level": "B2",
     "grammar": "passive-voice-and-relative-clause",
-    "category": "automation-troubleshooting",
+    "category": "engineering",
     "keywords": ["PLC configuration", "robot", "start signal", "cause", "relative clause"]
   },
   {
@@ -96,7 +96,7 @@
     "similarExample": "Please confirm that all safety inputs are active before startup.",
     "level": "B1",
     "grammar": "imperative-with-that-clause",
-    "category": "commissioning-and-testing",
+    "category": "engineering",
     "keywords": ["verify", "sensors", "commissioning", "testing", "instruction"]
   },
   {
@@ -106,7 +106,7 @@
     "similarExample": "After repairing the damaged cable, the machine returned to normal operation.",
     "level": "B1",
     "grammar": "after-gerund-and-past-simple",
-    "category": "maintenance-and-troubleshooting",
+    "category": "engineering",
     "keywords": ["faulty sensor", "production line", "normal operation", "replacement", "repair"]
   },
   {
@@ -116,7 +116,7 @@
     "similarExample": "The conveyor is not running due to a drive fault.",
     "level": "B1",
     "grammar": "present-continuous-with-due-to",
-    "category": "automation-troubleshooting",
+    "category": "engineering",
     "keywords": ["machine", "sensor fault", "due to", "operation", "fault"]
   },
   {
@@ -126,7 +126,7 @@
     "similarExample": "The machine completed the trial successfully. However, the customer requested another risk assessment before operation could begin.",
     "level": "B2",
     "grammar": "contrast-with-however-and-could",
-    "category": "safety-and-customer-validation",
+    "category": "engineering",
     "keywords": ["functional tests", "however", "customer", "safety validation", "production"]
   },
   {
@@ -136,7 +136,7 @@
     "similarExample": "The panel displays a safety gate alarm, but none of the gates are open.",
     "level": "B2",
     "grammar": "present-simple-contrast-with-passive",
-    "category": "hmi-and-safety-troubleshooting",
+    "category": "engineering",
     "keywords": ["HMI", "emergency stop", "warning", "E-stop buttons", "safety"]
   },
   {
@@ -146,7 +146,7 @@
     "similarExample": "The temporary repair works, but we are concerned about its long-term stability.",
     "level": "B2",
     "grammar": "present-simple-with-concern",
-    "category": "technical-evaluation",
+    "category": "engineering",
     "keywords": ["solution", "concern", "long-term reliability", "technical evaluation", "risk"]
   }
 ]

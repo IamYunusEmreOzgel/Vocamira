@@ -5,7 +5,7 @@
     "definition": "The process of testing, adjusting and preparing a machine, system or production line for normal operation.",
     "partOfSpeech": "noun",
     "level": "B2",
-    "category": "industrial-automation",
+    "category": "engineering",
     "sentences": [
       { "text": "I supported the _____ of the new production line by testing the PLC program.", "answer": "commissioning" },
       { "text": "The _____ process was delayed because one robot failed the safety check.", "answer": "commissioning" },
@@ -18,7 +18,7 @@
     "definition": "The process of adjusting and checking a measuring device or system to ensure accurate results.",
     "partOfSpeech": "noun",
     "level": "B2",
-    "category": "measurement-and-quality",
+    "category": "engineering",
     "sentences": [
       { "text": "The vision system requires _____ before the camera can measure accurately.", "answer": "calibration" },
       { "text": "We performed a new TCP _____ after replacing the welding torch.", "answer": "calibration" },
@@ -31,7 +31,7 @@
     "definition": "Not staying the same in quality, performance or behavior over time.",
     "partOfSpeech": "adjective",
     "level": "B2",
-    "category": "quality-and-troubleshooting",
+    "category": "engineering",
     "sentences": [
       { "text": "The sensor produced _____ readings during the production test.", "answer": "inconsistent" },
       { "text": "_____ weld quality may indicate unstable process parameters.", "answer": "inconsistent" },
@@ -44,7 +44,7 @@
     "definition": "A signal that appears and disappears irregularly instead of remaining stable.",
     "partOfSpeech": "noun phrase",
     "level": "B2",
-    "category": "automation-troubleshooting",
+    "category": "engineering",
     "sentences": [
       { "text": "The proximity sensor generated an _____ because the cable was damaged.", "answer": "intermittent signal" },
       { "text": "We monitored the PLC input to identify the source of the _____.", "answer": "intermittent signal" },
@@ -57,7 +57,7 @@
     "definition": "A period when a machine, system or production line is not operating.",
     "partOfSpeech": "noun",
     "level": "B2",
-    "category": "production-and-maintenance",
+    "category": "engineering",
     "sentences": [
       { "text": "Preventive maintenance helped reduce unplanned _____ on the production line.", "answer": "downtime" },
       { "text": "The damaged sensor caused thirty minutes of _____ during the night shift.", "answer": "downtime" },
@@ -70,7 +70,7 @@
     "definition": "Greater than what is normal, necessary or acceptable.",
     "partOfSpeech": "adjective",
     "level": "B2",
-    "category": "quality-and-production",
+    "category": "engineering",
     "sentences": [
       { "text": "_____ vibration may damage the motor bearings over time.", "answer": "excessive" },
       { "text": "The inspection system detected _____ sealant on the part surface.", "answer": "excessive" },
@@ -83,7 +83,7 @@
     "definition": "The fundamental reason why a problem or failure occurred.",
     "partOfSpeech": "noun phrase",
     "level": "B2",
-    "category": "troubleshooting-and-quality",
+    "category": "engineering",
     "sentences": [
       { "text": "The team used the Five Whys method to identify the _____ of the repeated alarm.", "answer": "root cause" },
       { "text": "Replacing the sensor solved the symptom but not the _____.", "answer": "root cause" },
@@ -96,7 +96,7 @@
     "definition": "To disconnect or switch off the electrical energy supplied to equipment.",
     "partOfSpeech": "verb phrase",
     "level": "B2",
-    "category": "industrial-safety",
+    "category": "engineering",
     "sentences": [
       { "text": "Always _____ before opening the electrical cabinet.", "answer": "remove power" },
       { "text": "The technician had to _____ from the drive before replacing the motor cable.", "answer": "remove power" },
