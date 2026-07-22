@@ -5,7 +5,7 @@
     "definition": "A careful examination of a product, machine or process to check its condition or quality.",
     "partOfSpeech": "noun",
     "level": "B1",
-    "category": "quality-and-production",
+    "category": "engineering",
     "sentences": [
       { "text": "The operator performed a visual _____ before starting the production line.", "answer": "inspection" },
       { "text": "The quality _____ found a small crack on the welded part.", "answer": "inspection" },
@@ -18,7 +18,7 @@
     "definition": "Work performed to keep equipment in good condition and prevent or repair failures.",
     "partOfSpeech": "noun",
     "level": "B1",
-    "category": "maintenance-and-troubleshooting",
+    "category": "engineering",
     "sentences": [
       { "text": "The _____ team replaced the damaged proximity sensor.", "answer": "maintenance" },
       { "text": "Preventive _____ helps reduce unexpected machine failures.", "answer": "maintenance" },
@@ -31,7 +31,7 @@
     "definition": "The amount of light produced by or reflected from a surface, screen or image.",
     "partOfSpeech": "noun",
     "level": "B1",
-    "category": "vision-and-inspection",
+    "category": "engineering",
     "sentences": [
       { "text": "The camera _____ was increased to make the part easier to detect.", "answer": "brightness" },
       { "text": "Incorrect _____ settings can cause unreliable inspection results.", "answer": "brightness" },
@@ -44,7 +44,7 @@
     "definition": "The straight-line distance across the center of a circle or cylindrical object.",
     "partOfSpeech": "noun",
     "level": "B1",
-    "category": "measurement-and-quality",
+    "category": "engineering",
     "sentences": [
       { "text": "The operator measured the _____ of the shaft with a digital caliper.", "answer": "diameter" },
       { "text": "The hole _____ must remain within the specified tolerance.", "answer": "diameter" },
@@ -70,7 +70,7 @@
     "definition": "Intended to stop a problem, failure or illness before it happens.",
     "partOfSpeech": "adjective",
     "level": "B1",
-    "category": "maintenance-and-troubleshooting",
+    "category": "engineering",
     "sentences": [
       { "text": "The maintenance team performs _____ checks every Friday.", "answer": "preventive" },
       { "text": "Regular cleaning is a simple _____ measure that can extend the life of the machine.", "answer": "preventive" },
@@ -83,7 +83,7 @@
     "definition": "A person who asks questions during an interview, especially for a job.",
     "partOfSpeech": "noun",
     "level": "B1",
-    "category": "career-and-employment",
+    "category": "career-workplace",
     "sentences": [
       { "text": "The _____ asked me to describe a difficult problem I had solved.", "answer": "interviewer" },
       { "text": "I maintained eye contact with the _____ and answered each question clearly.", "answer": "interviewer" },
@@ -96,7 +96,7 @@
     "definition": "Having the skills, experience or education needed for a particular job or activity.",
     "partOfSpeech": "adjective",
     "level": "B1",
-    "category": "career-and-employment",
+    "category": "career-workplace",
     "sentences": [
       { "text": "She is highly _____ for the engineering position because of her technical experience.", "answer": "qualified" },
       { "text": "Only _____ candidates will be invited to the final interview.", "answer": "qualified" },
@@ -109,7 +109,7 @@
     "definition": "A person who formally applies for a job, course or opportunity.",
     "partOfSpeech": "noun",
     "level": "B1",
-    "category": "career-and-employment",
+    "category": "career-workplace",
     "sentences": [
       { "text": "Each _____ must submit a CV and a short cover letter.", "answer": "applicant" },
       { "text": "The company invited the strongest _____ to a second interview.", "answer": "applicant" },
@@ -122,7 +122,7 @@
     "definition": "The act of agreeing to receive, approve or admit something or someone.",
     "partOfSpeech": "noun",
     "level": "B1",
-    "category": "career-and-education",
+    "category": "career-workplace",
     "sentences": [
       { "text": "She received an _____ email from the university yesterday.", "answer": "acceptance" },
       { "text": "The candidate confirmed his _____ of the job offer.", "answer": "acceptance" },
@@ -135,7 +135,7 @@
     "definition": "An approximate calculation or judgment of a value, cost, time or amount.",
     "partOfSpeech": "noun",
     "level": "B1",
-    "category": "work-and-planning",
+    "category": "career-workplace",
     "sentences": [
       { "text": "The engineer prepared an _____ of the time needed for commissioning.", "answer": "estimate" },
       { "text": "Our first cost _____ was higher than the final price.", "answer": "estimate" },
@@ -148,7 +148,7 @@
     "definition": "A feeling of worry or an issue that requires attention.",
     "partOfSpeech": "noun",
     "level": "B1",
-    "category": "daily-life-and-work",
+    "category": "career-workplace",
     "sentences": [
       { "text": "Safety is our main _____ before restarting the machine.", "answer": "concern" },
       { "text": "I raised a _____ about the unrealistic project schedule.", "answer": "concern" },
