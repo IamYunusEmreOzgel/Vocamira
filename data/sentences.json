@@ -1,0 +1,110 @@
+[
+  {
+    "id": "sentence-001",
+    "english": "I work as a mechatronics engineer.",
+    "turkish": "Mekatronik mühendisi olarak çalışıyorum.",
+    "level": "A2",
+    "grammar": "present-simple",
+    "category": "work",
+    "keywords": ["engineer", "job", "profession"]
+  },
+  {
+    "id": "sentence-002",
+    "english": "She programs industrial robots.",
+    "turkish": "O, endüstriyel robotları programlar.",
+    "level": "A2",
+    "grammar": "present-simple",
+    "category": "technology",
+    "keywords": ["robot", "programming", "automation"]
+  },
+  {
+    "id": "sentence-003",
+    "english": "The machine stops when the safety door opens.",
+    "turkish": "Güvenlik kapısı açıldığında makine durur.",
+    "level": "B1",
+    "grammar": "present-simple",
+    "category": "automation",
+    "keywords": ["machine", "safety", "door"]
+  },
+  {
+    "id": "sentence-004",
+    "english": "I am working on a new PLC project.",
+    "turkish": "Yeni bir PLC projesi üzerinde çalışıyorum.",
+    "level": "A2",
+    "grammar": "present-continuous",
+    "category": "work",
+    "keywords": ["plc", "project", "working"]
+  },
+  {
+    "id": "sentence-005",
+    "english": "The technicians are testing the production line.",
+    "turkish": "Teknisyenler üretim hattını test ediyor.",
+    "level": "B1",
+    "grammar": "present-continuous",
+    "category": "automation",
+    "keywords": ["technician", "testing", "production line"]
+  },
+  {
+    "id": "sentence-006",
+    "english": "We installed the robot last week.",
+    "turkish": "Robotu geçen hafta kurduk.",
+    "level": "A2",
+    "grammar": "past-simple",
+    "category": "work",
+    "keywords": ["installed", "robot", "last week"]
+  },
+  {
+    "id": "sentence-007",
+    "english": "The system stopped because a sensor failed.",
+    "turkish": "Bir sensör arızalandığı için sistem durdu.",
+    "level": "B1",
+    "grammar": "past-simple",
+    "category": "automation",
+    "keywords": ["system", "sensor", "failure"]
+  },
+  {
+    "id": "sentence-008",
+    "english": "I have worked with KUKA robots for two years.",
+    "turkish": "İki yıldır KUKA robotlarla çalışıyorum.",
+    "level": "B1",
+    "grammar": "present-perfect",
+    "category": "experience",
+    "keywords": ["kuka", "experience", "robots"]
+  },
+  {
+    "id": "sentence-009",
+    "english": "We have completed the commissioning process.",
+    "turkish": "Devreye alma sürecini tamamladık.",
+    "level": "B1",
+    "grammar": "present-perfect",
+    "category": "work",
+    "keywords": ["commissioning", "completed", "process"]
+  },
+  {
+    "id": "sentence-010",
+    "english": "You should check the alarm history first.",
+    "turkish": "Önce alarm geçmişini kontrol etmelisin.",
+    "level": "B1",
+    "grammar": "modal-verbs",
+    "category": "automation",
+    "keywords": ["should", "alarm", "check"]
+  },
+  {
+    "id": "sentence-011",
+    "english": "The operator must wear safety equipment.",
+    "turkish": "Operatör güvenlik ekipmanı kullanmalıdır.",
+    "level": "B1",
+    "grammar": "modal-verbs",
+    "category": "safety",
+    "keywords": ["must", "operator", "equipment"]
+  },
+  {
+    "id": "sentence-012",
+    "english": "Could you send me the updated project file?",
+    "turkish": "Güncellenmiş proje dosyasını bana gönderebilir misiniz?",
+    "level": "A2",
+    "grammar": "modal-verbs",
+    "category": "communication",
+    "keywords": ["could", "send", "file", "request"]
+  }
+]

@@ -35,6 +35,30 @@ if (siteHeader) {
   window.addEventListener("scroll", updateHeaderState, { passive: true });
 }
 
+function addSentenceLink() {
+  if (!siteNav) return;
+
+  const isInsidePages = window.location.pathname.includes("/Pages/");
+  const sentencesHref = isInsidePages ? "sentences.html" : "Pages/sentences.html";
+  const existingSentenceLink = [...siteNav.querySelectorAll("a")].find((link) => {
+    const href = link.getAttribute("href") || "";
+    return href.endsWith("sentences.html");
+  });
+
+  if (existingSentenceLink) return;
+
+  const sentenceLink = document.createElement("a");
+  sentenceLink.href = sentencesHref;
+  sentenceLink.textContent = "Sentences";
+
+  const howItWorksLink = [...siteNav.querySelectorAll("a")].find((link) => {
+    const href = link.getAttribute("href") || "";
+    return href.endsWith("how-it-works.html");
+  });
+
+  siteNav.insertBefore(sentenceLink, howItWorksLink || siteNav.querySelector(".play-link") || null);
+}
+
 function loadScript(src) {
   return new Promise((resolve, reject) => {
     const existingScript = [...document.scripts].find((script) => script.src === src);
@@ -126,5 +150,6 @@ function registerServiceWorker() {
   });
 }
 
+addSentenceLink();
 addAccountLink();
 registerServiceWorker();

@@ -1,16 +1,20 @@
-const CACHE_NAME = "vocamira-shell-v1";
+const CACHE_NAME = "vocamira-shell-v2";
 const APP_SHELL = [
   "./",
   "./index.html",
   "./offline.html",
   "./manifest.webmanifest",
+  "./Pages/sentences.html",
   "./assets/css/style.css",
   "./assets/css/nav.css",
   "./assets/css/home.css",
+  "./assets/css/sentences.css",
   "./assets/js/nav.js",
   "./assets/js/home.js",
+  "./assets/js/sentences.js",
   "./assets/images/favicon.svg",
-  "./assets/images/vocamira-logo.svg"
+  "./assets/images/vocamira-logo.svg",
+  "./data/sentences.json"
 ];
 
 self.addEventListener("install", (event) => {
