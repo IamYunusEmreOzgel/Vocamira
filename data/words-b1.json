@@ -102,5 +102,70 @@
       { "text": "Only _____ candidates will be invited to the final interview.", "answer": "qualified" },
       { "text": "The company is looking for a _____ technician who can work independently.", "answer": "qualified" }
     ]
+  },
+  {
+    "id": 20,
+    "word": "applicant",
+    "definition": "A person who formally applies for a job, course or opportunity.",
+    "partOfSpeech": "noun",
+    "level": "B1",
+    "category": "career-and-employment",
+    "sentences": [
+      { "text": "Each _____ must submit a CV and a short cover letter.", "answer": "applicant" },
+      { "text": "The company invited the strongest _____ to a second interview.", "answer": "applicant" },
+      { "text": "As an _____, you should research the company before the interview.", "answer": "applicant" }
+    ]
+  },
+  {
+    "id": 21,
+    "word": "acceptance",
+    "definition": "The act of agreeing to receive, approve or admit something or someone.",
+    "partOfSpeech": "noun",
+    "level": "B1",
+    "category": "career-and-education",
+    "sentences": [
+      { "text": "She received an _____ email from the university yesterday.", "answer": "acceptance" },
+      { "text": "The candidate confirmed his _____ of the job offer.", "answer": "acceptance" },
+      { "text": "Final _____ depends on completing all required documents.", "answer": "acceptance" }
+    ]
+  },
+  {
+    "id": 22,
+    "word": "estimate",
+    "definition": "An approximate calculation or judgment of a value, cost, time or amount.",
+    "partOfSpeech": "noun",
+    "level": "B1",
+    "category": "work-and-planning",
+    "sentences": [
+      { "text": "The engineer prepared an _____ of the time needed for commissioning.", "answer": "estimate" },
+      { "text": "Our first cost _____ was higher than the final price.", "answer": "estimate" },
+      { "text": "Can you give me an _____ of when the repair will be finished?", "answer": "estimate" }
+    ]
+  },
+  {
+    "id": 23,
+    "word": "concern",
+    "definition": "A feeling of worry or an issue that requires attention.",
+    "partOfSpeech": "noun",
+    "level": "B1",
+    "category": "daily-life-and-work",
+    "sentences": [
+      { "text": "Safety is our main _____ before restarting the machine.", "answer": "concern" },
+      { "text": "I raised a _____ about the unrealistic project schedule.", "answer": "concern" },
+      { "text": "Please contact me if you have any _____ about the new procedure.", "answer": "concern" }
+    ]
+  },
+  {
+    "id": 24,
+    "word": "however",
+    "definition": "Used to introduce a statement that contrasts with something said before.",
+    "partOfSpeech": "adverb",
+    "level": "B1",
+    "category": "general-english",
+    "sentences": [
+      { "text": "The machine passed the first test; _____, the safety check still needs to be completed.", "answer": "however" },
+      { "text": "I liked the job offer. _____, the location was too far from my home.", "answer": "however" },
+      { "text": "The repair looked simple; _____, it took several hours to finish.", "answer": "however" }
+    ]
   }
 ]

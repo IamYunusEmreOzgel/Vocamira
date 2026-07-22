@@ -37,5 +37,31 @@
       { "text": "Thank you for the _____, but I will not be able to join the meeting.", "answer": "invitation" },
       { "text": "The interview _____ included the date, time and location.", "answer": "invitation" }
     ]
+  },
+  {
+    "id": 18,
+    "word": "deadline",
+    "definition": "The latest time or date by which something must be completed.",
+    "partOfSpeech": "noun",
+    "level": "A2",
+    "category": "work-and-study",
+    "sentences": [
+      { "text": "The _____ for submitting the application is Friday afternoon.", "answer": "deadline" },
+      { "text": "We worked late to finish the report before the _____.", "answer": "deadline" },
+      { "text": "Please tell me if you cannot meet the project _____.", "answer": "deadline" }
+    ]
+  },
+  {
+    "id": 19,
+    "word": "pending",
+    "definition": "Waiting to be decided, completed or approved.",
+    "partOfSpeech": "adjective",
+    "level": "A2",
+    "category": "work-and-daily-life",
+    "sentences": [
+      { "text": "My job application is still _____, so I have not received a final answer.", "answer": "pending" },
+      { "text": "The payment will remain _____ until the manager approves it.", "answer": "pending" },
+      { "text": "Several maintenance tasks are _____ and must be completed this week.", "answer": "pending" }
+    ]
   }
 ]
