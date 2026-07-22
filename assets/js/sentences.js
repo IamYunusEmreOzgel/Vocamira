@@ -4,13 +4,11 @@ const sentenceSearch = document.querySelector("#sentence-search");
 const levelFilter = document.querySelector("#level-filter");
 const grammarFilter = document.querySelector("#grammar-filter");
 const categoryFilter = document.querySelector("#category-filter");
-const translationToggle = document.querySelector("#translation-toggle");
 const clearFiltersButton = document.querySelector("#clear-filters");
 const emptyState = document.querySelector("#sentence-empty");
 const errorState = document.querySelector("#sentence-error");
 
 let sentences = [];
-let translationsHidden = false;
 
 const formatLabel = (value) => value
   .split("-")
@@ -41,7 +39,8 @@ const getFilteredSentences = () => {
   return sentences.filter((sentence) => {
     const searchableText = [
       sentence.english,
-      sentence.turkish,
+      sentence.pattern,
+      sentence.similarExample,
       sentence.level,
       sentence.grammar,
       sentence.category,
@@ -64,7 +63,16 @@ const createSentenceCard = (sentence) => `
       <span>${escapeHtml(formatLabel(sentence.category))}</span>
     </div>
     <p class="english-sentence">${escapeHtml(sentence.english)}</p>
-    <p class="turkish-sentence" lang="tr">${escapeHtml(sentence.turkish)}</p>
+    <div class="sentence-details">
+      <div class="sentence-detail">
+        <span class="detail-label">Pattern</span>
+        <p>${escapeHtml(sentence.pattern)}</p>
+      </div>
+      <div class="sentence-detail similar-example">
+        <span class="detail-label">Similar Example</span>
+        <p>${escapeHtml(sentence.similarExample)}</p>
+      </div>
+    </div>
   </article>
 `;
 
@@ -76,7 +84,6 @@ const renderSentences = () => {
     return groups;
   }, {});
 
-  sentenceGroups.classList.toggle("hide-translations", translationsHidden);
   sentenceGroups.innerHTML = Object.entries(groupedSentences)
     .sort(([grammarA], [grammarB]) => grammarA.localeCompare(grammarB))
     .map(([grammar, group]) => `
@@ -106,13 +113,6 @@ const resetFilters = () => {
 
 [sentenceSearch, levelFilter, grammarFilter, categoryFilter].forEach((control) => {
   control.addEventListener(control === sentenceSearch ? "input" : "change", renderSentences);
-});
-
-translationToggle.addEventListener("click", () => {
-  translationsHidden = !translationsHidden;
-  translationToggle.setAttribute("aria-pressed", String(translationsHidden));
-  translationToggle.textContent = translationsHidden ? "Show Turkish" : "Hide Turkish";
-  sentenceGroups.classList.toggle("hide-translations", translationsHidden);
 });
 
 clearFiltersButton.addEventListener("click", resetFilters);
