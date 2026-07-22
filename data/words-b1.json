@@ -50,5 +50,18 @@
       { "text": "The hole _____ must remain within the specified tolerance.", "answer": "diameter" },
       { "text": "A larger pipe _____ allows more material to flow through the system.", "answer": "diameter" }
     ]
+  },
+  {
+    "id": 12,
+    "word": "keep me updated",
+    "definition": "To continue giving someone the latest information about a situation or process.",
+    "partOfSpeech": "phrase",
+    "level": "B1",
+    "category": "daily-life",
+    "sentences": [
+      { "text": "Please _____ on the progress.", "answer": "keep me updated" },
+      { "text": "Please _____ if the meeting time changes.", "answer": "keep me updated" },
+      { "text": "Can you _____ while I am away?", "answer": "keep me updated" }
+    ]
   }
 ]
