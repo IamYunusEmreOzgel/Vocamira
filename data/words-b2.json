@@ -1,74 +1,80 @@
 [
   {
+    "id": 5,
     "word": "commissioning",
     "definition": "The process of testing, adjusting and preparing a machine, system or production line for normal operation.",
     "partOfSpeech": "noun",
     "level": "B2",
     "category": "industrial-automation",
-    "examples": [
-      "I supported the commissioning of the new production line by testing the PLC program, checking all safety devices and verifying robot communication.",
-      "The commissioning process was delayed because one of the robots failed the safety check.",
-      "During commissioning, we tested every sensor and actuator before starting automatic production."
+    "sentences": [
+      { "text": "I supported the _____ of the new production line by testing the PLC program.", "answer": "commissioning" },
+      { "text": "The _____ process was delayed because one robot failed the safety check.", "answer": "commissioning" },
+      { "text": "During _____, we tested every sensor and actuator.", "answer": "commissioning" }
     ]
   },
   {
+    "id": 6,
     "word": "calibration",
     "definition": "The process of adjusting and checking a measuring device or system to ensure accurate results.",
     "partOfSpeech": "noun",
     "level": "B2",
     "category": "measurement-and-quality",
-    "examples": [
-      "The vision system requires calibration before the camera can measure the part accurately.",
-      "We performed a new TCP calibration after replacing the robot welding torch.",
-      "Incorrect calibration caused a small difference between the actual and measured positions."
+    "sentences": [
+      { "text": "The vision system requires _____ before the camera can measure accurately.", "answer": "calibration" },
+      { "text": "We performed a new TCP _____ after replacing the welding torch.", "answer": "calibration" },
+      { "text": "Incorrect _____ caused a difference between the actual and measured positions.", "answer": "calibration" }
     ]
   },
   {
+    "id": 7,
     "word": "inconsistent",
     "definition": "Not staying the same in quality, performance or behavior over time.",
     "partOfSpeech": "adjective",
     "level": "B2",
     "category": "quality-and-troubleshooting",
-    "examples": [
-      "The sensor produced inconsistent readings during the production test.",
-      "Inconsistent weld quality may indicate unstable process parameters.",
-      "The robot movement became inconsistent because the fixture was not properly secured."
+    "sentences": [
+      { "text": "The sensor produced _____ readings during the production test.", "answer": "inconsistent" },
+      { "text": "_____ weld quality may indicate unstable process parameters.", "answer": "inconsistent" },
+      { "text": "The robot movement became _____ because the fixture was not secured.", "answer": "inconsistent" }
     ]
   },
   {
+    "id": 8,
     "word": "intermittent signal",
     "definition": "A signal that appears and disappears irregularly instead of remaining stable.",
     "partOfSpeech": "noun phrase",
     "level": "B2",
     "category": "automation-troubleshooting",
-    "examples": [
-      "The proximity sensor generated an intermittent signal because the cable was damaged.",
-      "We monitored the PLC input to identify the source of the intermittent signal.",
-      "An intermittent signal caused the machine to stop several times during the shift."
+    "sentences": [
+      { "text": "The proximity sensor generated an _____ because the cable was damaged.", "answer": "intermittent signal" },
+      { "text": "We monitored the PLC input to identify the source of the _____.", "answer": "intermittent signal" },
+      { "text": "An _____ caused the machine to stop several times during the shift.", "answer": "intermittent signal" }
     ]
   },
   {
+    "id": 9,
     "word": "downtime",
     "definition": "A period when a machine, system or production line is not operating.",
     "partOfSpeech": "noun",
     "level": "B2",
     "category": "production-and-maintenance",
-    "examples": [
-      "Preventive maintenance helped reduce unplanned downtime on the production line.",
-      "The damaged sensor caused thirty minutes of downtime during the night shift.",
-      "The engineering team analyzed the fault to prevent further downtime."
+    "sentences": [
+      { "text": "Preventive maintenance helped reduce unplanned _____ on the production line.", "answer": "downtime" },
+      { "text": "The damaged sensor caused thirty minutes of _____ during the night shift.", "answer": "downtime" },
+      { "text": "The engineering team analyzed the fault to prevent further _____.", "answer": "downtime" }
     ]
   },
   {
+    "id": 10,
     "word": "excessive",
     "definition": "Greater than what is normal, necessary or acceptable.",
     "partOfSpeech": "adjective",
     "level": "B2",
     "category": "quality-and-production",
-    "examples": [
-      "Excessive vibration may damage the motor bearings over time.",
-      "The inspection system detected excessive sealant on the surface of the part.",
-      "Excessive welding current can cause spatter and poor weld quality."
+    "sentences": [
+      { "text": "_____ vibration may damage the motor bearings over time.", "answer": "excessive" },
+      { "text": "The inspection system detected _____ sealant on the part surface.", "answer": "excessive" },
+      { "text": "_____ welding current can cause spatter and poor weld quality.", "answer": "excessive" }
     ]
   }
 ]
