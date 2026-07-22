@@ -11,5 +11,31 @@
       { "text": "Sorry, I’m _____, but I should be there in ten minutes.", "answer": "running late" },
       { "text": "She called her manager to say that she was _____ for the meeting.", "answer": "running late" }
     ]
+  },
+  {
+    "id": 13,
+    "word": "unemployed",
+    "definition": "Not having a paid job at the present time.",
+    "partOfSpeech": "adjective",
+    "level": "A2",
+    "category": "career-and-employment",
+    "sentences": [
+      { "text": "He was _____ for three months before finding a new job.", "answer": "unemployed" },
+      { "text": "She used the time while she was _____ to improve her technical skills.", "answer": "unemployed" },
+      { "text": "The support program helps _____ people prepare for job interviews.", "answer": "unemployed" }
+    ]
+  },
+  {
+    "id": 14,
+    "word": "invitation",
+    "definition": "A spoken or written request asking someone to attend an event or take part in something.",
+    "partOfSpeech": "noun",
+    "level": "A2",
+    "category": "daily-life",
+    "sentences": [
+      { "text": "I received an _____ to attend the company’s career event.", "answer": "invitation" },
+      { "text": "Thank you for the _____, but I will not be able to join the meeting.", "answer": "invitation" },
+      { "text": "The interview _____ included the date, time and location.", "answer": "invitation" }
+    ]
   }
 ]

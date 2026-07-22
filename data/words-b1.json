@@ -63,5 +63,44 @@
       { "text": "Please _____ if the meeting time changes.", "answer": "keep me updated" },
       { "text": "Can you _____ while I am away?", "answer": "keep me updated" }
     ]
+  },
+  {
+    "id": 15,
+    "word": "preventive",
+    "definition": "Intended to stop a problem, failure or illness before it happens.",
+    "partOfSpeech": "adjective",
+    "level": "B1",
+    "category": "maintenance-and-troubleshooting",
+    "sentences": [
+      { "text": "The maintenance team performs _____ checks every Friday.", "answer": "preventive" },
+      { "text": "Regular cleaning is a simple _____ measure that can extend the life of the machine.", "answer": "preventive" },
+      { "text": "The company introduced a _____ maintenance plan to reduce unexpected downtime.", "answer": "preventive" }
+    ]
+  },
+  {
+    "id": 16,
+    "word": "interviewer",
+    "definition": "A person who asks questions during an interview, especially for a job.",
+    "partOfSpeech": "noun",
+    "level": "B1",
+    "category": "career-and-employment",
+    "sentences": [
+      { "text": "The _____ asked me to describe a difficult problem I had solved.", "answer": "interviewer" },
+      { "text": "I maintained eye contact with the _____ and answered each question clearly.", "answer": "interviewer" },
+      { "text": "At the end of the meeting, the _____ explained the next stage of the hiring process.", "answer": "interviewer" }
+    ]
+  },
+  {
+    "id": 17,
+    "word": "qualified",
+    "definition": "Having the skills, experience or education needed for a particular job or activity.",
+    "partOfSpeech": "adjective",
+    "level": "B1",
+    "category": "career-and-employment",
+    "sentences": [
+      { "text": "She is highly _____ for the engineering position because of her technical experience.", "answer": "qualified" },
+      { "text": "Only _____ candidates will be invited to the final interview.", "answer": "qualified" },
+      { "text": "The company is looking for a _____ technician who can work independently.", "answer": "qualified" }
+    ]
   }
 ]

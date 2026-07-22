@@ -1,10 +1,10 @@
 {
-  "totalWords": 12,
+  "totalWords": 17,
   "examplesPerWord": 3,
   "levels": {
     "A1": { "file": "words-a1.json", "wordCount": 0 },
-    "A2": { "file": "words-a2.json", "wordCount": 1 },
-    "B1": { "file": "words-b1.json", "wordCount": 5 },
+    "A2": { "file": "words-a2.json", "wordCount": 3 },
+    "B1": { "file": "words-b1.json", "wordCount": 8 },
     "B2": { "file": "words-b2.json", "wordCount": 6 },
     "C1": { "file": "words-c1.json", "wordCount": 0 },
     "C2": { "file": "words-c2.json", "wordCount": 0 }
