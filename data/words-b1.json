@@ -271,5 +271,31 @@
       { "text": "We finally managed to _____ how the new system works.", "answer": "figure out" },
       { "text": "Can you _____ the best way to solve this problem?", "answer": "figure out" }
     ]
+  },
+  {
+    "id": 36,
+    "word": "run out of",
+    "definition": "To use all of something so that none of it is left.",
+    "partOfSpeech": "phrasal verb",
+    "level": "B1",
+    "category": "general-english",
+    "sentences": [
+      { "text": "We _____ milk this morning, so I went to the store.", "answer": "ran out of" },
+      { "text": "The machine stopped because it had _____ raw material.", "answer": "run out of" },
+      { "text": "Be careful not to _____ time before the test ends.", "answer": "run out of" }
+    ]
+  },
+  {
+    "id": 37,
+    "word": "handle",
+    "definition": "To deal with a situation, task or problem in a capable and controlled way.",
+    "partOfSpeech": "verb",
+    "level": "B1",
+    "category": "general-english",
+    "sentences": [
+      { "text": "She knows how to _____ difficult customers calmly.", "answer": "handle" },
+      { "text": "Can you _____ this task while I check the machine?", "answer": "handle" },
+      { "text": "He _____ the unexpected problem better than I expected.", "answer": "handled" }
+    ]
   }
 ]
