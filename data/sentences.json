@@ -68,5 +68,85 @@
     "grammar": "present-simple-with-contrast",
     "category": "automation-troubleshooting",
     "keywords": ["weld complete", "robot output", "pendant", "PLC input", "signal", "welding"]
+  },
+  {
+    "id": "sentence-008",
+    "english": "The customer requested a software modification before the final acceptance test.",
+    "pattern": "Subject + past simple + object + before + noun phrase.",
+    "similarExample": "The customer requested an HMI update before the production trial.",
+    "level": "B1",
+    "grammar": "past-simple-with-before",
+    "category": "customer-and-project-communication",
+    "keywords": ["customer", "software modification", "acceptance test", "request", "project"]
+  },
+  {
+    "id": "sentence-009",
+    "english": "The issue was caused by an incorrect PLC configuration, which prevented the robot from receiving the start signal.",
+    "pattern": "Passive past simple + by + cause, which + past simple + object + from + verb-ing.",
+    "similarExample": "The fault was caused by an incorrect safety setting, which prevented the machine from starting.",
+    "level": "B2",
+    "grammar": "passive-voice-and-relative-clause",
+    "category": "automation-troubleshooting",
+    "keywords": ["PLC configuration", "robot", "start signal", "cause", "relative clause"]
+  },
+  {
+    "id": "sentence-010",
+    "english": "Please verify that all sensors are working correctly before commissioning.",
+    "pattern": "Please + base verb + that-clause + before + noun.",
+    "similarExample": "Please confirm that all safety inputs are active before startup.",
+    "level": "B1",
+    "grammar": "imperative-with-that-clause",
+    "category": "commissioning-and-testing",
+    "keywords": ["verify", "sensors", "commissioning", "testing", "instruction"]
+  },
+  {
+    "id": "sentence-011",
+    "english": "After replacing the faulty sensor, the production line resumed normal operation.",
+    "pattern": "After + verb-ing + object, subject + past simple + object.",
+    "similarExample": "After repairing the damaged cable, the machine returned to normal operation.",
+    "level": "B1",
+    "grammar": "after-gerund-and-past-simple",
+    "category": "maintenance-and-troubleshooting",
+    "keywords": ["faulty sensor", "production line", "normal operation", "replacement", "repair"]
+  },
+  {
+    "id": "sentence-012",
+    "english": "The machine is not operating due to a sensor fault.",
+    "pattern": "Subject + present continuous negative + due to + noun phrase.",
+    "similarExample": "The conveyor is not running due to a drive fault.",
+    "level": "B1",
+    "grammar": "present-continuous-with-due-to",
+    "category": "automation-troubleshooting",
+    "keywords": ["machine", "sensor fault", "due to", "operation", "fault"]
+  },
+  {
+    "id": "sentence-013",
+    "english": "The system passed all functional tests. However, the customer requested additional safety validation before production could begin.",
+    "pattern": "Past simple statement. However, + past simple + object + before + modal past clause.",
+    "similarExample": "The machine completed the trial successfully. However, the customer requested another risk assessment before operation could begin.",
+    "level": "B2",
+    "grammar": "contrast-with-however-and-could",
+    "category": "safety-and-customer-validation",
+    "keywords": ["functional tests", "however", "customer", "safety validation", "production"]
+  },
+  {
+    "id": "sentence-014",
+    "english": "The HMI displays an emergency stop warning, but none of the E-stop buttons are pressed.",
+    "pattern": "Present simple + but + none of + plural noun + passive present simple.",
+    "similarExample": "The panel displays a safety gate alarm, but none of the gates are open.",
+    "level": "B2",
+    "grammar": "present-simple-contrast-with-passive",
+    "category": "hmi-and-safety-troubleshooting",
+    "keywords": ["HMI", "emergency stop", "warning", "E-stop buttons", "safety"]
+  },
+  {
+    "id": "sentence-015",
+    "english": "The solution works, but we are concerned about its long-term reliability.",
+    "pattern": "Present simple + but + subject + be + concerned about + noun phrase.",
+    "similarExample": "The temporary repair works, but we are concerned about its long-term stability.",
+    "level": "B2",
+    "grammar": "present-simple-with-concern",
+    "category": "technical-evaluation",
+    "keywords": ["solution", "concern", "long-term reliability", "technical evaluation", "risk"]
   }
 ]
