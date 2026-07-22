@@ -1,50 +1,54 @@
 [
   {
+    "id": 1,
     "word": "inspection",
     "definition": "A careful examination of a product, machine or process to check its condition or quality.",
     "partOfSpeech": "noun",
     "level": "B1",
     "category": "quality-and-production",
-    "examples": [
-      "The operator performed a visual inspection before starting the production line to ensure that all parts were correctly positioned.",
-      "The quality inspection found a small crack on the welded part.",
-      "After the inspection was completed, production continued without any problems."
+    "sentences": [
+      { "text": "The operator performed a visual _____ before starting the production line.", "answer": "inspection" },
+      { "text": "The quality _____ found a small crack on the welded part.", "answer": "inspection" },
+      { "text": "After the _____ was completed, production continued without any problems.", "answer": "inspection" }
     ]
   },
   {
+    "id": 2,
     "word": "maintenance",
     "definition": "Work performed to keep equipment in good condition and prevent or repair failures.",
     "partOfSpeech": "noun",
     "level": "B1",
     "category": "maintenance-and-troubleshooting",
-    "examples": [
-      "The maintenance team replaced the damaged proximity sensor and tested the machine before restarting production.",
-      "Preventive maintenance helps reduce unexpected machine failures.",
-      "The robot was stopped for scheduled maintenance during the night shift."
+    "sentences": [
+      { "text": "The _____ team replaced the damaged proximity sensor.", "answer": "maintenance" },
+      { "text": "Preventive _____ helps reduce unexpected machine failures.", "answer": "maintenance" },
+      { "text": "The robot was stopped for scheduled _____ during the night shift.", "answer": "maintenance" }
     ]
   },
   {
+    "id": 3,
     "word": "brightness",
     "definition": "The amount of light produced by or reflected from a surface, screen or image.",
     "partOfSpeech": "noun",
     "level": "B1",
     "category": "vision-and-inspection",
-    "examples": [
-      "The camera brightness was increased to make the part easier to detect.",
-      "Incorrect brightness settings can cause unreliable inspection results.",
-      "The operator adjusted the screen brightness before checking the image."
+    "sentences": [
+      { "text": "The camera _____ was increased to make the part easier to detect.", "answer": "brightness" },
+      { "text": "Incorrect _____ settings can cause unreliable inspection results.", "answer": "brightness" },
+      { "text": "The operator adjusted the screen _____ before checking the image.", "answer": "brightness" }
     ]
   },
   {
+    "id": 4,
     "word": "diameter",
     "definition": "The straight-line distance across the center of a circle or cylindrical object.",
     "partOfSpeech": "noun",
     "level": "B1",
     "category": "measurement-and-quality",
-    "examples": [
-      "The operator measured the diameter of the shaft with a digital caliper.",
-      "The hole diameter must remain within the specified tolerance.",
-      "A larger pipe diameter allows more material to flow through the system."
+    "sentences": [
+      { "text": "The operator measured the _____ of the shaft with a digital caliper.", "answer": "diameter" },
+      { "text": "The hole _____ must remain within the specified tolerance.", "answer": "diameter" },
+      { "text": "A larger pipe _____ allows more material to flow through the system.", "answer": "diameter" }
     ]
   }
 ]
