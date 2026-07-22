@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "id": 11,
+    "word": "running late",
+    "definition": "Likely to arrive or happen later than the expected or planned time.",
+    "partOfSpeech": "phrase",
+    "level": "A2",
+    "category": "daily-conversation",
+    "sentences": [
+      { "text": "I’m _____ because the traffic is heavier than usual.", "answer": "running late" },
+      { "text": "Sorry, I’m _____, but I should be there in ten minutes.", "answer": "running late" },
+      { "text": "She called her manager to say that she was _____ for the meeting.", "answer": "running late" }
+    ]
+  }
+]
