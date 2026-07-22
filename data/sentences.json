@@ -8,5 +8,15 @@
     "grammar": "present-simple-and-present-continuous",
     "category": "automation-troubleshooting",
     "keywords": ["robot", "PLC", "part sensor", "pick position", "permission", "troubleshooting"]
+  },
+  {
+    "id": "sentence-002",
+    "english": "The PLC output for \"Robot Start\" is active, but the robot does not begin the cycle. The robot is in automatic mode and there is no active alarm.",
+    "pattern": "Present simple + but + present simple. Present simple + and + there is/are.",
+    "similarExample": "The start signal is active, but the conveyor does not move. The drive is ready and there is no fault message.",
+    "level": "B2",
+    "grammar": "present-simple-with-contrast",
+    "category": "automation-troubleshooting",
+    "keywords": ["PLC output", "Robot Start", "automatic mode", "cycle", "alarm", "troubleshooting"]
   }
 ]
