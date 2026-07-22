@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "id": "sentence-001",
+    "english": "During production, the robot waits at the pick position even though the part is present. The PLC input from the part sensor is active, but the robot program is still waiting for permission.",
+    "pattern": "Time phrase + present simple + even though + present simple. Present simple + but + present continuous.",
+    "similarExample": "During operation, the conveyor stops even though the safety signal is active. The PLC output is on, but the motor is still waiting for a start command.",
+    "level": "B2",
+    "grammar": "present-simple-and-present-continuous",
+    "category": "automation-troubleshooting",
+    "keywords": ["robot", "PLC", "part sensor", "pick position", "permission", "troubleshooting"]
+  }
+]
