@@ -76,5 +76,31 @@
       { "text": "The inspection system detected _____ sealant on the part surface.", "answer": "excessive" },
       { "text": "_____ welding current can cause spatter and poor weld quality.", "answer": "excessive" }
     ]
+  },
+  {
+    "id": 25,
+    "word": "root cause",
+    "definition": "The fundamental reason why a problem or failure occurred.",
+    "partOfSpeech": "noun phrase",
+    "level": "B2",
+    "category": "troubleshooting-and-quality",
+    "sentences": [
+      { "text": "The team used the Five Whys method to identify the _____ of the repeated alarm.", "answer": "root cause" },
+      { "text": "Replacing the sensor solved the symptom but not the _____.", "answer": "root cause" },
+      { "text": "We reviewed the fault history to determine the _____ of the production stop.", "answer": "root cause" }
+    ]
+  },
+  {
+    "id": 26,
+    "word": "remove power",
+    "definition": "To disconnect or switch off the electrical energy supplied to equipment.",
+    "partOfSpeech": "verb phrase",
+    "level": "B2",
+    "category": "industrial-safety",
+    "sentences": [
+      { "text": "Always _____ before opening the electrical cabinet.", "answer": "remove power" },
+      { "text": "The technician had to _____ from the drive before replacing the motor cable.", "answer": "remove power" },
+      { "text": "Press the emergency stop and _____ before starting maintenance work.", "answer": "remove power" }
+    ]
   }
 ]
