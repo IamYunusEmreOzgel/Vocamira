@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manage the Vocamira sentence library.">
+  <title>Sentence Admin | Vocamira</title>
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/nav.css">
+  <link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="site-header">
+      <a class="site-logo" href="../index.html" aria-label="Vocamira home"><img src="../assets/images/vocamira-logo.svg" alt="Vocamira"></a>
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="../index.html">Home</a><a href="study.html">Study</a><a href="sentences.html">Sentences</a><a href="profile.html">Profile</a><a class="active" href="admin-sentences.html" aria-current="page">Admin</a>
+      </nav>
+    </header>
+
+    <section id="admin-loading" class="admin-state">Checking administrator access...</section>
+
+    <section id="admin-content" class="admin-layout" hidden>
+      <div class="admin-heading">
+        <div><p class="eyebrow">Administration</p><h1>Sentence Management</h1><p>Add, edit, publish or hide sentence cards without changing repository files.</p></div>
+        <button id="admin-logout" class="secondary-button" type="button">Sign Out</button>
+      </div>
+
+      <section class="admin-panel">
+        <div class="panel-heading"><div><p class="eyebrow">Editor</p><h2 id="form-title">Add a sentence</h2></div><button id="cancel-edit" class="text-button" type="button" hidden>Cancel edit</button></div>
+        <form id="sentence-form" class="admin-form">
+          <input id="sentence-id" type="hidden">
+          <label class="field-wide"><span>English sentence</span><textarea id="english" rows="2" required></textarea></label>
+          <label><span>Level</span><select id="level" required><option>A1</option><option selected>A2</option><option>B1</option><option>B2</option><option>C1</option><option>C2</option></select></label>
+          <label><span>Grammar</span><input id="grammar" placeholder="present-simple" required></label>
+          <label><span>Category</span><input id="category" placeholder="work" required></label>
+          <label class="field-wide"><span>Pattern</span><input id="pattern" placeholder="Subject + verb + object" required></label>
+          <label class="field-wide"><span>Similar example</span><textarea id="similar-example" rows="2" required></textarea></label>
+          <label class="checkbox-field"><input id="is-active" type="checkbox" checked><span>Published and visible</span></label>
+          <div class="form-actions"><button id="save-sentence" class="primary-button" type="submit">Save Sentence</button><button id="import-starter" class="secondary-button" type="button">Import Starter Library</button></div>
+        </form>
+        <p id="admin-message" class="admin-message" role="status" aria-live="polite"></p>
+      </section>
+
+      <section class="admin-panel">
+        <div class="panel-heading"><div><p class="eyebrow">Library</p><h2>Existing sentences</h2></div><span id="admin-count">0 sentences</span></div>
+        <div id="admin-sentence-list" class="admin-sentence-list"></div>
+      </section>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="../assets/js/supabase.js"></script>
+  <script src="../assets/js/nav.js"></script>
+  <script src="../assets/js/admin-sentences.js"></script>
+</body>
+</html>
