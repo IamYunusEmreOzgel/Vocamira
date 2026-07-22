@@ -22,5 +22,29 @@
       "Preventive maintenance helps reduce unexpected machine failures.",
       "The robot was stopped for scheduled maintenance during the night shift."
     ]
+  },
+  {
+    "word": "brightness",
+    "definition": "The amount of light produced by or reflected from a surface, screen or image.",
+    "partOfSpeech": "noun",
+    "level": "B1",
+    "category": "vision-and-inspection",
+    "examples": [
+      "The camera brightness was increased to make the part easier to detect.",
+      "Incorrect brightness settings can cause unreliable inspection results.",
+      "The operator adjusted the screen brightness before checking the image."
+    ]
+  },
+  {
+    "word": "diameter",
+    "definition": "The straight-line distance across the center of a circle or cylindrical object.",
+    "partOfSpeech": "noun",
+    "level": "B1",
+    "category": "measurement-and-quality",
+    "examples": [
+      "The operator measured the diameter of the shaft with a digital caliper.",
+      "The hole diameter must remain within the specified tolerance.",
+      "A larger pipe diameter allows more material to flow through the system."
+    ]
   }
 ]
