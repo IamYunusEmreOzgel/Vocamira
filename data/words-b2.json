@@ -102,5 +102,18 @@
       { "text": "The technician had to _____ from the drive before replacing the motor cable.", "answer": "remove power" },
       { "text": "Press the emergency stop and _____ before starting maintenance work.", "answer": "remove power" }
     ]
+  },
+  {
+    "id": 30,
+    "word": "vague",
+    "definition": "Not clearly expressed, explained or understood because important details are missing.",
+    "partOfSpeech": "adjective",
+    "level": "B2",
+    "category": "general-english",
+    "sentences": [
+      { "text": "The instructions were too _____ for the new employee to follow.", "answer": "vague" },
+      { "text": "He gave a _____ answer and avoided explaining the real problem.", "answer": "vague" },
+      { "text": "The project requirements are still _____ and need to be clarified.", "answer": "vague" }
+    ]
   }
 ]
