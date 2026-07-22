@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "word": "inspection",
+    "definition": "A careful examination of a product, machine or process to check its condition or quality.",
+    "partOfSpeech": "noun",
+    "level": "B1",
+    "category": "quality-and-production",
+    "examples": [
+      "The operator performed a visual inspection before starting the production line to ensure that all parts were correctly positioned.",
+      "The quality inspection found a small crack on the welded part.",
+      "After the inspection was completed, production continued without any problems."
+    ]
+  },
+  {
+    "word": "maintenance",
+    "definition": "Work performed to keep equipment in good condition and prevent or repair failures.",
+    "partOfSpeech": "noun",
+    "level": "B1",
+    "category": "maintenance-and-troubleshooting",
+    "examples": [
+      "The maintenance team replaced the damaged proximity sensor and tested the machine before restarting production.",
+      "Preventive maintenance helps reduce unexpected machine failures.",
+      "The robot was stopped for scheduled maintenance during the night shift."
+    ]
+  }
+]
