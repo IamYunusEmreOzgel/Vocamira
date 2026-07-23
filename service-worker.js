@@ -1,10 +1,10 @@
-const CACHE_NAME = "vocamira-shell-v3";
+const CACHE_NAME = "vocamira-shell-v4";
 const APP_SHELL = [
   "./",
   "./index.html",
   "./offline.html",
   "./manifest.webmanifest",
-  "./Pages/sentences.html",
+  "./pages/sentences.html",
   "./assets/css/style.css",
   "./assets/css/nav.css",
   "./assets/css/home.css",

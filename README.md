@@ -13,6 +13,7 @@ Vocamira is a web-based English vocabulary learning app built around short, focu
 - CEFR-based difficulty filters: Beginner, Intermediate, Advanced, and Mixed
 - Adjustable quiz lengths: 10, 20, 30, or 50 questions
 - Category-based vocabulary filtering
+- Sentence pattern library
 - All Words, Unseen Words, and Weak Words pools
 - Automatic weak-word detection based on user performance
 - Instant correct and incorrect answer feedback
@@ -49,12 +50,14 @@ Correct answers are calculated across both quiz modes.
 ```text
 Vocamira/
 ├── index.html
+├── offline.html
 ├── manifest.webmanifest
 ├── service-worker.js
-├── offline.html
-├── Pages/
+├── README.md
+├── pages/
 │   ├── game.html
 │   ├── study.html
+│   ├── sentences.html
 │   ├── profile.html
 │   ├── login.html
 │   └── how-it-works.html
@@ -63,8 +66,25 @@ Vocamira/
 │   ├── images/
 │   └── js/
 └── data/
-    └── words.json
+    ├── manifest.json
+    ├── sentences.json
+    ├── words-a1.json
+    ├── words-a2.json
+    ├── words-b1.json
+    ├── words-b2.json
+    ├── words-c1.json
+    └── words-c2.json
 ```
+
+### Directory Responsibilities
+
+- `pages/`: Application pages other than the home page.
+- `assets/css/`: Shared and page-specific stylesheets.
+- `assets/js/`: Shared and page-specific JavaScript files.
+- `assets/images/`: Logos, icons, and visual assets.
+- `data/`: Vocabulary manifests, level-based word files, and sentence data.
+
+File and directory names use lowercase kebab-case where possible to keep GitHub Pages paths consistent on case-sensitive systems.
 
 ## Running Locally
 
@@ -98,6 +118,4 @@ On iPhone:
 
 ## Current Status
 
-Vocamira is under active development. The core study, quiz, authentication, progress tracking, profile statistics, weak-word logic, and initial PWA shell are available.
-
-
+Vocamira is under active development. The core study, quiz, sentence library, authentication, progress tracking, profile statistics, weak-word logic, and initial PWA shell are available.
