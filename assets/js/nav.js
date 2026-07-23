@@ -38,8 +38,8 @@ if (siteHeader) {
 function addSentenceLink() {
   if (!siteNav) return;
 
-  const isInsidePages = window.location.pathname.includes("/Pages/");
-  const sentencesHref = isInsidePages ? "sentences.html" : "Pages/sentences.html";
+  const isInsidePages = window.location.pathname.includes("/pages/");
+  const sentencesHref = isInsidePages ? "sentences.html" : "pages/sentences.html";
   const existingSentenceLink = [...siteNav.querySelectorAll("a")].find((link) => {
     const href = link.getAttribute("href") || "";
     return href.endsWith("sentences.html");
@@ -89,7 +89,7 @@ async function ensureSupabaseClient() {
     await loadScript("https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2");
   }
 
-  const isInsidePages = window.location.pathname.includes("/Pages/");
+  const isInsidePages = window.location.pathname.includes("/pages/");
   const configPath = isInsidePages ? "../assets/js/supabase.js" : "assets/js/supabase.js";
   await loadScript(new URL(configPath, window.location.href).href);
 
@@ -99,9 +99,9 @@ async function ensureSupabaseClient() {
 async function addAccountLink() {
   if (!siteNav) return;
 
-  const isInsidePages = window.location.pathname.includes("/Pages/");
-  const loginHref = isInsidePages ? "login.html" : "Pages/login.html";
-  const profileHref = isInsidePages ? "profile.html" : "Pages/profile.html";
+  const isInsidePages = window.location.pathname.includes("/pages/");
+  const loginHref = isInsidePages ? "login.html" : "pages/login.html";
+  const profileHref = isInsidePages ? "profile.html" : "pages/profile.html";
   const existingAccountLink = [...siteNav.querySelectorAll("a")].find((link) => {
     const href = link.getAttribute("href") || "";
     return href.endsWith("login.html") || href.endsWith("profile.html");
@@ -136,7 +136,7 @@ function registerServiceWorker() {
   if (!("serviceWorker" in navigator)) return;
 
   window.addEventListener("load", async () => {
-    const isInsidePages = window.location.pathname.includes("/Pages/");
+    const isInsidePages = window.location.pathname.includes("/pages/");
     const appRoot = new URL(isInsidePages ? "../" : "./", window.location.href);
     const serviceWorkerUrl = new URL("service-worker.js", appRoot);
 
