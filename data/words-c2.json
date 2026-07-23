@@ -1,1 +1,132 @@
-[]
+[
+  {
+    "id": 65,
+    "word": "ubiquitous",
+    "definition": "Present, appearing or found everywhere, especially to the point of being very common.",
+    "partOfSpeech": "adjective",
+    "level": "C2",
+    "category": "general-english",
+    "sentences": [
+      { "text": "Industrial robots have become _____ in modern automotive production.", "answer": "ubiquitous" },
+      { "text": "Wireless communication is now _____ across most manufacturing facilities.", "answer": "ubiquitous" },
+      { "text": "Data collection systems are increasingly _____ in smart factories.", "answer": "ubiquitous" }
+    ]
+  },
+  {
+    "id": 66,
+    "word": "unequivocal",
+    "definition": "Completely clear and leaving no possibility for doubt or misunderstanding.",
+    "partOfSpeech": "adjective",
+    "level": "C2",
+    "category": "career-workplace",
+    "sentences": [
+      { "text": "The test results provided _____ evidence that the sensor was defective.", "answer": "unequivocal" },
+      { "text": "The customer gave an _____ instruction to stop production immediately.", "answer": "unequivocal" },
+      { "text": "The safety procedure must be written in _____ language.", "answer": "unequivocal" }
+    ]
+  },
+  {
+    "id": 67,
+    "word": "intrinsic",
+    "definition": "Belonging naturally or essentially to something rather than being caused by external factors.",
+    "partOfSpeech": "adjective",
+    "level": "C2",
+    "category": "engineering",
+    "sentences": [
+      { "text": "Precision is an _____ requirement of high-quality robotic welding.", "answer": "intrinsic" },
+      { "text": "The design has an _____ limitation that cannot be solved through software alone.", "answer": "intrinsic" },
+      { "text": "Traceability is _____ to any reliable quality-management system.", "answer": "intrinsic" }
+    ]
+  },
+  {
+    "id": 68,
+    "word": "ostensibly",
+    "definition": "Apparently or according to what is stated, although the reality may be different.",
+    "partOfSpeech": "adverb",
+    "level": "C2",
+    "category": "general-english",
+    "sentences": [
+      { "text": "The modification was _____ introduced to improve safety, but it also reduced cycle time.", "answer": "ostensibly" },
+      { "text": "The machine was _____ ready for production, although several alarms remained active.", "answer": "ostensibly" },
+      { "text": "The meeting was _____ about scheduling, but most of the discussion focused on cost.", "answer": "ostensibly" }
+    ]
+  },
+  {
+    "id": 69,
+    "word": "circumvent",
+    "definition": "To find a way around a problem, restriction or requirement, often through an indirect method.",
+    "partOfSpeech": "verb",
+    "level": "C2",
+    "category": "engineering",
+    "sentences": [
+      { "text": "The team created a temporary software solution to _____ the communication limitation.", "answer": "circumvent" },
+      { "text": "Safety functions must never be disabled to _____ production delays.", "answer": "circumvent" },
+      { "text": "We redesigned the fixture to _____ the robot's restricted working envelope.", "answer": "circumvent" }
+    ]
+  },
+  {
+    "id": 70,
+    "word": "exacerbate",
+    "definition": "To make an existing problem, difficult situation or negative condition worse.",
+    "partOfSpeech": "verb",
+    "level": "C2",
+    "category": "engineering",
+    "sentences": [
+      { "text": "Increasing the welding current may _____ the spatter problem.", "answer": "exacerbate" },
+      { "text": "Poor cable routing can _____ intermittent communication faults.", "answer": "exacerbate" },
+      { "text": "Delaying maintenance will only _____ the mechanical wear.", "answer": "exacerbate" }
+    ]
+  },
+  {
+    "id": 71,
+    "word": "meticulous",
+    "definition": "Extremely careful and precise, with close attention to every detail.",
+    "partOfSpeech": "adjective",
+    "level": "C2",
+    "category": "career-workplace",
+    "sentences": [
+      { "text": "The commissioning engineer kept _____ records of every parameter change.", "answer": "meticulous" },
+      { "text": "A _____ inspection revealed a barely visible crack in the fixture.", "answer": "meticulous" },
+      { "text": "Robot calibration requires a _____ approach to achieve repeatable results.", "answer": "meticulous" }
+    ]
+  },
+  {
+    "id": 72,
+    "word": "paradigm",
+    "definition": "A model, pattern or established way of thinking about how something should be done.",
+    "partOfSpeech": "noun",
+    "level": "C2",
+    "category": "career-workplace",
+    "sentences": [
+      { "text": "Digital manufacturing has introduced a new _____ for production management.", "answer": "paradigm" },
+      { "text": "Collaborative robots are changing the traditional automation _____.", "answer": "paradigm" },
+      { "text": "The company shifted from reactive maintenance to a predictive maintenance _____.", "answer": "paradigm" }
+    ]
+  },
+  {
+    "id": 73,
+    "word": "ramifications",
+    "definition": "The complex and often unintended consequences of a decision, action or event.",
+    "partOfSpeech": "plural noun",
+    "level": "C2",
+    "category": "career-workplace",
+    "sentences": [
+      { "text": "The team considered the safety _____ of modifying the robot sequence.", "answer": "ramifications" },
+      { "text": "A production delay of this scale could have serious financial _____.", "answer": "ramifications" },
+      { "text": "The manager explained the long-term _____ of selecting an unsupported control system.", "answer": "ramifications" }
+    ]
+  },
+  {
+    "id": 74,
+    "word": "resilient",
+    "definition": "Able to recover quickly from difficulties, failures or changing conditions.",
+    "partOfSpeech": "adjective",
+    "level": "C2",
+    "category": "engineering",
+    "sentences": [
+      { "text": "A _____ production system can recover quickly after a device failure.", "answer": "resilient" },
+      { "text": "The network architecture must be _____ enough to tolerate temporary communication loss.", "answer": "resilient" },
+      { "text": "The company invested in a more _____ supply chain after repeated shortages.", "answer": "resilient" }
+    ]
+  }
+]
