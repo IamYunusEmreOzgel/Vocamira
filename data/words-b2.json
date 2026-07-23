@@ -115,5 +115,122 @@
       { "text": "He gave a _____ answer and avoided explaining the real problem.", "answer": "vague" },
       { "text": "The project requirements are still _____ and need to be clarified.", "answer": "vague" }
     ]
+  },
+  {
+    "id": 46,
+    "word": "commission",
+    "definition": "To test and prepare a machine, system or production line so that it can begin normal operation.",
+    "partOfSpeech": "verb",
+    "level": "B2",
+    "category": "engineering",
+    "sentences": [
+      { "text": "The engineering team will _____ the new robotic cell next week.", "answer": "commission" },
+      { "text": "We must test every safety device before we _____ the machine.", "answer": "commission" },
+      { "text": "The customer asked us to _____ the production line before Friday.", "answer": "commission" }
+    ]
+  },
+  {
+    "id": 47,
+    "word": "calibrate",
+    "definition": "To adjust a measuring device, sensor or system so that it produces accurate results.",
+    "partOfSpeech": "verb",
+    "level": "B2",
+    "category": "engineering",
+    "sentences": [
+      { "text": "We need to _____ the camera before starting the measurement process.", "answer": "calibrate" },
+      { "text": "The technician used a reference part to _____ the sensor.", "answer": "calibrate" },
+      { "text": "Always _____ the robot TCP after replacing the welding torch.", "answer": "calibrate" }
+    ]
+  },
+  {
+    "id": 48,
+    "word": "throughput",
+    "definition": "The amount of material, products or work that a system can process within a specific period of time.",
+    "partOfSpeech": "noun",
+    "level": "B2",
+    "category": "engineering",
+    "sentences": [
+      { "text": "The path optimization increased the cell _____ without adding another robot.", "answer": "throughput" },
+      { "text": "Frequent stops reduced the production line's hourly _____.", "answer": "throughput" },
+      { "text": "We measured _____ to determine whether the new conveyor met the target capacity.", "answer": "throughput" }
+    ]
+  },
+  {
+    "id": 49,
+    "word": "interlock",
+    "definition": "A safety or control feature that prevents equipment from operating unless specific conditions are satisfied.",
+    "partOfSpeech": "noun",
+    "level": "B2",
+    "category": "engineering",
+    "sentences": [
+      { "text": "The safety _____ prevents the robot from moving while the door is open.", "answer": "interlock" },
+      { "text": "A missing _____ signal stopped the automatic cycle.", "answer": "interlock" },
+      { "text": "We tested the door _____ before releasing the cell for production.", "answer": "interlock" }
+    ]
+  },
+  {
+    "id": 50,
+    "word": "redundancy",
+    "definition": "The use of additional components or systems so that operation or safety can continue if one component fails.",
+    "partOfSpeech": "noun",
+    "level": "B2",
+    "category": "engineering",
+    "sentences": [
+      { "text": "The safety circuit uses _____ to reduce the risk of a single-point failure.", "answer": "redundancy" },
+      { "text": "Sensor _____ allows the controller to compare two independent signals.", "answer": "redundancy" },
+      { "text": "The design includes power-supply _____ for critical equipment.", "answer": "redundancy" }
+    ]
+  },
+  {
+    "id": 51,
+    "word": "synchronize",
+    "definition": "To make two or more machines, processes or movements operate at the same time or in the correct sequence.",
+    "partOfSpeech": "verb",
+    "level": "B2",
+    "category": "engineering",
+    "sentences": [
+      { "text": "The PLC must _____ the conveyor with the robot's picking motion.", "answer": "synchronize" },
+      { "text": "We used handshake signals to _____ the three robots.", "answer": "synchronize" },
+      { "text": "The controller can _____ both servo axes during the transfer operation.", "answer": "synchronize" }
+    ]
+  },
+  {
+    "id": 52,
+    "word": "diagnose",
+    "definition": "To identify the cause of a fault or problem by examining its symptoms and available information.",
+    "partOfSpeech": "verb",
+    "level": "B2",
+    "category": "engineering",
+    "sentences": [
+      { "text": "The engineer used the alarm history to _____ the communication fault.", "answer": "diagnose" },
+      { "text": "It is difficult to _____ an intermittent problem without recorded data.", "answer": "diagnose" },
+      { "text": "We checked the PLC inputs to _____ why the cylinder was not moving.", "answer": "diagnose" }
+    ]
+  },
+  {
+    "id": 53,
+    "word": "validate",
+    "definition": "To confirm through testing or evidence that a system, process or result meets its requirements.",
+    "partOfSpeech": "verb",
+    "level": "B2",
+    "category": "engineering",
+    "sentences": [
+      { "text": "We performed a dry run to _____ the robot program before production.", "answer": "validate" },
+      { "text": "The quality team will _____ the inspection results using reference samples.", "answer": "validate" },
+      { "text": "Every safety function must be tested to _____ the final system.", "answer": "validate" }
+    ]
+  },
+  {
+    "id": 54,
+    "word": "optimize",
+    "definition": "To improve a process, system or design so that it performs as effectively or efficiently as possible.",
+    "partOfSpeech": "verb",
+    "level": "B2",
+    "category": "engineering",
+    "sentences": [
+      { "text": "We changed the robot path to _____ the cycle time.", "answer": "optimize" },
+      { "text": "The engineer adjusted the welding parameters to _____ process quality.", "answer": "optimize" },
+      { "text": "Production data helped us _____ the material flow between stations.", "answer": "optimize" }
+    ]
   }
 ]
