@@ -50,10 +50,11 @@ Correct answers are calculated across both quiz modes.
 ```text
 Vocamira/
 ├── index.html
-├── offline.html
-├── manifest.webmanifest
 ├── service-worker.js
 ├── README.md
+├── pwa/
+│   ├── offline.html
+│   └── manifest.webmanifest
 ├── pages/
 │   ├── game.html
 │   ├── study.html
@@ -78,11 +79,13 @@ Vocamira/
 
 ### Directory Responsibilities
 
+- `pwa/`: Web app manifest and offline fallback page.
 - `pages/`: Application pages other than the home page.
 - `assets/css/`: Shared and page-specific stylesheets.
 - `assets/js/`: Shared and page-specific JavaScript files.
 - `assets/images/`: Logos, icons, and visual assets.
 - `data/`: Vocabulary manifests, level-based word files, and sentence data.
+- `service-worker.js`: Remains at the project root so its default scope covers the full application.
 
 File and directory names use lowercase kebab-case where possible to keep GitHub Pages paths consistent on case-sensitive systems.
 
