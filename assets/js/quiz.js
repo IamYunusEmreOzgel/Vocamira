@@ -16,6 +16,8 @@ const questionLabel = document.querySelector("#question-label");
 const questionPrompt = document.querySelector("#question-prompt");
 const answerOptions = document.querySelector("#answer-options");
 const feedback = document.querySelector("#feedback");
+const quizExamplePanel = document.querySelector("#quiz-example-panel");
+const quizExampleList = document.querySelector("#quiz-example-list");
 const finalScore = document.querySelector("#final-score");
 const resultMessage = document.querySelector("#result-message");
 const saveStatus = document.querySelector("#save-status");
@@ -62,6 +64,25 @@ function shuffle(items) {
     [copy[index], copy[randomIndex]] = [copy[randomIndex], copy[index]];
   }
   return copy;
+}
+
+function clearQuizExamples() {
+  if (!quizExamplePanel || !quizExampleList) return;
+  quizExampleList.innerHTML = "";
+  quizExamplePanel.classList.add("hidden");
+}
+
+function renderQuizExamples(word) {
+  if (!quizExamplePanel || !quizExampleList || !Array.isArray(word?.sentences)) return;
+
+  quizExampleList.innerHTML = "";
+  word.sentences.slice(0, 3).forEach((sentence) => {
+    const item = document.createElement("li");
+    item.textContent = sentence.text.replace("_____", sentence.answer);
+    quizExampleList.appendChild(item);
+  });
+
+  quizExamplePanel.classList.remove("hidden");
 }
 
 function getSelectedDifficulty() {
@@ -266,6 +287,7 @@ function startQuiz() {
   saveStatus.textContent = "";
   restartButton.disabled = false;
   changeSettingsButton.disabled = false;
+  clearQuizExamples();
 
   quizWords.forEach((word) => {
     const wordId = Number(word.id);
@@ -336,6 +358,7 @@ function renderQuestion() {
   feedback.className = "feedback";
   nextButton.classList.add("hidden");
   answerOptions.innerHTML = "";
+  clearQuizExamples();
 
   const currentWord = quizWords[currentQuestionIndex];
   const totalQuestions = quizWords.length;
@@ -377,6 +400,7 @@ function checkAnswer(selectedButton, selectedAnswer) {
     feedback.classList.add("error");
   }
 
+  renderQuizExamples(currentWord);
   nextButton.textContent = currentQuestionIndex === quizWords.length - 1 ? "View Result" : "Next Question";
   nextButton.classList.remove("hidden");
 }
@@ -403,6 +427,7 @@ async function showResult() {
         ? "A solid start. Review the words and try again."
         : "Keep practising. Repetition will make these words easier.";
 
+  clearQuizExamples();
   showScreen("result");
 
   if (typeof window.saveGameResults === "function") {
@@ -413,6 +438,7 @@ async function showResult() {
 }
 
 function returnToSettings() {
+  clearQuizExamples();
   showScreen("start");
   updateSetupSummary();
 }
@@ -427,4 +453,5 @@ difficultyInputs.forEach((input) => input.addEventListener("change", updateSetup
 wordPoolInputs.forEach((input) => input.addEventListener("change", updateSetupSummary));
 gameModeInputs.forEach((input) => input.addEventListener("change", updateSetupSummary));
 
+clearQuizExamples();
 loadWords();
