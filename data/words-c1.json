@@ -1,1 +1,132 @@
-[]
+[
+  {
+    "id": 55,
+    "word": "mitigate",
+    "definition": "To reduce the seriousness, harmfulness or negative impact of a problem or risk.",
+    "partOfSpeech": "verb",
+    "level": "C1",
+    "category": "engineering",
+    "sentences": [
+      { "text": "The team installed an additional sensor to _____ the risk of an undetected failure.", "answer": "mitigate" },
+      { "text": "Preventive maintenance can _____ the impact of unexpected equipment breakdowns.", "answer": "mitigate" },
+      { "text": "We revised the robot path to _____ the possibility of a collision.", "answer": "mitigate" }
+    ]
+  },
+  {
+    "id": 56,
+    "word": "stringent",
+    "definition": "Very strict, precise or demanding, especially regarding rules, standards or requirements.",
+    "partOfSpeech": "adjective",
+    "level": "C1",
+    "category": "engineering",
+    "sentences": [
+      { "text": "The automotive customer imposed _____ quality requirements on every welded component.", "answer": "stringent" },
+      { "text": "The machine must comply with _____ safety standards before commissioning.", "answer": "stringent" },
+      { "text": "The inspection system was designed to meet the plant's _____ acceptance criteria.", "answer": "stringent" }
+    ]
+  },
+  {
+    "id": 57,
+    "word": "discrepancy",
+    "definition": "A difference between two results, values, statements or conditions that should normally agree.",
+    "partOfSpeech": "noun",
+    "level": "C1",
+    "category": "engineering",
+    "sentences": [
+      { "text": "The engineer found a _____ between the commanded position and the actual robot position.", "answer": "discrepancy" },
+      { "text": "A small _____ in the measurement data indicated a calibration problem.", "answer": "discrepancy" },
+      { "text": "We investigated the _____ between the production report and the PLC counter.", "answer": "discrepancy" }
+    ]
+  },
+  {
+    "id": 58,
+    "word": "interoperability",
+    "definition": "The ability of different systems, devices or software applications to communicate and work together effectively.",
+    "partOfSpeech": "noun",
+    "level": "C1",
+    "category": "engineering",
+    "sentences": [
+      { "text": "Profinet improves _____ between the PLC, robots and field devices.", "answer": "interoperability" },
+      { "text": "The project required reliable _____ between equipment from several manufacturers.", "answer": "interoperability" },
+      { "text": "Poor protocol _____ caused delays during system integration.", "answer": "interoperability" }
+    ]
+  },
+  {
+    "id": 59,
+    "word": "contingency",
+    "definition": "A possible future event or problem that must be prepared for, especially through an alternative plan.",
+    "partOfSpeech": "noun",
+    "level": "C1",
+    "category": "career-workplace",
+    "sentences": [
+      { "text": "The project manager prepared a _____ plan in case the new drive failed during commissioning.", "answer": "contingency" },
+      { "text": "We kept a spare sensor as a _____ for unexpected production failures.", "answer": "contingency" },
+      { "text": "Every critical installation should include a realistic _____ strategy.", "answer": "contingency" }
+    ]
+  },
+  {
+    "id": 60,
+    "word": "rectify",
+    "definition": "To correct a mistake, fault or unacceptable situation.",
+    "partOfSpeech": "verb",
+    "level": "C1",
+    "category": "engineering",
+    "sentences": [
+      { "text": "The technician modified the PLC logic to _____ the timing error.", "answer": "rectify" },
+      { "text": "We must _____ the safety fault before restarting the production line.", "answer": "rectify" },
+      { "text": "The supplier was asked to _____ the dimensional problem immediately.", "answer": "rectify" }
+    ]
+  },
+  {
+    "id": 61,
+    "word": "robust",
+    "definition": "Strong, reliable and able to continue functioning under difficult or changing conditions.",
+    "partOfSpeech": "adjective",
+    "level": "C1",
+    "category": "engineering",
+    "sentences": [
+      { "text": "The control system needs a _____ recovery procedure for communication failures.", "answer": "robust" },
+      { "text": "We developed a _____ robot program that can handle minor product variations.", "answer": "robust" },
+      { "text": "A _____ design reduces the risk of production interruptions.", "answer": "robust" }
+    ]
+  },
+  {
+    "id": 62,
+    "word": "feasible",
+    "definition": "Possible and practical to achieve with the available time, resources and technology.",
+    "partOfSpeech": "adjective",
+    "level": "C1",
+    "category": "career-workplace",
+    "sentences": [
+      { "text": "The proposed cycle time is technically _____ if the robot paths are optimized.", "answer": "feasible" },
+      { "text": "We evaluated whether the automation concept was financially _____.", "answer": "feasible" },
+      { "text": "The team selected the most _____ solution after comparing three alternatives.", "answer": "feasible" }
+    ]
+  },
+  {
+    "id": 63,
+    "word": "detrimental",
+    "definition": "Causing harm, damage or a negative effect on something.",
+    "partOfSpeech": "adjective",
+    "level": "C1",
+    "category": "engineering",
+    "sentences": [
+      { "text": "Excessive vibration can be _____ to the service life of the motor.", "answer": "detrimental" },
+      { "text": "Frequent emergency stops may have a _____ effect on production efficiency.", "answer": "detrimental" },
+      { "text": "Ignoring minor welding defects can be _____ to final product quality.", "answer": "detrimental" }
+    ]
+  },
+  {
+    "id": 64,
+    "word": "streamline",
+    "definition": "To improve a process by making it simpler, faster or more efficient.",
+    "partOfSpeech": "verb",
+    "level": "C1",
+    "category": "career-workplace",
+    "sentences": [
+      { "text": "The new HMI screens helped _____ the operator's daily tasks.", "answer": "streamline" },
+      { "text": "We automated the reporting process to _____ production tracking.", "answer": "streamline" },
+      { "text": "The project team reorganized the workflow to _____ commissioning activities.", "answer": "streamline" }
+    ]
+  }
+]
