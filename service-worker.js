@@ -1,9 +1,9 @@
-const CACHE_NAME = "vocamira-shell-v4";
+const CACHE_NAME = "vocamira-shell-v5";
 const APP_SHELL = [
   "./",
   "./index.html",
-  "./offline.html",
-  "./manifest.webmanifest",
+  "./pwa/offline.html",
+  "./pwa/manifest.webmanifest",
   "./pages/sentences.html",
   "./assets/css/style.css",
   "./assets/css/nav.css",
@@ -52,7 +52,7 @@ self.addEventListener("fetch", (event) => {
           return response;
         })
         .catch(async () => {
-          return (await caches.match(request)) || caches.match("./offline.html");
+          return (await caches.match(request)) || caches.match("./pwa/offline.html");
         })
     );
     return;
