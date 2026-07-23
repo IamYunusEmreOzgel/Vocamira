@@ -1,4 +1,4 @@
-const CACHE_NAME = "vocamira-shell-v5";
+const CACHE_NAME = "vocamira-shell-v6";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -43,34 +43,24 @@ self.addEventListener("fetch", (event) => {
 
   if (request.method !== "GET" || url.origin !== self.location.origin) return;
 
-  if (request.mode === "navigate") {
-    event.respondWith(
-      fetch(request)
-        .then((response) => {
+  event.respondWith(
+    fetch(request)
+      .then((response) => {
+        if (response.ok) {
           const responseCopy = response.clone();
           caches.open(CACHE_NAME).then((cache) => cache.put(request, responseCopy));
-          return response;
-        })
-        .catch(async () => {
-          return (await caches.match(request)) || caches.match("./pwa/offline.html");
-        })
-    );
-    return;
-  }
+        }
+        return response;
+      })
+      .catch(async () => {
+        const cachedResponse = await caches.match(request);
+        if (cachedResponse) return cachedResponse;
 
-  event.respondWith(
-    caches.match(request).then((cachedResponse) => {
-      const networkResponse = fetch(request)
-        .then((response) => {
-          if (response.ok) {
-            const responseCopy = response.clone();
-            caches.open(CACHE_NAME).then((cache) => cache.put(request, responseCopy));
-          }
-          return response;
-        })
-        .catch(() => cachedResponse);
+        if (request.mode === "navigate") {
+          return caches.match("./pwa/offline.html");
+        }
 
-      return cachedResponse || networkResponse;
-    })
+        return Response.error();
+      })
   );
 });
