@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#354f9b">
+  <title>Vocamira | Offline</title>
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <style>
+    :root {
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #202735;
+      background: #f5f7fb;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      box-sizing: border-box;
+    }
+
+    main {
+      width: min(100%, 460px);
+      padding: 36px;
+      border-radius: 24px;
+      background: #ffffff;
+      box-shadow: 0 18px 50px rgba(32, 39, 53, 0.12);
+      text-align: center;
+    }
+
+    img {
+      width: 72px;
+      height: 72px;
+    }
+
+    h1 {
+      margin: 20px 0 10px;
+      font-size: 1.75rem;
+    }
+
+    p {
+      margin: 0 0 24px;
+      line-height: 1.6;
+      color: #596273;
+    }
+
+    button {
+      border: 0;
+      border-radius: 12px;
+      padding: 12px 20px;
+      background: #354f9b;
+      color: #ffffff;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="../assets/images/favicon.svg" alt="">
+    <h1>You are offline</h1>
+    <p>Vocamira could not reach the internet. Reconnect and try again.</p>
+    <button type="button" onclick="window.location.reload()">Try Again</button>
+  </main>
+</body>
+</html>
